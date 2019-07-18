@@ -1,0 +1,66 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
+| Date         : Thu Jul 18 16:30:02 2019
+| Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
+| Command      : report_methodology -file fwrisc_uart_wraper_methodology_drc_routed.rpt -pb fwrisc_uart_wraper_methodology_drc_routed.pb -rpx fwrisc_uart_wraper_methodology_drc_routed.rpx
+| Design       : fwrisc_uart_wraper
+| Device       : xc7z010clg400-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_fwrisc_uart_wraper
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 6
++----------+----------+--------------------------------------------+------------+
+| Rule     | Severity | Description                                | Violations |
++----------+----------+--------------------------------------------+------------+
+| SYNTH-6  | Warning  | Timing of a block RAM might be sub-optimal | 2          |
+| SYNTH-16 | Warning  | Address collision                          | 4          |
++----------+----------+--------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+SYNTH-6#1 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-6#2 Warning
+Timing of a block RAM might be sub-optimal  
+The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2, implemented as a block RAM, might be sub-optimal as no output register was merged into the block
+Related violations: <none>
+
+SYNTH-16#1 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_0_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#2 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_1_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#3 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_2_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#4 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_3_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+

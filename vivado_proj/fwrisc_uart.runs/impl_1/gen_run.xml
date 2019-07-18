@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7z010clg400-1" LaunchTime="1563437426">
+  <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="fwrisc_uart_wraper_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="fwrisc_uart_wraper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="fwrisc_uart_wraper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="fwrisc_uart_wraper.tcl"/>
+  <File Type="OPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="fwrisc_uart_wraper_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="fwrisc_uart_wraper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="fwrisc_uart_wraper_reports.tcl"/>
+  <File Type="OPT-DRC" Name="fwrisc_uart_wraper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="fwrisc_uart_wraper.hwdef"/>
+  <File Type="PWROPT-DCP" Name="fwrisc_uart_wraper_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="fwrisc_uart_wraper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="fwrisc_uart_wraper_placed.dcp"/>
+  <File Type="PLACE-IO" Name="fwrisc_uart_wraper_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="fwrisc_uart_wraper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="fwrisc_uart_wraper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="fwrisc_uart_wraper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="fwrisc_uart_wraper_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="fwrisc_uart_wraper.bgn"/>
+  <File Type="PLACE-TIMING" Name="fwrisc_uart_wraper_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="fwrisc_uart_wraper_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="fwrisc_uart_wraper.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="fwrisc_uart_wraper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="fwrisc_uart_wraper_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="fwrisc_uart_wraper.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="fwrisc_uart_wraper_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="fwrisc_uart_wraper_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="fwrisc_uart_wraper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="fwrisc_uart_wraper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="fwrisc_uart_wraper_drc_routed.pb"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="fwrisc_uart_wraper.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="fwrisc_uart_wraper_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="fwrisc_uart_wraper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="fwrisc_uart_wraper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fwrisc_uart_wraper_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="fwrisc_uart_wraper.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fwrisc_uart_wraper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="fwrisc_uart_wraper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="fwrisc_uart_wraper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="fwrisc_uart_wraper_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="fwrisc_uart_wraper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="fwrisc_uart_wraper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="fwrisc_uart_wraper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="fwrisc_uart_wraper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="fwrisc_uart_wraper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="fwrisc_uart_wraper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="fwrisc_uart_wraper_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="fwrisc_uart_wraper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fwrisc_uart_wraper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="fwrisc_uart_wraper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="fwrisc_uart_wraper.rbt"/>
+  <File Type="BITSTR-NKY" Name="fwrisc_uart_wraper.nky"/>
+  <File Type="BG-DRC" Name="fwrisc_uart_wraper.drc"/>
+  <File Type="RDI-RDI" Name="fwrisc_uart_wraper.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_defines.vh">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/IF_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/UART_Registers.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/UART_baudrate_gen.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/UART_rx_fsm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/UART_tx_fsm.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_alu.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_comparator.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_dbus_if.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_fpga_top.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_regfile.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/mux2to1.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/my_fifo.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/my_ram.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/fpga/fwrisc_uart_wraper.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_tracer.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/op_uart.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/uart_transceiver.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/uart_tb.sv">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/vsim/csrc/rmapats.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/vsim/csrc/rmar0.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/vsim/csrc/rmar.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../fwrisc_uart/rtl/uart/vsim/csrc/import_dpic.h">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="fwrisc_uart_wraper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/fwrisc_uart.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/fwrisc_uart.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
+</GenRun>
