@@ -39,7 +39,7 @@ module fwrisc_regfile(
 	reg[5:0]			rb_raddr_r;
 	(*ram_style="block"*)reg[31:0]			regs['h3f:0];
 
-// `ifdef FORMAL
+// `ifdef FORMAL 
 	// initial regs[0] = 0;
 //	genvar reg_i;
 //	for (reg_i=1; reg_i<64; reg_i++) begin

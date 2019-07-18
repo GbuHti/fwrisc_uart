@@ -34,13 +34,13 @@ module fwrisc (
 		output			ivalid,
 		input			iready,
 		
-		output[31:0]	daddr,
-		output[31:0]	dwdata,
-		input[31:0]		drdata,
-		output[3:0]		dstrb,
-		output			dwrite,
-		output			dvalid,
-		input			dready
+		output	reg [31:0]		daddr,
+		output	reg [31:0]		dwdata,
+		input		[31:0]		drdata,
+		output	reg [3:0]		dstrb,
+		output	reg 			dwrite,
+		output	reg 			dvalid,
+		input					dready
 		);
 
 	reg[31:0]			instr;
@@ -816,6 +816,11 @@ module fwrisc (
 		end
 	end
 	
+	wire	[31:0]	daddr_w;
+	wire 		dvalid_w;
+	wire 		dwrite_w;
+	wire 	[31:0]	dwdata_w;
+	wire 		dstrb_w;
 	// Handle data-access control signals
 	fwrisc_dbus_if u_dbus_if (
 		.clock     (clock    ), 
@@ -823,12 +828,20 @@ module fwrisc (
 		.rb_rdata  (rb_rdata ), 
 		.alu_out   (alu_out  ), 
 		.state     (state    ), 
-		.daddr     (daddr    ), 
-		.dvalid    (dvalid   ), 
-		.dwrite    (dwrite   ), 
-		.dwdata    (dwdata   ), 
-		.dstrb     (dstrb    ), 
+		.daddr     (daddr_w    ), 
+		.dvalid    (dvalid_w   ), 
+		.dwrite    (dwrite_w  ), 
+		.dwdata    (dwdata_w   ), 
+		.dstrb     (dstrb_w    ), 
 		.dready    (dready   ));
+		
+	always @(posedge clock) begin
+		daddr <= daddr_w;
+		dvalid <= dvalid_w;
+		dwrite <= dwrite_w;
+		dwdata <= dwdata_w;
+		dstrb <= dstrb_w;
+	end	
 	
 	
 	always @* begin
@@ -859,25 +872,25 @@ module fwrisc (
 	/**
 	 * The tracer is used during simulation to inspect operation of the core
 	 */
-	fwrisc_tracer u_tracer (
-		.clock   (clock  			), 
-		.reset   (reset  			), 
-		.pc      ({pc, 2'b0}		), 
-		.instr   (instr  			), 
-		.ivalid  (exec_state		), 
-		.ra_raddr(ra_raddr			),
-		.ra_rdata(ra_rdata			),
-		.rb_raddr(rb_raddr			),
-		.rb_rdata(rb_rdata			),
-		.rd_waddr(rd_waddr			), 
-		.rd_wdata(rd_wdata			), 
-		.rd_write(rd_wen 			),
-		.maddr   (daddr				),
-		.mdata   ((dwrite)?dwdata:drdata),
-		.mstrb   (dstrb				),
-		.mwrite  (dwrite			),
-		.mvalid  ((dvalid && dready))
-		);
+	// fwrisc_tracer u_tracer (
+		// .clock   (clock  			), 
+		// .reset   (reset  			), 
+		// .pc      ({pc, 2'b0}		), 
+		// .instr   (instr  			), 
+		// .ivalid  (exec_state		), 
+		// .ra_raddr(ra_raddr			),
+		// .ra_rdata(ra_rdata			),
+		// .rb_raddr(rb_raddr			),
+		// .rb_rdata(rb_rdata			),
+		// .rd_waddr(rd_waddr			), 
+		// .rd_wdata(rd_wdata			), 
+		// .rd_write(rd_wen 			),
+		// .maddr   (daddr				),
+		// .mdata   ((dwrite)?dwdata:drdata),
+		// .mstrb   (dstrb				),
+		// .mwrite  (dwrite			),
+		// .mvalid  ((dvalid && dready))
+		// );
 	
 endmodule
 
