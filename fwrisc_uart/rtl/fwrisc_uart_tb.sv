@@ -64,7 +64,12 @@ module fwrisc_uart_tb;
 	initial begin
 		@(posedge rx_irq) begin
 			repeat(100) @(posedge clk);
-			Send_custom;
+			Send_custom(67);
+			@(posedge tx_irq) Send_custom(54);
+			@(posedge tx_irq) Send_custom(37);
+			@(posedge tx_irq) Send_custom(58);
+			@(posedge tx_irq) Send_custom(91);
+			
 		end
 	end
 
@@ -93,9 +98,10 @@ module fwrisc_uart_tb;
 	endtask
 
 	task Send_custom;
+		input [7:0] custom;
 		csr_we = 1;
 		csr_a = {4'b0000,8'h0,2'b00};
-		csr_di = {24'h0,8'hba};
+		csr_di = {24'h0,custom};
 		@(posedge clk_50M);
 		@(posedge clk_50M)
 		csr_we = 0;

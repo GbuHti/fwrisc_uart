@@ -20,11 +20,11 @@ n@_opt
 Z4 OL;O;10.6d;65
 R0
 T_opt1
-!s110 1563459513
-V62Cj7R<df6zjG;Xzb<Dz?2
+!s110 1563462958
+V@V?6G9O2M^UJX[dM=Z`5@1
 04 14 4 work fwrisc_uart_tb fast 0
 R1
-=1-309c23e63ef0-5d307fb9-107-1518
+=1-309c23e63ef0-5d308d2e-172-acc
 R2
 R3
 n@_opt1
@@ -180,6 +180,7 @@ R19
 R20
 R3
 vfwrisc_fpga_top
+!s10a 1563459014
 R13
 Z23 !s110 1563459494
 !i10b 1
@@ -232,15 +233,15 @@ R20
 R3
 vfwrisc_uart_tb
 R13
-R23
+Z27 !s110 1563462946
 !i10b 1
-!s100 CdF50k0C97:CVDA3U^mD00
-ICY?n@9KH;1HcGJESiGXWC3
+!s100 GKlG9;G;F6[W1>M5E=iOT2
+I?PJC`M1870Dk;CA2QOAFX0
 R6
 !s105 fwrisc_uart_tb_sv_unit
 S1
 R0
-w1563459296
+w1563462928
 8../../../../../fwrisc_uart/rtl/fwrisc_uart_tb.sv
 F../../../../../fwrisc_uart/rtl/fwrisc_uart_tb.sv
 R22
@@ -248,7 +249,7 @@ R7
 r1
 !s85 0
 31
-R24
+Z28 !s108 1563462946.000000
 R17
 R18
 !i113 0
@@ -282,7 +283,7 @@ R19
 R20
 R3
 vglbl
-R23
+R27
 !i10b 1
 !s100 JWZ^meD<P7inSF0<1SiO32
 IAl?5;D^:bf?I5A^M>WzmU1
@@ -296,13 +297,14 @@ R7
 r1
 !s85 0
 31
-R24
+R28
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
 R10
 R3
 vIF_fifo
+Z29 !s10a 1563458477
 R13
 R23
 !i10b 1
@@ -315,7 +317,7 @@ R0
 w1563458477
 8../../../../../fwrisc_uart/rtl/IF_fifo.sv
 F../../../../../fwrisc_uart/rtl/IF_fifo.sv
-Z27 L0 11
+Z30 L0 11
 R7
 r1
 !s85 0
@@ -329,7 +331,7 @@ R20
 R3
 n@i@f_fifo
 vmux2to1
-Z28 !s10a 1563458477
+R29
 R13
 R14
 !i10b 1
@@ -342,7 +344,7 @@ R0
 R21
 8../../../../../fwrisc_uart/rtl/mux2to1.sv
 F../../../../../fwrisc_uart/rtl/mux2to1.sv
-R27
+R30
 R7
 r1
 !s85 0
@@ -355,7 +357,7 @@ R19
 R20
 R3
 vmy_fifo
-R28
+R29
 R13
 R14
 !i10b 1
@@ -365,7 +367,7 @@ R6
 R26
 S1
 R0
-Z29 w1563419491
+Z31 w1563419491
 8../../../../../fwrisc_uart/rtl/my_fifo.sv
 F../../../../../fwrisc_uart/rtl/my_fifo.sv
 L0 1
@@ -381,7 +383,7 @@ R19
 R20
 R3
 vmy_ram
-R28
+R29
 R13
 R14
 !i10b 1
@@ -391,7 +393,7 @@ R6
 R26
 S1
 R0
-R29
+R31
 8../../../../../fwrisc_uart/rtl/my_ram.sv
 F../../../../../fwrisc_uart/rtl/my_ram.sv
 L0 22
@@ -420,7 +422,7 @@ R0
 w1563449498
 8../../../../../fwrisc_uart/rtl/uart/op_uart.sv
 F../../../../../fwrisc_uart/rtl/uart/op_uart.sv
-Z30 L0 18
+Z32 L0 18
 R7
 r1
 !s85 0
@@ -468,7 +470,7 @@ R6
 R26
 S1
 R0
-Z31 w1563419499
+Z33 w1563419499
 8../../../../../fwrisc_uart/rtl/uart.sv
 F../../../../../fwrisc_uart/rtl/uart.sv
 L0 10
@@ -484,9 +486,9 @@ R19
 R20
 R3
 vUART_baudrate_gen
-R28
+R29
 R13
-Z32 !s110 1563443943
+Z34 !s110 1563443943
 !i10b 1
 !s100 183j4d;]P[d==0lcO^n<T3
 ILz;=gU=<ZEh3F`XYC<MRV3
@@ -494,10 +496,10 @@ R6
 !s105 UART_baudrate_gen_sv_unit
 S1
 R0
-R29
+R31
 8../../../../../fwrisc_uart/rtl/UART_baudrate_gen.sv
 F../../../../../fwrisc_uart/rtl/UART_baudrate_gen.sv
-R27
+R30
 R7
 r1
 !s85 0
@@ -513,7 +515,7 @@ n@u@a@r@t_baudrate_gen
 vUART_Registers
 R25
 R13
-R32
+R34
 !i10b 1
 !s100 S87gT`E@KSC:E5;7>7:Pi3
 IV7aoDZKBETKOlJ6>8bgja1
@@ -521,7 +523,7 @@ R6
 !s105 UART_Registers_sv_unit
 S1
 R0
-R31
+R33
 8../../../../../fwrisc_uart/rtl/UART_Registers.sv
 F../../../../../fwrisc_uart/rtl/UART_Registers.sv
 L0 17
@@ -538,9 +540,9 @@ R20
 R3
 n@u@a@r@t_@registers
 vUART_rx_fsm
-R28
+R29
 R13
-R32
+R34
 !i10b 1
 !s100 XN3^9`DKXC6[NjNZG=l0<0
 I<>MLI[ZhFbM<_mIRn3cB91
@@ -548,10 +550,10 @@ R6
 !s105 UART_rx_fsm_sv_unit
 S1
 R0
-R29
+R31
 8../../../../../fwrisc_uart/rtl/UART_rx_fsm.sv
 F../../../../../fwrisc_uart/rtl/UART_rx_fsm.sv
-R30
+R32
 R7
 r1
 !s85 0
@@ -565,7 +567,7 @@ R20
 R3
 n@u@a@r@t_rx_fsm
 vuart_transceiver
-R28
+R29
 R13
 R14
 !i10b 1
@@ -575,7 +577,7 @@ R6
 R26
 S1
 R0
-R29
+R31
 8../../../../../fwrisc_uart/rtl/uart/uart_transceiver.sv
 F../../../../../fwrisc_uart/rtl/uart/uart_transceiver.sv
 L0 19
@@ -591,9 +593,9 @@ R19
 R20
 R3
 vUART_tx_fsm
-R28
+R29
 R13
-R32
+R34
 !i10b 1
 !s100 fQCcE]OXaf?e99c[OjWEN1
 IE:^1SF=:B:X;Vmhl[z7ZA3
@@ -604,7 +606,7 @@ R0
 R21
 8../../../../../fwrisc_uart/rtl/UART_tx_fsm.sv
 F../../../../../fwrisc_uart/rtl/UART_tx_fsm.sv
-R27
+R30
 R7
 r1
 !s85 0
