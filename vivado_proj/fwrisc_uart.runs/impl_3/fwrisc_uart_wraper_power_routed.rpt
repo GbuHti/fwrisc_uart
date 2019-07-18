@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Jul 18 19:19:50 2019
+| Date             : Thu Jul 18 19:28:16 2019
 | Host             : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command          : report_power -file fwrisc_uart_wraper_power_routed.rpt -pb fwrisc_uart_wraper_power_summary_routed.pb -rpx fwrisc_uart_wraper_power_routed.rpx
 | Design           : fwrisc_uart_wraper
@@ -30,10 +30,10 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.222        |
+| Total On-Chip Power (W)  | 0.223        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.127        |
+| Dynamic (W)              | 0.128        |
 | Device Static (W)        | 0.095        |
 | Effective TJA (C/W)      | 11.5         |
 | Max Ambient (C)          | 82.4         |
@@ -54,17 +54,17 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | Clocks                   |     0.002 |        8 |       --- |             --- |
 | Slice Logic              |     0.005 |     1788 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     1027 |     17600 |            5.84 |
+|   LUT as Logic           |     0.004 |     1028 |     17600 |            5.84 |
 |   CARRY4                 |    <0.001 |       59 |      4400 |            1.34 |
 |   Register               |    <0.001 |      433 |     35200 |            1.23 |
 |   LUT as Distributed RAM |    <0.001 |       16 |      6000 |            0.27 |
 |   Others                 |     0.000 |       34 |       --- |             --- |
-| Signals                  |     0.006 |     1689 |       --- |             --- |
+| Signals                  |     0.006 |     1686 |       --- |             --- |
 | Block RAM                |     0.016 |       13 |        60 |           21.67 |
 | PLL                      |     0.099 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |        7 |       100 |            7.00 |
 | Static Power             |     0.095 |          |           |                 |
-| Total                    |     0.222 |          |           |                 |
+| Total                    |     0.223 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,7 +74,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.040 |       0.036 |      0.004 |
+| Vccint    |       1.000 |     0.041 |       0.036 |      0.004 |
 | Vccaux    |       1.800 |     0.056 |       0.050 |      0.005 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -155,11 +155,11 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| fwrisc_uart_wraper  |     0.127 |
+| fwrisc_uart_wraper  |     0.128 |
 |   u_clock_gen       |     0.099 |
 |     inst            |     0.099 |
 |   u_fwrisc_fpga_top |     0.028 |
-|     u_core          |     0.013 |
+|     u_core          |     0.014 |
 |       u_regfile     |     0.011 |
 +---------------------+-----------+
 

@@ -29,6 +29,7 @@ R2
 R3
 n@_opt1
 R4
+R0
 vclk_wiz_0
 Z5 !s10a 1563440467
 !s110 1563435858
@@ -181,15 +182,15 @@ R19
 R3
 vfwrisc_fpga_top
 R12
-Z24 !s110 1563448571
+Z24 !s110 1563449359
 !i10b 1
-!s100 KHC3T<zo=>??fzOiX2>Oc1
-IReN@eg3BAHIZO:AR0:lZf3
+!s100 L[H?;<4JmUiUX<fT`<YQ72
+I2]LTS0B>;`ZBBK4bNi^Kz3
 R6
 !s105 fwrisc_fpga_top_sv_unit
 S1
 R0
-w1563444112
+w1563449107
 8../../../../../fwrisc_uart/rtl/fwrisc_fpga_top.sv
 F../../../../../fwrisc_uart/rtl/fwrisc_fpga_top.sv
 R22
@@ -197,7 +198,7 @@ R7
 r1
 !s85 0
 31
-Z25 !s108 1563448571.000000
+Z25 !s108 1563449359.000000
 R16
 R17
 !i113 0
@@ -283,7 +284,7 @@ R18
 R19
 R3
 vglbl
-R24
+!s110 1563449360
 !i10b 1
 !s100 JWZ^meD<P7inSF0<1SiO32
 IAl?5;D^:bf?I5A^M>WzmU1
@@ -297,7 +298,7 @@ R7
 r1
 !s85 0
 31
-R25
+!s108 1563449360.000000
 !s107 glbl.v|
 !s90 -work|xil_defaultlib|glbl.v|
 !i113 0
@@ -409,25 +410,24 @@ R18
 R19
 R3
 vop_uart
-Z31 !s10a 1563419499
 R12
-R13
+R24
 !i10b 1
-!s100 cElo_AzKo=Ficf`iN^dee0
-I@dUH1]CK`f2CNAnSO`d5l0
+!s100 @JcjFCeB5P35WJ9g56f:f1
+IV]=l>_OUD8S6gJN_Ba3e02
 R6
-R26
+!s105 op_uart_sv_unit
 S1
 R0
-Z32 w1563419499
+w1563449334
 8../../../../../fwrisc_uart/rtl/uart/op_uart.sv
 F../../../../../fwrisc_uart/rtl/uart/op_uart.sv
-Z33 L0 18
+Z31 L0 18
 R7
 r1
 !s85 0
 31
-R15
+R25
 R16
 R17
 !i113 0
@@ -460,7 +460,7 @@ R10
 R11
 R3
 vuart
-R31
+Z32 !s10a 1563419499
 R12
 R13
 !i10b 1
@@ -470,7 +470,7 @@ R6
 R26
 S1
 R0
-R32
+Z33 w1563419499
 8../../../../../fwrisc_uart/rtl/uart.sv
 F../../../../../fwrisc_uart/rtl/uart.sv
 L0 10
@@ -513,7 +513,7 @@ R19
 R3
 n@u@a@r@t_baudrate_gen
 vUART_Registers
-R31
+R32
 R12
 R28
 !i10b 1
@@ -523,7 +523,7 @@ R6
 !s105 UART_Registers_sv_unit
 S1
 R0
-R32
+R33
 8../../../../../fwrisc_uart/rtl/UART_Registers.sv
 F../../../../../fwrisc_uart/rtl/UART_Registers.sv
 L0 17
@@ -553,7 +553,7 @@ R0
 R29
 8../../../../../fwrisc_uart/rtl/UART_rx_fsm.sv
 F../../../../../fwrisc_uart/rtl/UART_rx_fsm.sv
-R33
+R31
 R7
 r1
 !s85 0

@@ -17,7 +17,7 @@
 
 module op_uart #(
 	parameter csr_addr = 4'h0,
-	parameter clk_freq = 100000000,
+	parameter clk_freq = 500000000,
 	parameter baud = 115200
 ) (
 	input sys_clk,

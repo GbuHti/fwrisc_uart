@@ -174,7 +174,9 @@ module fwrisc_fpga_top (
 	wire	rom_wr_en = (rx_program_data_cnt == 2'b00)&&(rx_program_data_cnt_r == 2'b11);
 
 	always @(posedge clock)begin 
-		if(rx_program_data_valid)
+		if(reset)
+			program_data <= 0;
+		else if(rx_program_data_valid)
 			program_data <= {program_data[23:0],rx_program_data};
 	end
 

@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jul 18 19:18:53 2019
+| Date         : Thu Jul 18 19:27:18 2019
 | Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command      : report_utilization -file fwrisc_uart_wraper_utilization_synth.rpt -pb fwrisc_uart_wraper_utilization_synth.pb
 | Design       : fwrisc_uart_wraper
@@ -155,8 +155,8 @@ Table of Contents
 | LUT5     |  189 |                 LUT |
 | LUT4     |  174 |                 LUT |
 | LUT2     |  127 |                 LUT |
-| LUT3     |  124 |                 LUT |
-| LUT1     |   62 |                 LUT |
+| LUT3     |  123 |                 LUT |
+| LUT1     |   63 |                 LUT |
 | CARRY4   |   59 |          CarryLogic |
 | RAMD32   |   24 |  Distributed Memory |
 | RAMB36E1 |   12 |        Block Memory |
