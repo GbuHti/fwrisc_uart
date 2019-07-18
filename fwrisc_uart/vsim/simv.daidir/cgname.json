@@ -1,0 +1,32 @@
+{
+    "UART_rx_fsm": [
+        "UART_rx_fsm",
+        "J2Vib",
+        "module"
+    ],
+    "std": [
+        "std",
+        "reYIK",
+        "module"
+    ],
+    "mux2to1": [
+        "mux2to1",
+        "TDywx",
+        "module"
+    ],
+    "...MASTER...": [
+        "SIM",
+        "amcQw",
+        "module"
+    ],
+    "fwrisc_uart_tb": [
+        "fwrisc_uart_tb",
+        "Rq5Sq",
+        "module"
+    ],
+    "op_uart": [
+        "op_uart",
+        "UJngv",
+        "module"
+    ]
+}

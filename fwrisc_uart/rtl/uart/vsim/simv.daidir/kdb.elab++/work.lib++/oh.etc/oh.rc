@@ -1,0 +1,5 @@
+@elabcom rc file Version 1.0
+[oh]
+invokeDir = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim
+hostCommand = -lib simv.daidir/work -elab simv.daidir/kdb -simflow -top "uart_tb " -Lf work -SNPS_ELABCOM -saveElab
+simType = VCS

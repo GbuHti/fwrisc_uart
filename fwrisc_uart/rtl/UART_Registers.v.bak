@@ -1,0 +1,58 @@
+//----------------------------------------------------
+// //filename: UART_Registers.v
+// //Author: yuzhenbo
+// //CreateTime: 2019-06-27 23:52:51
+// //Description: 
+//
+// //ModifyTime: 
+// //Additional explanation: 
+// //---------------------------------------------------- 
+
+module UART_Registers(
+	input			clk,
+	input			rst_n,
+
+	//bus
+	input	[31:0]	daddr_i,
+	input	[31:0]	dwdata_i,
+	output	[31:0]	drdata_o,
+	input	[3:0]	dstrb,
+	input			dwrite,
+	input			dvalid,
+	output			dready,
+
+	//if tx fifo reads empty, stop UART sending data;
+	//if tx fifo writes full, MCU suspend writing;
+	output			UART_fifo_empty,
+	output	[7:0]	UART_tx_data,		
+	//if rx fifo writes full, UART discards following data;
+	//if rx fifo reads empty, nothing happens;
+	output			UART_fifo_full,		
+	output	[7:0]	UART_rx_data,		
+
+	output	[31:0]	UART_baudrate_div
+		
+	
+);
+	// for storing 1 byte data and empty signal form tx fifo;
+	reg		[31:0]	UART_Tx_Buffer;	//read fifo
+	// enable UART to send data;
+	reg		[31:0]	UART_Tx_Ctrl;
+	// similar to previous
+	reg		[31:0]	UART_Rx_Buffer;	//write fifo
+	// similar to previous
+	reg		[31:0]	UART_Rx_Ctrl;
+	//used to set UART to corresponding baudrate
+	reg		[31:0]	UART_Baudrate_Div;
+	
+	//
+	assign UART_fifo_empty	=	UART_Tx_Buffer[31];
+	assign UART_tx_data		=	UART_Tx_Buffer[7:0];
+	assign UART_fifo_full	=	UART_Rx_Buffer[31];
+	assign UART_rx_data		=	UART_Rx_Buffer[7:0];
+	assign UART_baudrate_div=	UART_Baudrate_Div;
+
+
+
+	
+endmodule 

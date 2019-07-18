@@ -1,0 +1,424 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/b9bde3d/
+ADDR_WIDTH	my_fifo.sv	/^	parameter ADDR_WIDTH=4$/;"	c	module:my_fifo
+ADDR_WIDTH	my_ram.sv	/^	parameter	ADDR_WIDTH=4$/;"	c	module:my_ram
+CSR_MCAUSE	fwrisc.sv	/^	wire[5:0] CSR_MCAUSE  = 6'h2A;$/;"	n	module:fwrisc
+CSR_MCYCLE	fwrisc.sv	/^	wire[5:0] CSR_MCYCLE  = 6'h36;$/;"	n	module:fwrisc
+CSR_MCYCLEH	fwrisc.sv	/^	wire[5:0] CSR_MCYCLEH = 6'h38;$/;"	n	module:fwrisc
+CSR_MEPC	fwrisc.sv	/^	wire[5:0] CSR_MEPC    = 6'h29;$/;"	n	module:fwrisc
+CSR_MINSTR	fwrisc.sv	/^	wire[5:0] CSR_MINSTR  = 6'h37;$/;"	n	module:fwrisc
+CSR_MINSTRH	fwrisc.sv	/^	wire[5:0] CSR_MINSTRH = 6'h39;$/;"	n	module:fwrisc
+CSR_MTVAL	fwrisc.sv	/^	wire[5:0] CSR_MTVAL   = 6'h2B;$/;"	n	module:fwrisc
+CSR_MTVEC	fwrisc.sv	/^	wire[5:0] CSR_MTVEC   = 6'h25;$/;"	n	module:fwrisc
+CSR_tmp	fwrisc.sv	/^	wire[5:0] CSR_tmp     = 6'h3F;$/;"	n	module:fwrisc
+DATA_WIDTH	IF_fifo.sv	/^	parameter DATA_WIDTH=8	$/;"	c	module:IF_fifo
+DATA_WIDTH	mux2to1.sv	/^	parameter DATA_WIDTH = 1	$/;"	c	module:mux2to1
+DATA_WIDTH	my_fifo.sv	/^	parameter DATA_WIDTH=8,$/;"	c	module:my_fifo
+DATA_WIDTH	my_ram.sv	/^	parameter	DATA_WIDTH=16,$/;"	c	module:my_ram
+FIFO_DEPTH	my_fifo.sv	/^	parameter FIFO_DEPTH = 2**ADDR_WIDTH;$/;"	c	module:my_fifo
+IDLE	UART_rx_fsm.sv	/^	parameter		IDLE = 4'b0001;$/;"	c	module:UART_rx_fsm
+IDLE	UART_tx_fsm.sv	/^	parameter IDLE = 4'b0001;$/;"	c	module:UART_tx_fsm
+IF_fifo	IF_fifo.sv	/^module IF_fifo#($/;"	m
+RXDA	UART_rx_fsm.sv	/^	parameter		RXDA = 4'b0100;$/;"	c	module:UART_rx_fsm
+STAR	UART_rx_fsm.sv	/^	parameter		STAR = 4'b0010;$/;"	c	module:UART_rx_fsm
+STAR	UART_tx_fsm.sv	/^	parameter STAR = 4'b0010;$/;"	c	module:UART_tx_fsm
+STOP	UART_rx_fsm.sv	/^	parameter		STOP = 4'b1000;$/;"	c	module:UART_rx_fsm
+STOP	UART_tx_fsm.sv	/^	parameter STOP = 4'b1000;$/;"	c	module:UART_tx_fsm
+Send	uart/uart_tb.sv	/^	task Send;$/;"	t	module:uart_tb
+Set_thru	uart/uart_tb.sv	/^	task Set_thru;$/;"	t	module:uart_tb
+TXDA	UART_tx_fsm.sv	/^	parameter TXDA = 4'b0100;$/;"	c	module:UART_tx_fsm
+UART_BASE	UART_Registers.sv	/^`define UART_BASE			32'h80006000$/;"	c
+UART_BAUDRATE_DIV	UART_Registers.sv	/^`define UART_BAUDRATE_DIV	32'h10$/;"	c
+UART_Baudrate_Div	UART_Registers.sv	/^	reg		[31:0]	UART_Baudrate_Div;$/;"	r	module:UART_Registers
+UART_RX_BUFFER	UART_Registers.sv	/^`define UART_RX_BUFFER		32'h8$/;"	c
+UART_RX_CTRL	UART_Registers.sv	/^`define UART_RX_CTRL		32'hc$/;"	c
+UART_Registers	UART_Registers.sv	/^module UART_Registers($/;"	m
+UART_Rx_Buffer	UART_Registers.sv	/^	reg		[31:0]	UART_Rx_Buffer;$/;"	r	module:UART_Registers
+UART_Rx_Ctrl	UART_Registers.sv	/^	reg		[31:0]	UART_Rx_Ctrl;$/;"	r	module:UART_Registers
+UART_TX_BUFFER	UART_Registers.sv	/^`define UART_TX_BUFFER		32'h0$/;"	c
+UART_TX_CTRL	UART_Registers.sv	/^`define UART_TX_CTRL		32'h4$/;"	c
+UART_Tx_Buffer	UART_Registers.sv	/^	reg		[31:0]	UART_Tx_Buffer;	\/\/read fifo$/;"	r	module:UART_Registers
+UART_Tx_Ctrl	UART_Registers.sv	/^	reg		[31:0]	UART_Tx_Ctrl;$/;"	r	module:UART_Registers
+UART_baudrate_div	UART_Registers.sv	/^	output	[31:0]	UART_baudrate_div$/;"	p	module:UART_Registers
+UART_baudrate_gen	UART_baudrate_gen.sv	/^module UART_baudrate_gen($/;"	m
+UART_rx_data	UART_Registers.sv	/^	input	[7:0]	UART_rx_data,$/;"	p	module:UART_Registers
+UART_rx_en	UART_Registers.sv	/^	output			UART_rx_en,$/;"	p	module:UART_Registers
+UART_rx_fifo_full	UART_Registers.sv	/^	output			UART_rx_fifo_full,$/;"	p	module:UART_Registers
+UART_rx_fsm	UART_rx_fsm.sv	/^module UART_rx_fsm($/;"	m
+UART_tx_data	UART_Registers.sv	/^	output	[7:0]	UART_tx_data,		$/;"	p	module:UART_Registers
+UART_tx_en	UART_Registers.sv	/^	output			UART_tx_en,$/;"	p	module:UART_Registers
+UART_tx_fifo_empty	UART_Registers.sv	/^	output			UART_tx_fifo_empty,$/;"	p	module:UART_Registers
+UART_tx_fsm	UART_tx_fsm.sv	/^module UART_tx_fsm($/;"	m
+add_sub	fwrisc_alu.sv	/^	wire[31:0] add_sub = (op == `OP_ADD)?(op_a + op_b):(op_a - op_b);$/;"	n	module:fwrisc_alu
+addr_d	fwrisc_fpga_top.sv	/^	reg[31:0]			addr_d;$/;"	r	module:fwrisc_fpga_top
+addr_i	fwrisc_fpga_top.sv	/^	reg[31:0]			addr_i;$/;"	r	module:fwrisc_fpga_top
+addra	my_fifo.sv	/^	reg [ADDR_WIDTH-1:0] addra;$/;"	r	module:my_fifo
+addra	my_ram.sv	/^	input	[ADDR_WIDTH-1:0]	addra,$/;"	p	module:my_ram
+addrb	my_fifo.sv	/^	reg [ADDR_WIDTH-1:0] addrb;$/;"	r	module:my_fifo
+addrb	my_ram.sv	/^	input 	[ADDR_WIDTH-1:0]	addrb,$/;"	p	module:my_ram
+alu_carry	fwrisc.sv	/^	wire						alu_carry;$/;"	n	module:fwrisc
+alu_eqz	fwrisc.sv	/^	wire						alu_eqz;$/;"	n	module:fwrisc
+alu_op	fwrisc.sv	/^	reg[2:0]					alu_op;$/;"	r	module:fwrisc
+alu_op_a	fwrisc.sv	/^	reg[31:0]					alu_op_a;$/;"	r	module:fwrisc
+alu_op_b	fwrisc.sv	/^	reg[31:0]					alu_op_b;$/;"	r	module:fwrisc
+alu_out	fwrisc.sv	/^	wire[31:0]					alu_out;$/;"	n	module:fwrisc
+alu_out	fwrisc_dbus_if.sv	/^		input[31:0]		alu_out,$/;"	p	module:fwrisc_dbus_if
+auipc_imm_31_12	fwrisc.sv	/^	wire[31:0]      auipc_imm_31_12 = {instr[31:12], {12{1'b0}}};$/;"	n	module:fwrisc
+baud	uart/op_uart.sv	/^	parameter baud = 115200$/;"	c	module:op_uart
+baudrate	uart.sv	/^	wire [19:0]	baudrate;$/;"	n	module:uart
+baudrate_i	UART_baudrate_gen.sv	/^	input [19:0]	baudrate_i,$/;"	p	module:UART_baudrate_gen
+baudrate_i	UART_rx_fsm.sv	/^	input [19:0]	baudrate_i,$/;"	p	module:UART_rx_fsm
+baudrate_i	UART_tx_fsm.sv	/^	input [19:0]	baudrate_i,$/;"	p	module:UART_tx_fsm
+bit_cnt	UART_tx_fsm.sv	/^	reg [3:0]	bit_cnt;$/;"	r	module:UART_tx_fsm
+branch_cond	fwrisc.sv	/^	wire						branch_cond;$/;"	n	module:fwrisc
+carry	fwrisc_alu.sv	/^		output 					carry,$/;"	p	module:fwrisc_alu
+catchup_r	my_fifo.sv	/^	wire catchup_r  = (rd_en&!wr_en)? (((addrb + 1'b1) == addra)? 1:0):0;$/;"	n	module:my_fifo
+catchup_w	my_fifo.sv	/^	wire catchup_w 	= (wr_en&!rd_en)? (((addra + 1'b1) == addrb)? 1:0):0;$/;"	n	module:my_fifo
+clk	UART_Registers.sv	/^	input			clk,$/;"	p	module:UART_Registers
+clk	UART_baudrate_gen.sv	/^	input clk,$/;"	p	module:UART_baudrate_gen
+clk	UART_rx_fsm.sv	/^	input			clk,$/;"	p	module:UART_rx_fsm
+clk	UART_tx_fsm.sv	/^	input			clk,$/;"	p	module:UART_tx_fsm
+clk	fwrisc_uart_tb.sv	/^	reg clk;$/;"	r	module:fwrisc_uart_tb
+clk	my_fifo.sv	/^	input						clk,$/;"	p	module:my_fifo
+clk	uart.sv	/^	input			 clk,$/;"	p	module:uart
+clk_cnt	UART_baudrate_gen.sv	/^	reg [19:0] clk_cnt;$/;"	r	module:UART_baudrate_gen
+clk_freq	uart/op_uart.sv	/^	parameter clk_freq = 100000000,$/;"	c	module:op_uart
+clka	my_ram.sv	/^	input						clka,$/;"	p	module:my_ram
+clkb	my_ram.sv	/^	input 						clkb,$/;"	p	module:my_ram
+clock	fwrisc.sv	/^		input			clock,$/;"	p	module:fwrisc
+clock	fwrisc_alu.sv	/^		input					clock,$/;"	p	module:fwrisc_alu
+clock	fwrisc_comparator.sv	/^		input			clock,$/;"	p	module:fwrisc_comparator
+clock	fwrisc_dbus_if.sv	/^		input			clock,$/;"	p	module:fwrisc_dbus_if
+clock	fwrisc_fpga_top.sv	/^		input			clock,$/;"	p	module:fwrisc_fpga_top
+clock	fwrisc_regfile.sv	/^		input				clock,$/;"	p	module:fwrisc_regfile
+clock	fwrisc_tracer.sv	/^		input			clock,$/;"	p	module:fwrisc_tracer
+cnt_should_zero	UART_baudrate_gen.sv	/^	wire cnt_should_zero = tick_should_flip;$/;"	n	module:UART_baudrate_gen
+comp_op	fwrisc.sv	/^	reg[1:0]					comp_op;$/;"	r	module:fwrisc
+comp_op_a	fwrisc.sv	/^	wire[31:0]					comp_op_a = ra_rdata;$/;"	n	module:fwrisc
+comp_op_b	fwrisc.sv	/^	reg[31:0]					comp_op_b;$/;"	r	module:fwrisc
+comp_out	fwrisc.sv	/^	wire						comp_out;$/;"	n	module:fwrisc
+cs	UART_rx_fsm.sv	/^	reg [3:0] cs, ns;$/;"	r	module:UART_rx_fsm
+cs	UART_tx_fsm.sv	/^	reg [3:0]	cs,ns;$/;"	r	module:UART_tx_fsm
+csr	fwrisc.sv	/^	wire [11:0]	csr   = instr[31:20];$/;"	n	module:fwrisc
+csr_a	fwrisc_uart_tb.sv	/^	reg [13:0]	csr_a;$/;"	r	module:fwrisc_uart_tb
+csr_a	uart/op_uart.sv	/^	input [13:0] csr_a,$/;"	p	module:op_uart
+csr_a	uart/uart_tb.sv	/^	reg [13:0]	csr_a;$/;"	r	module:uart_tb
+csr_addr	fwrisc.sv	/^	reg [5:0]	csr_addr;$/;"	r	module:fwrisc
+csr_addr	uart/op_uart.sv	/^	parameter csr_addr = 4'h0,$/;"	c	module:op_uart
+csr_di	fwrisc_uart_tb.sv	/^	reg	[31:0]	csr_di;$/;"	r	module:fwrisc_uart_tb
+csr_di	uart/op_uart.sv	/^	input [31:0] csr_di,$/;"	p	module:op_uart
+csr_di	uart/uart_tb.sv	/^	reg	[31:0]	csr_di;$/;"	r	module:uart_tb
+csr_do	fwrisc_uart_tb.sv	/^	wire[31:0]	csr_do;$/;"	n	module:fwrisc_uart_tb
+csr_do	uart/op_uart.sv	/^	output reg [31:0] csr_do,$/;"	p	module:op_uart
+csr_do	uart/uart_tb.sv	/^	wire[31:0]	csr_do;$/;"	n	module:uart_tb
+csr_selected	uart/op_uart.sv	/^wire csr_selected = csr_a[13:10] == csr_addr;$/;"	n	module:op_uart
+csr_we	fwrisc_uart_tb.sv	/^	reg			csr_we;$/;"	r	module:fwrisc_uart_tb
+csr_we	uart/op_uart.sv	/^	input csr_we,$/;"	p	module:op_uart
+csr_we	uart/uart_tb.sv	/^	reg			csr_we;$/;"	r	module:uart_tb
+cycle_counter	fwrisc.sv	/^	reg [7:0]			cycle_counter = 1;$/;"	r	module:fwrisc
+cycle_counter_ovf	fwrisc.sv	/^	wire				cycle_counter_ovf = cycle_counter[7];$/;"	n	module:fwrisc
+daddr	fwrisc.sv	/^		output[31:0]	daddr,$/;"	p	module:fwrisc
+daddr	fwrisc_dbus_if.sv	/^		output[31:0]	daddr,$/;"	p	module:fwrisc_dbus_if
+daddr	fwrisc_fpga_top.sv	/^	wire[31:0]			daddr;$/;"	n	module:fwrisc_fpga_top
+daddr_i	IF_fifo.sv	/^	input	[31:0] daddr_i,$/;"	p	module:IF_fifo
+daddr_i	UART_Registers.sv	/^	input	[31:0]	daddr_i,$/;"	p	module:UART_Registers
+daddr_i	uart.sv	/^	input	[31:0]	daddr_i,$/;"	p	module:uart
+default_divisor	uart/op_uart.sv	/^parameter default_divisor = clk_freq\/baud\/16;$/;"	c	module:op_uart
+din	my_fifo.sv	/^	input	[DATA_WIDTH-1:0]	din,$/;"	p	module:my_fifo
+dina	my_ram.sv	/^	input 	[DATA_WIDTH-1:0]	dina,$/;"	p	module:my_ram
+divisor	uart/op_uart.sv	/^reg [15:0] divisor;$/;"	r	module:op_uart
+divisor	uart/uart_transceiver.sv	/^	input [15:0] divisor,$/;"	p	module:uart_transceiver
+dout	my_fifo.sv	/^	output	[DATA_WIDTH-1:0]	dout,$/;"	p	module:my_fifo
+doutb	my_fifo.sv	/^	wire[DATA_WIDTH-1:0] doutb;$/;"	n	module:my_fifo
+doutb	my_ram.sv	/^	output	reg[DATA_WIDTH-1:0]	doutb$/;"	p	module:my_ram
+drdata	fwrisc.sv	/^		input[31:0]		drdata,$/;"	p	module:fwrisc
+drdata	fwrisc_fpga_top.sv	/^	wire[31:0]			drdata;$/;"	n	module:fwrisc_fpga_top
+drdata_o	IF_fifo.sv	/^	output	[31:0] drdata_o,$/;"	p	module:IF_fifo
+drdata_o	UART_Registers.sv	/^	output	[31:0]	drdata_o,$/;"	p	module:UART_Registers
+drdata_o	uart.sv	/^	output	[31:0]	drdata_o,$/;"	p	module:uart
+drdata_r	fwrisc_fpga_top.sv	/^	reg [31:0]			drdata_r;$/;"	r	module:fwrisc_fpga_top
+dready	fwrisc.sv	/^		input			dready$/;"	p	module:fwrisc
+dready	fwrisc_dbus_if.sv	/^		input			dready$/;"	p	module:fwrisc_dbus_if
+dready	fwrisc_fpga_top.sv	/^	wire				dready;$/;"	n	module:fwrisc_fpga_top
+dready_fifo	UART_Registers.sv	/^	wire dready_fifo;$/;"	n	module:UART_Registers
+dready_o	IF_fifo.sv	/^	output  dready_o,$/;"	p	module:IF_fifo
+dready_o	UART_Registers.sv	/^	output reg		dready_o,$/;"	p	module:UART_Registers
+dready_o	uart.sv	/^	output			dready_o,$/;"	p	module:uart
+dready_r	fwrisc_fpga_top.sv	/^	reg					iready_r, dready_r;$/;"	r	module:fwrisc_fpga_top
+dstrb	fwrisc.sv	/^		output[3:0]		dstrb,$/;"	p	module:fwrisc
+dstrb	fwrisc_dbus_if.sv	/^		output reg[3:0]	dstrb,$/;"	p	module:fwrisc_dbus_if
+dstrb	fwrisc_fpga_top.sv	/^	wire[3:0]			dstrb;$/;"	n	module:fwrisc_fpga_top
+dstrb_i	IF_fifo.sv	/^	input	[3:0]  dstrb_i,$/;"	p	module:IF_fifo
+dstrb_i	UART_Registers.sv	/^	input	[3:0]	dstrb_i,$/;"	p	module:UART_Registers
+dstrb_i	uart.sv	/^	input	[3:0]	dstrb_i,$/;"	p	module:uart
+dvalid	fwrisc.sv	/^		output			dvalid,$/;"	p	module:fwrisc
+dvalid	fwrisc_dbus_if.sv	/^		output			dvalid,$/;"	p	module:fwrisc_dbus_if
+dvalid	fwrisc_fpga_top.sv	/^	wire				dvalid;$/;"	n	module:fwrisc_fpga_top
+dvalid_i	IF_fifo.sv	/^	input	dvalid_i,$/;"	p	module:IF_fifo
+dvalid_i	UART_Registers.sv	/^	input			dvalid_i,$/;"	p	module:UART_Registers
+dvalid_i	uart.sv	/^	input			dvalid_i,$/;"	p	module:uart
+dwdata	fwrisc.sv	/^		output[31:0]	dwdata,$/;"	p	module:fwrisc
+dwdata	fwrisc_dbus_if.sv	/^		output reg[31:0]dwdata,$/;"	p	module:fwrisc_dbus_if
+dwdata	fwrisc_fpga_top.sv	/^	wire[31:0]			dwdata;$/;"	n	module:fwrisc_fpga_top
+dwdata_i	IF_fifo.sv	/^	input	[31:0] dwdata_i,$/;"	p	module:IF_fifo
+dwdata_i	UART_Registers.sv	/^	input	[31:0]	dwdata_i,$/;"	p	module:UART_Registers
+dwdata_i	uart.sv	/^	input	[31:0]	dwdata_i,$/;"	p	module:uart
+dwrite	fwrisc.sv	/^		output			dwrite,$/;"	p	module:fwrisc
+dwrite	fwrisc_dbus_if.sv	/^		output			dwrite,$/;"	p	module:fwrisc_dbus_if
+dwrite	fwrisc_fpga_top.sv	/^	wire				dwrite;$/;"	n	module:fwrisc_fpga_top
+dwrite_i	IF_fifo.sv	/^	input	dwrite_i,$/;"	p	module:IF_fifo
+dwrite_i	UART_Registers.sv	/^	input			dwrite_i,$/;"	p	module:UART_Registers
+dwrite_i	uart.sv	/^	input			dwrite_i,$/;"	p	module:uart
+empty	my_fifo.sv	/^	output	reg					empty$/;"	p	module:my_fifo
+empty_i	UART_tx_fsm.sv	/^	input			empty_i,$/;"	p	module:UART_tx_fsm
+en_i	UART_baudrate_gen.sv	/^	input en_i,$/;"	p	module:UART_baudrate_gen
+ena	my_ram.sv	/^	input 						ena,$/;"	p	module:my_ram
+enable16	uart/uart_transceiver.sv	/^wire enable16;$/;"	n	module:uart_transceiver
+enable16_counter	uart/uart_transceiver.sv	/^reg [15:0] enable16_counter;$/;"	r	module:uart_transceiver
+enb	my_ram.sv	/^	input 						enb,$/;"	p	module:my_ram
+eqz	fwrisc_alu.sv	/^		output					eqz);$/;"	p	module:fwrisc_alu
+exc_code	fwrisc.sv	/^	reg[3:0] exc_code;$/;"	r	module:fwrisc
+exception	fwrisc.sv	/^	wire						exception;$/;"	n	module:fwrisc
+exec_state	fwrisc.sv	/^	wire exec_state = (state == `EXECUTE);$/;"	n	module:fwrisc
+fifo_empty	uart.sv	/^	wire		fifo_empty;$/;"	n	module:uart
+full	my_fifo.sv	/^	output 	reg					full,$/;"	p	module:my_fifo
+full_i	UART_rx_fsm.sv	/^	input			full_i,			$/;"	p	module:UART_rx_fsm
+fwrisc	fwrisc.sv	/^module fwrisc ($/;"	m
+fwrisc_alu	fwrisc_alu.sv	/^module fwrisc_alu ($/;"	m
+fwrisc_comparator	fwrisc_comparator.sv	/^module fwrisc_comparator($/;"	m
+fwrisc_dbus_if	fwrisc_dbus_if.sv	/^module fwrisc_dbus_if($/;"	m
+fwrisc_fpga_top	fwrisc_fpga_top.sv	/^module fwrisc_fpga_top ($/;"	m
+fwrisc_regfile	fwrisc_regfile.sv	/^module fwrisc_regfile($/;"	m
+fwrisc_tracer	fwrisc_tracer.sv	/^module fwrisc_tracer ($/;"	m
+fwrisc_uart_tb	fwrisc_uart_tb.sv	/^module fwrisc_uart_tb;$/;"	m
+gen_baudrate	UART_rx_fsm.sv	/^	wire	gen_baudrate = (cs != IDLE);	$/;"	n	module:UART_rx_fsm
+iaddr	fwrisc.sv	/^		output[31:0]	iaddr,$/;"	p	module:fwrisc
+iaddr	fwrisc_fpga_top.sv	/^	wire[31:0]			iaddr;$/;"	n	module:fwrisc_fpga_top
+idata	fwrisc.sv	/^		input[31:0]		idata,$/;"	p	module:fwrisc
+idata	fwrisc_fpga_top.sv	/^	reg[31:0]			idata;$/;"	r	module:fwrisc_fpga_top
+imm_11_0	fwrisc.sv	/^	wire[31:0]      imm_11_0   = (instr[31])?{{22{1'b1}}, instr[31:20]}:{{22{1'b0}}, instr[31:20]};$/;"	n	module:fwrisc
+imm_11_0_u	fwrisc.sv	/^	wire[31:0]      imm_11_0_u = instr[31:20];$/;"	n	module:fwrisc
+imm_branch	fwrisc.sv	/^	wire[31:0]		imm_branch = (instr[31])?$/;"	n	module:fwrisc
+imm_lui	fwrisc.sv	/^	wire[31:0]      imm_lui = {instr[31:12], 12'h000};$/;"	n	module:fwrisc
+in0	mux2to1.sv	/^	input [DATA_WIDTH-1:0]	in0,$/;"	p	module:mux2to1
+in1	mux2to1.sv	/^	input [DATA_WIDTH-1:0]	in1,$/;"	p	module:mux2to1
+in_a	fwrisc_comparator.sv	/^		input[31:0]		in_a,$/;"	p	module:fwrisc_comparator
+in_b	fwrisc_comparator.sv	/^		input[31:0]		in_b,$/;"	p	module:fwrisc_comparator
+instr	fwrisc.sv	/^	reg[31:0]			instr;$/;"	r	module:fwrisc
+instr	fwrisc_dbus_if.sv	/^		input[31:0]		instr,$/;"	p	module:fwrisc_dbus_if
+instr	fwrisc_tracer.sv	/^		input [31:0]	instr,$/;"	p	module:fwrisc_tracer
+instr_counter	fwrisc.sv	/^	reg [7:0]			instr_counter = 0;$/;"	r	module:fwrisc
+iready	fwrisc.sv	/^		input			iready,$/;"	p	module:fwrisc
+iready	fwrisc_fpga_top.sv	/^	wire				iready;$/;"	n	module:fwrisc_fpga_top
+iready_r	fwrisc_fpga_top.sv	/^	reg					iready_r, dready_r;$/;"	r	module:fwrisc_fpga_top
+ivalid	fwrisc.sv	/^		output			ivalid,$/;"	p	module:fwrisc
+ivalid	fwrisc_fpga_top.sv	/^	wire				ivalid;$/;"	n	module:fwrisc_fpga_top
+ivalid	fwrisc_tracer.sv	/^		input			ivalid,$/;"	p	module:fwrisc_tracer
+jal_off	fwrisc.sv	/^	wire[31:0]      jal_off = (instr[31])?{{21{1'b1}}, instr[31], instr[19:12], instr[20], instr[30/;"	n	module:fwrisc
+maddr	fwrisc_tracer.sv	/^		input [31:0]	maddr,$/;"	p	module:fwrisc_tracer
+master_rdata	IF_fifo.sv	/^	input  [DATA_WIDTH-1:0] master_rdata,$/;"	p	module:IF_fifo
+master_wdata	IF_fifo.sv	/^	output	[DATA_WIDTH-1:0] master_wdata,$/;"	p	module:IF_fifo
+mdata	fwrisc_tracer.sv	/^		input [31:0]	mdata,$/;"	p	module:fwrisc_tracer
+misaligned_addr	fwrisc.sv	/^	reg 						misaligned_addr;$/;"	r	module:fwrisc
+mstrb	fwrisc_tracer.sv	/^		input [3:0]		mstrb,$/;"	p	module:fwrisc_tracer
+mux2to1	mux2to1.sv	/^module mux2to1 #($/;"	m
+mvalid	fwrisc_tracer.sv	/^		input 			mvalid$/;"	p	module:fwrisc_tracer
+mwrite	fwrisc_tracer.sv	/^		input			mwrite,$/;"	p	module:fwrisc_tracer
+my_fifo	my_fifo.sv	/^module my_fifo #($/;"	m
+my_ram	my_ram.sv	/^module my_ram #($/;"	m
+no_empty	my_fifo.sv	/^	wire no_empty = empty && wr_en?1:0;$/;"	n	module:my_fifo
+no_full	my_fifo.sv	/^	wire no_full = full && rd_en?1:0;$/;"	n	module:my_fifo
+ns	UART_rx_fsm.sv	/^	reg [3:0] cs, ns;$/;"	r	module:UART_rx_fsm
+ns	UART_tx_fsm.sv	/^	reg [3:0]	cs,ns;$/;"	r	module:UART_tx_fsm
+op	fwrisc_alu.sv	/^		input[2:0]				op,$/;"	p	module:fwrisc_alu
+op	fwrisc_comparator.sv	/^		input[1:0]		op,$/;"	p	module:fwrisc_comparator
+op_a	fwrisc_alu.sv	/^		input[31:0]				op_a,$/;"	p	module:fwrisc_alu
+op_arith_imm	fwrisc.sv	/^	wire op_arith_imm = (op_branch_ld_st_arith && instr[6:4] == 3'b001);$/;"	n	module:fwrisc
+op_arith_reg	fwrisc.sv	/^	wire op_arith_reg = (op_branch_ld_st_arith && instr[6:4] == 3'b011);$/;"	n	module:fwrisc
+op_auipc	fwrisc.sv	/^	wire op_auipc     = (instr[6:0] == 7'b0010111);$/;"	n	module:fwrisc
+op_b	fwrisc_alu.sv	/^		input[31:0]				op_b,$/;"	p	module:fwrisc_alu
+op_branch	fwrisc.sv	/^	wire op_branch    = (op_branch_ld_st_arith && instr[6:4] == 3'b110);$/;"	n	module:fwrisc
+op_branch_ld_st_arith	fwrisc.sv	/^	wire op_branch_ld_st_arith = (instr[3:0] == 4'b0011);$/;"	n	module:fwrisc
+op_csr	fwrisc.sv	/^	wire op_csr       = (op_sys && |instr[14:12]);$/;"	n	module:fwrisc
+op_csrr_cs	fwrisc.sv	/^	wire op_csrr_cs   = (op_csr && instr[13]);$/;"	n	module:fwrisc
+op_csrrc	fwrisc.sv	/^	wire op_csrrc     = (op_csr && instr[13:12] == 2'b11);$/;"	n	module:fwrisc
+op_csrrs	fwrisc.sv	/^	wire op_csrrs     = (op_csr && instr[13:12] == 2'b10);$/;"	n	module:fwrisc
+op_ecall	fwrisc.sv	/^	wire op_ecall     = (op_sys && op_sys_prv && !instr[28]);$/;"	n	module:fwrisc
+op_eret	fwrisc.sv	/^	wire op_eret      = (op_sys && op_sys_prv && instr[28]);$/;"	n	module:fwrisc
+op_fence	fwrisc.sv	/^	wire op_fence     = (instr[3:0] == 4'b1111);$/;"	n	module:fwrisc
+op_jal	fwrisc.sv	/^	wire op_jal       = (instr[6:0] == 7'b1101111);$/;"	n	module:fwrisc
+op_jalr	fwrisc.sv	/^	wire op_jalr      = (instr[6:0] == 7'b1100111);$/;"	n	module:fwrisc
+op_ld	fwrisc.sv	/^	wire op_ld        = (op_branch_ld_st_arith && instr[6:4] == 3'b000);$/;"	n	module:fwrisc
+op_ld_st	fwrisc.sv	/^	wire op_ld_st     = (op_ld || op_st);$/;"	n	module:fwrisc
+op_lui	fwrisc.sv	/^	wire op_lui       = (instr[6:0] == 7'b0110111);$/;"	n	module:fwrisc
+op_shift	fwrisc.sv	/^	wire op_shift     = (op_shift_imm || op_shift_reg);$/;"	n	module:fwrisc
+op_shift_imm	fwrisc.sv	/^	wire op_shift_imm = (op_arith_imm && instr[13:12] == 2'b01);$/;"	n	module:fwrisc
+op_shift_reg	fwrisc.sv	/^	wire op_shift_reg = (op_arith_reg && instr[13:12] == 2'b01);$/;"	n	module:fwrisc
+op_st	fwrisc.sv	/^	wire op_st        = (op_branch_ld_st_arith && instr[6:4] == 3'b010);$/;"	n	module:fwrisc
+op_sys	fwrisc.sv	/^	wire op_sys       = (op_branch_ld_st_arith && instr[6:4] == 3'b111);$/;"	n	module:fwrisc
+op_sys_prv	fwrisc.sv	/^	wire op_sys_prv   = !(|instr[14:12]);$/;"	n	module:fwrisc
+op_uart	uart/op_uart.sv	/^module op_uart #($/;"	m
+or_xor	fwrisc_alu.sv	/^	wire[31:0] or_xor = (op == `OP_XOR)?(op_a ^ op_b):(op_a | op_b);$/;"	n	module:fwrisc_alu
+out	fwrisc_alu.sv	/^		output reg[31:0]		out,$/;"	p	module:fwrisc_alu
+out	fwrisc_comparator.sv	/^		output reg		out$/;"	p	module:fwrisc_comparator
+out	mux2to1.sv	/^	output [DATA_WIDTH-1:0]	out$/;"	p	module:mux2to1
+pc	fwrisc.sv	/^	reg[31:2]			pc;$/;"	r	module:fwrisc
+pc	fwrisc_tracer.sv	/^		input [31:0]	pc,$/;"	p	module:fwrisc_tracer
+pc_next	fwrisc.sv	/^	reg[31:2]			pc_next;$/;"	r	module:fwrisc
+pc_next_sel	fwrisc.sv	/^	always @* begin : pc_next_sel$/;"	b	module:fwrisc
+pc_plus4	fwrisc.sv	/^	wire[31:2]			pc_plus4;$/;"	n	module:fwrisc
+ra_raddr	fwrisc.sv	/^	reg[5:0]		ra_raddr;$/;"	r	module:fwrisc
+ra_raddr	fwrisc_regfile.sv	/^		input[5:0]			ra_raddr,$/;"	p	module:fwrisc_regfile
+ra_raddr	fwrisc_tracer.sv	/^		input [5:0]		ra_raddr,$/;"	p	module:fwrisc_tracer
+ra_raddr_r	fwrisc_regfile.sv	/^	reg[5:0]			ra_raddr_r;$/;"	r	module:fwrisc_regfile
+ra_rdata	fwrisc.sv	/^	wire[31:0]		ra_rdata;$/;"	n	module:fwrisc
+ra_rdata	fwrisc_regfile.sv	/^		output [31:0]		ra_rdata,$/;"	p	module:fwrisc_regfile
+ra_rdata	fwrisc_tracer.sv	/^		input [31:0]	ra_rdata,$/;"	p	module:fwrisc_tracer
+ram	my_ram.sv	/^	reg [DATA_WIDTH-1:0]	ram	[0:2**ADDR_WIDTH-1];$/;"	r	module:my_ram
+ram_0	fwrisc_fpga_top.sv	/^	reg[7:0]			ram_0[4095:0]; \/\/ 16k ram$/;"	r	module:fwrisc_fpga_top
+ram_1	fwrisc_fpga_top.sv	/^	reg[7:0]			ram_1[4095:0]; \/\/ $/;"	r	module:fwrisc_fpga_top
+ram_2	fwrisc_fpga_top.sv	/^	reg[7:0]			ram_2[4095:0]; \/\/$/;"	r	module:fwrisc_fpga_top
+ram_3	fwrisc_fpga_top.sv	/^	reg[7:0]			ram_3[4095:0]; \/\/$/;"	r	module:fwrisc_fpga_top
+rb_raddr	fwrisc.sv	/^	reg[5:0]		rb_raddr;$/;"	r	module:fwrisc
+rb_raddr	fwrisc_regfile.sv	/^		input[5:0]			rb_raddr,$/;"	p	module:fwrisc_regfile
+rb_raddr	fwrisc_tracer.sv	/^		input [5:0]		rb_raddr,$/;"	p	module:fwrisc_tracer
+rb_raddr_r	fwrisc_regfile.sv	/^	reg[5:0]			rb_raddr_r;$/;"	r	module:fwrisc_regfile
+rb_rdata	fwrisc.sv	/^	wire[31:0]		rb_rdata;$/;"	n	module:fwrisc
+rb_rdata	fwrisc_dbus_if.sv	/^		input[31:0]		rb_rdata,$/;"	p	module:fwrisc_dbus_if
+rb_rdata	fwrisc_regfile.sv	/^		output [31:0]		rb_rdata,$/;"	p	module:fwrisc_regfile
+rb_rdata	fwrisc_tracer.sv	/^		input [31:0]	rb_rdata,$/;"	p	module:fwrisc_tracer
+rd	fwrisc.sv	/^	wire[4:0]		rd  = instr[11:7];$/;"	n	module:fwrisc
+rd_en	my_fifo.sv	/^	input 						rd_en,$/;"	p	module:my_fifo
+rd_en	uart.sv	/^	wire		rd_en;$/;"	n	module:uart
+rd_en_o	UART_tx_fsm.sv	/^	output	reg		rd_en_o,$/;"	p	module:UART_tx_fsm
+rd_waddr	fwrisc.sv	/^	reg[5:0]		rd_waddr;$/;"	r	module:fwrisc
+rd_waddr	fwrisc_regfile.sv	/^		input[5:0]			rd_waddr,$/;"	p	module:fwrisc_regfile
+rd_waddr	fwrisc_tracer.sv	/^		input [5:0]		rd_waddr,$/;"	p	module:fwrisc_tracer
+rd_wdata	fwrisc.sv	/^	reg[31:0]		rd_wdata;$/;"	r	module:fwrisc
+rd_wdata	fwrisc_regfile.sv	/^		input[31:0]			rd_wdata,$/;"	p	module:fwrisc_regfile
+rd_wdata	fwrisc_tracer.sv	/^		input [31:0]	rd_wdata,$/;"	p	module:fwrisc_tracer
+rd_wen	fwrisc.sv	/^	reg				rd_wen;$/;"	r	module:fwrisc
+rd_wen	fwrisc_regfile.sv	/^		input				rd_wen$/;"	p	module:fwrisc_regfile
+rd_write	fwrisc_tracer.sv	/^		input			rd_write,$/;"	p	module:fwrisc_tracer
+read_data_wb	fwrisc.sv	/^	reg[31:0]			read_data_wb;$/;"	r	module:fwrisc
+reg_rd_sel	UART_Registers.sv	/^	wire [7:0] reg_rd_sel = (daddr_i&32'hfffff000 == `UART_BASE)?daddr_i[7:0]:0;$/;"	n	module:UART_Registers
+reg_wr_en	UART_Registers.sv	/^	wire reg_wr_en = (daddr_i&32'hfffff000 == `UART_BASE )&&dvalid_i&&dwrite_i;$/;"	n	module:UART_Registers
+reg_wr_sel	UART_Registers.sv	/^	wire [7:0] reg_wr_sel = daddr_i[7:0];$/;"	n	module:UART_Registers
+regs	fwrisc_regfile.sv	/^	(*ram_style="block"*)reg[31:0]			regs['h3f:0];$/;"	r	module:fwrisc_regfile
+reset	fwrisc.sv	/^		input			reset,$/;"	p	module:fwrisc
+reset	fwrisc_alu.sv	/^		input					reset,$/;"	p	module:fwrisc_alu
+reset	fwrisc_comparator.sv	/^		input			reset,$/;"	p	module:fwrisc_comparator
+reset	fwrisc_fpga_top.sv	/^		input			reset,$/;"	p	module:fwrisc_fpga_top
+reset	fwrisc_regfile.sv	/^		input				reset,$/;"	p	module:fwrisc_regfile
+reset	fwrisc_tracer.sv	/^		input			reset,$/;"	p	module:fwrisc_tracer
+rom	fwrisc_fpga_top.sv	/^	reg[31:0]			rom[4095:0];   \/\/ 16k rom$/;"	r	module:fwrisc_fpga_top
+rs1	fwrisc.sv	/^	wire[4:0]		rs1 = instr[19:15];$/;"	n	module:fwrisc
+rs2	fwrisc.sv	/^	wire[4:0]		rs2 = instr[24:20];$/;"	n	module:fwrisc
+rst	my_fifo.sv	/^	input						rst,$/;"	p	module:my_fifo
+rst	uart.sv	/^   	input			 rst,$/;"	p	module:uart
+rst_n	UART_Registers.sv	/^	input			rst_n,$/;"	p	module:UART_Registers
+rst_n	UART_baudrate_gen.sv	/^	input rst_n,$/;"	p	module:UART_baudrate_gen
+rst_n	UART_rx_fsm.sv	/^	input			rst_n,$/;"	p	module:UART_rx_fsm
+rst_n	UART_tx_fsm.sv	/^	input			rst_n,$/;"	p	module:UART_tx_fsm
+rst_n	fwrisc_uart_tb.sv	/^	reg rst_n;$/;"	r	module:fwrisc_uart_tb
+rst_n	uart.sv	/^	wire		rst_n = !rst;$/;"	n	module:uart
+rx	fwrisc_fpga_top.sv	/^		input			rx,$/;"	p	module:fwrisc_fpga_top
+rx	fwrisc_uart_tb.sv	/^	wire tx, rx;$/;"	n	module:fwrisc_uart_tb
+rx	uart.sv	/^	input			rx,$/;"	p	module:uart
+rx_bitcount	uart/uart_transceiver.sv	/^reg [3:0] rx_bitcount;$/;"	r	module:uart_transceiver
+rx_busy	uart/uart_transceiver.sv	/^reg rx_busy;$/;"	r	module:uart_transceiver
+rx_count16	uart/uart_transceiver.sv	/^reg [3:0] rx_count16;$/;"	r	module:uart_transceiver
+rx_data	UART_rx_fsm.sv	/^	reg [7:0] rx_data;$/;"	r	module:UART_rx_fsm
+rx_data	uart.sv	/^	wire [7:0]	rx_data;$/;"	n	module:uart
+rx_data	uart/op_uart.sv	/^wire [7:0] rx_data;$/;"	n	module:op_uart
+rx_data	uart/uart_transceiver.sv	/^	output reg [7:0] rx_data,$/;"	p	module:uart_transceiver
+rx_data_o	UART_rx_fsm.sv	/^	output [7:0]	rx_data_o,$/;"	p	module:UART_rx_fsm
+rx_data_valid_o	UART_rx_fsm.sv	/^	output			rx_data_valid_o$/;"	p	module:UART_rx_fsm
+rx_done	uart/uart_transceiver.sv	/^	output reg rx_done,$/;"	p	module:uart_transceiver
+rx_en	uart.sv	/^	wire		rx_en;$/;"	n	module:uart
+rx_en_i	UART_rx_fsm.sv	/^	input			rx_en_i,$/;"	p	module:UART_rx_fsm
+rx_fifo_dout	UART_Registers.sv	/^	wire [7:0] rx_fifo_dout;$/;"	n	module:UART_Registers
+rx_fifo_empty_i	IF_fifo.sv	/^	input	rx_fifo_empty_i$/;"	p	module:IF_fifo
+rx_fifo_rd_en	UART_Registers.sv	/^	wire rx_fifo_rd_en;$/;"	n	module:UART_Registers
+rx_fifo_rd_en_o	IF_fifo.sv	/^	output	rx_fifo_rd_en_o,$/;"	p	module:IF_fifo
+rx_fifo_wr_en	UART_Registers.sv	/^	input			rx_fifo_wr_en,$/;"	p	module:UART_Registers
+rx_h2l	UART_rx_fsm.sv	/^	wire		rx_h2l;$/;"	n	module:UART_rx_fsm
+rx_i	UART_rx_fsm.sv	/^	input			rx_i,$/;"	p	module:UART_rx_fsm
+rx_irq	fwrisc_uart_tb.sv	/^	wire		rx_irq;$/;"	n	module:fwrisc_uart_tb
+rx_irq	uart/op_uart.sv	/^	output rx_irq,$/;"	p	module:op_uart
+rx_irq	uart/uart_tb.sv	/^	wire		rx_irq;$/;"	n	module:uart_tb
+rx_reg	UART_rx_fsm.sv	/^	reg			rx_reg;$/;"	r	module:UART_rx_fsm
+rx_reg	uart/uart_transceiver.sv	/^reg [7:0] rx_reg;$/;"	r	module:uart_transceiver
+rx_should_check	UART_rx_fsm.sv	/^	wire			rx_should_check;$/;"	n	module:UART_rx_fsm
+rx_tick_delay	UART_rx_fsm.sv	/^	reg				rx_tick_delay;$/;"	r	module:UART_rx_fsm
+rx_tick_plus	UART_rx_fsm.sv	/^	wire			rx_tick_plus;$/;"	n	module:UART_rx_fsm
+sel	mux2to1.sv	/^	input					sel,$/;"	p	module:mux2to1
+send_tick	UART_tx_fsm.sv	/^	wire		send_tick;$/;"	n	module:UART_tx_fsm
+shift_amt	fwrisc.sv	/^	reg[4:0]			shift_amt;$/;"	r	module:fwrisc
+st_imm_11_0	fwrisc.sv	/^	wire[31:0]      st_imm_11_0 = (instr[31])?$/;"	n	module:fwrisc
+state	fwrisc.sv	/^	reg[3:0]			state;$/;"	r	module:fwrisc
+state	fwrisc_dbus_if.sv	/^		input[3:0]		state,$/;"	p	module:fwrisc_dbus_if
+sys_clk	uart/op_uart.sv	/^	input sys_clk,$/;"	p	module:op_uart
+sys_clk	uart/uart_tb.sv	/^	reg sys_clk;$/;"	r	module:uart_tb
+sys_clk	uart/uart_transceiver.sv	/^	input sys_clk,$/;"	p	module:uart_transceiver
+sys_rst	uart/op_uart.sv	/^	input sys_rst,$/;"	p	module:op_uart
+sys_rst	uart/uart_tb.sv	/^	reg sys_rst;$/;"	r	module:uart_tb
+sys_rst	uart/uart_transceiver.sv	/^	input sys_rst,$/;"	p	module:uart_transceiver
+testcase	fwrisc_uart_tb.sv	/^	reg [8*300:1] testcase;$/;"	r	module:fwrisc_uart_tb
+thru	uart/op_uart.sv	/^reg thru;$/;"	r	module:op_uart
+tick	UART_rx_fsm.sv	/^	wire		tick;$/;"	n	module:UART_rx_fsm
+tick_counter	UART_rx_fsm.sv	/^	reg	[3:0]	tick_counter;$/;"	r	module:UART_rx_fsm
+tick_h2l	UART_rx_fsm.sv	/^	wire		tick_h2l;$/;"	n	module:UART_rx_fsm
+tick_l2h	UART_rx_fsm.sv	/^	wire		tick_l2h;$/;"	n	module:UART_rx_fsm
+tick_o	UART_baudrate_gen.sv	/^	output reg 		tick_o$/;"	p	module:UART_baudrate_gen
+tick_reg	UART_rx_fsm.sv	/^	reg			tick_reg;$/;"	r	module:UART_rx_fsm
+tick_should_flip	UART_baudrate_gen.sv	/^	wire tick_should_flip = (clk_cnt == ((baudrate_i>>1) - 1));$/;"	n	module:UART_baudrate_gen
+tx	fwrisc_fpga_top.sv	/^		output			tx$/;"	p	module:fwrisc_fpga_top
+tx	fwrisc_uart_tb.sv	/^	wire tx, rx;$/;"	n	module:fwrisc_uart_tb
+tx	uart.sv	/^	output			tx$/;"	p	module:uart
+tx_bitcount	uart/uart_transceiver.sv	/^reg [3:0] tx_bitcount;$/;"	r	module:uart_transceiver
+tx_busy	uart/uart_transceiver.sv	/^reg tx_busy;$/;"	r	module:uart_transceiver
+tx_count16	uart/uart_transceiver.sv	/^reg [3:0] tx_count16;$/;"	r	module:uart_transceiver
+tx_data	uart.sv	/^	wire [7:0]	tx_data;$/;"	n	module:uart
+tx_data	uart/op_uart.sv	/^wire [7:0] tx_data;$/;"	n	module:op_uart
+tx_data	uart/uart_transceiver.sv	/^	input [7:0] tx_data,$/;"	p	module:uart_transceiver
+tx_data_i	UART_tx_fsm.sv	/^	input [7:0]		tx_data_i,$/;"	p	module:UART_tx_fsm
+tx_done	uart/uart_transceiver.sv	/^	output reg tx_done$/;"	p	module:uart_transceiver
+tx_en	uart.sv	/^	wire		tx_en;$/;"	n	module:uart
+tx_en_i	UART_tx_fsm.sv	/^	input			tx_en_i,$/;"	p	module:UART_tx_fsm
+tx_fifo_dout	UART_Registers.sv	/^	wire [7:0] tx_fifo_dout;$/;"	n	module:UART_Registers
+tx_fifo_full_i	IF_fifo.sv	/^	input	tx_fifo_full_i,$/;"	p	module:IF_fifo
+tx_fifo_rd_en	UART_Registers.sv	/^	input			tx_fifo_rd_en,$/;"	p	module:UART_Registers
+tx_fifo_wr_en	UART_Registers.sv	/^	wire tx_fifo_wr_en;$/;"	n	module:UART_Registers
+tx_fifo_wr_en_o	IF_fifo.sv	/^	output 	tx_fifo_wr_en_o,$/;"	p	module:IF_fifo
+tx_irq	fwrisc_uart_tb.sv	/^	wire		tx_irq;$/;"	n	module:fwrisc_uart_tb
+tx_irq	uart/op_uart.sv	/^	output tx_irq,$/;"	p	module:op_uart
+tx_irq	uart/uart_tb.sv	/^	wire		tx_irq;$/;"	n	module:uart_tb
+tx_o	UART_tx_fsm.sv	/^    output	reg		tx_o	$/;"	p	module:UART_tx_fsm
+tx_reg	uart/uart_transceiver.sv	/^reg [7:0] tx_reg;$/;"	r	module:uart_transceiver
+tx_wr	uart/op_uart.sv	/^wire tx_wr;$/;"	n	module:op_uart
+tx_wr	uart/uart_transceiver.sv	/^	input tx_wr,$/;"	p	module:uart_transceiver
+uart	uart.sv	/^module uart($/;"	m
+uart_drdata	fwrisc_fpga_top.sv	/^	wire [31:0]	uart_drdata;$/;"	n	module:fwrisc_fpga_top
+uart_mux_sel	fwrisc_fpga_top.sv	/^	wire uart_mux_sel = (daddr == `UART_BASE)?1:0;$/;"	n	module:fwrisc_fpga_top
+uart_ready	fwrisc_fpga_top.sv	/^	wire		uart_ready;$/;"	n	module:fwrisc_fpga_top
+uart_rx	uart/op_uart.sv	/^	input uart_rx,$/;"	p	module:op_uart
+uart_rx	uart/uart_tb.sv	/^	wire		uart_rx;$/;"	n	module:uart_tb
+uart_rx	uart/uart_transceiver.sv	/^	input uart_rx,$/;"	p	module:uart_transceiver
+uart_rx1	uart/uart_transceiver.sv	/^reg uart_rx1;$/;"	r	module:uart_transceiver
+uart_rx2	uart/uart_transceiver.sv	/^reg uart_rx2;$/;"	r	module:uart_transceiver
+uart_tb	uart/uart_tb.sv	/^module uart_tb;$/;"	m
+uart_transceiver	uart/uart_transceiver.sv	/^module uart_transceiver($/;"	m
+uart_tx	uart/op_uart.sv	/^	output uart_tx$/;"	p	module:op_uart
+uart_tx	uart/uart_tb.sv	/^	wire		uart_tx;$/;"	n	module:uart_tb
+uart_tx	uart/uart_transceiver.sv	/^	output reg uart_tx,$/;"	p	module:uart_transceiver
+uart_tx_transceiver	uart/op_uart.sv	/^wire uart_tx_transceiver;$/;"	n	module:op_uart
+wea	my_ram.sv	/^	input 						wea,$/;"	p	module:my_ram
+wr_en	my_fifo.sv	/^	input 						wr_en,$/;"	p	module:my_fifo
+wr_en	uart.sv	/^	wire		wr_en;$/;"	n	module:uart
+zero	fwrisc.sv	/^	wire[31:0]		zero = 32'h00000000;$/;"	n	module:fwrisc

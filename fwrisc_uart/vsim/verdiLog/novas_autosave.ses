@@ -1,0 +1,75 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_L-2016.06-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+powerDumped = 0
+[hb]
+postSimFile = /home/yzb/fwrisc/fwrisc_uart/vsim/inter.fsdb
+syncTime = 6249860000
+viewport = 1 33 1916 1006 541 314 308 1914
+activeNode = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm"
+activeScope = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm"
+activeFile = "/home/yzb/fwrisc/fwrisc_uart/rtl/UART_rx_fsm.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 13
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm"
+Scope2 = "fwrisc_uart_tb.u_fwrisc_fpga_top"
+Scope3 = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart"
+Scope4 = "fwrisc_uart_tb"
+Scope5 = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_tx_fsm"
+multipleSelection = 1 24 5 0 0
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.sourceTab.1]
+scope = fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm
+File = /home/yzb/fwrisc/fwrisc_uart/rtl/UART_rx_fsm.sv
+Line = 14
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/yzb/fwrisc/fwrisc_uart/vsim
+design = DebussyLib
+hostCommand = hostCommand -elab ./simv.daidir/kdb.elab++
+topName = fwrisc_uart_tb 
+fromLibrary = TRUE
+[nMemoryManager]
+FsdbFile = /home/yzb/fwrisc/fwrisc_uart/vsim/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 1272 448 202 162
+SessionFile = /home/yzb/fwrisc/fwrisc_uart/vsim/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = TRUE

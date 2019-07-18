@@ -1,0 +1,72 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_L-2016.06-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+powerDumped = 0
+[hb]
+postSimFile = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb
+syncTime = 140000
+viewport = 1 33 1916 1006 531 366 383 1269
+activeNode = "uart_tb.u_uart_send.transceiver"
+activeScope = "uart_tb.u_uart_send.transceiver"
+activeFile = "/home/yzb/fwrisc/fwrisc_uart/rtl/uart/uart_transceiver.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 26
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "uart_tb.u_uart_send.transceiver"
+Scope2 = "uart_tb.Send"
+rangeSelection = 45 45 1 6 1 1
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.sourceTab.1]
+scope = uart_tb.u_uart_send.transceiver
+File = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/uart_transceiver.sv
+Line = 27
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim
+design = DebussyLib
+hostCommand = hostCommand -elab ./simv.daidir/kdb.elab++
+topName = uart_tb 
+fromLibrary = TRUE
+[nMemoryManager]
+FsdbFile = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb
+UserActionNum = 0
+nMemWindowNum = 0
+[wave.0]
+viewPort = 0 28 1916 848 200 65
+SessionFile = /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/verdiLog/novas_autosave.ses.wave.0
+displayGrid = FALSE
+hierarchicalName = FALSE
+snap = TRUE
+displayLeadingZeros = FALSE
+fixDelta = FALSE
+displayCursorMarker = FALSE
+autoUpdate = FALSE
+highlightGlitchs = FALSE
+waveformSync = FALSE
+displayErrors = TRUE
+displayMsgSymbols = TRUE
+showMsgDescriptions = TRUE
+autoFit = FALSE
+displayDeltaY = FALSE
+centerCursor = FALSE

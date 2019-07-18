@@ -1,0 +1,178 @@
+debImport "-i" "-simflow" "-simBin" "./simv" "-simOpt" " "
+srcTBInvokeSim
+wvCreateWindow
+verdiWindowBeWindow -win $_nWave3
+wvResizeWindow -win $_nWave3 50 487 1274 481
+wvResizeWindow -win $_nWave3 50 487 1274 481
+wvResizeWindow -win $_nWave3 0 23 1920 1017
+wvRestoreSignal -win $_nWave3 \
+           "/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/uart_tb.rc" \
+           -overWriteAutoAlias on
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+srcTBRunSim
+srcTBSimBreak
+wvZoomAll -win $_nWave3
+wvScrollDown -win $_nWave3 0
+wvDisplayGridCount -win $_nWave3 -off
+wvGetSignalClose -win $_nWave3
+wvReloadFile -win $_nWave3
+debReload
+wvDisplayGridCount -win $_nWave3 -off
+wvGetSignalClose -win $_nWave3
+wvReloadFile -win $_nWave3
+srcTBInvokeSim
+srcHBSelect "uart_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb" -delim "."
+srcTBRunSim
+srcTBSimBreak
+srcHBSelect "uart_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "csr_we" -win $_nTrace1
+srcAction -pos 96 2 5 -win $_nTrace1 -name "csr_we" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debReload
+srcDeselectAll -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debReload
+srcHBSelect "uart_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb" -delim "."
+srcDeselectAll -win $_nTrace1
+debReload
+debReload
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb" -delim "."
+srcHBSelect "uart_tb" -win $_nTrace1
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb.Send" -delim "."
+debReload
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb.Send" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiSetSyncSelection -widget MTB_SOURCE_TAB_1
+verdiSetSyncSelection -widget MTB_SOURCE_TAB_1 -off
+debReload
+wvTpfCloseForm -win $_nWave3
+wvGetSignalClose -win $_nWave3
+wvCloseWindow -win $_nWave3
+debReload
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 88 3 1 -win $_nTrace1 -name "csr_we = 0;" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcAction -pos 88 3 2 -win $_nTrace1 -name "csr_we = 0;" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "csr_we" -win $_nTrace1
+srcAction -pos 96 2 3 -win $_nTrace1 -name "csr_we" -ctrlKey off
+srcTraceLoad "uart_tb.csr_we" -win $_nTrace1
+srcHBSelect "uart_tb.u_uart_send" -win $_nTrace1
+srcTraceDriver "uart_tb.u_uart_send.csr_we" -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb.Send" -delim "."
+srcDeselectAll -win $_nTrace1
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+debReload
+verdiDockWidgetSetCurTab -dock widgetDock_<Local>
+verdiDockWidgetSetCurTab -dock widgetDock_<Member>
+verdiDockWidgetSetCurTab -dock widgetDock_<Object._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Class._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Stack>
+verdiDockWidgetSetCurTab -dock widgetDock_<Decl._Tree>
+verdiDockWidgetSetCurTab -dock widgetDock_<Inst._Tree>
+srcSetOptions -win $_nTrace1 -annotate on
+schSetOptions -win $_nSchema1 -annotate on
+debReload
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb.Send" -delim "."
+verdiDockWidgetHide -dock widgetDock_MTB_SOURCE_TAB_1
+srcHBSelect "uart_tb.Send" -win $_nTrace1
+srcSetScope -win $_nTrace1 "uart_tb.Send" -delim "."
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 88 1 2 -win $_nTrace1 -name "//" -ctrlKey off
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab trace
+nsMsgSwitchTab -tab search
+nsMsgSwitchTab -tab intercon
+verdiDockWidgetSetCurTab -dock windowDock_VIA_InteractiveDebug_2
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+nsMsgSwitchTab -tab general
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab trace
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab search
+nsMsgSwitchTab -tab trace
+nsMsgSwitchTab -tab intercon
+nsMsgSwitchTab -tab general
+verdiDockWidgetSetCurTab -dock windowDock_VIA_InteractiveDebug_2
+verdiDockWidgetSetCurTab -dock widgetDock_<Message>
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab trace
+nsMsgSwitchTab -tab search
+nsMsgSwitchTab -tab intercon
+nsMsgSwitchTab -tab search
+nsMsgSwitchTab -tab cmpl
+nsMsgSwitchTab -tab trace
+verdiDockWidgetSetCurTab -dock windowDock_VIA_InteractiveDebug_2
+srcHBSelect "uart_tb" -win $_nTrace1
+srcHBSelect "uart_tb" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+debExit

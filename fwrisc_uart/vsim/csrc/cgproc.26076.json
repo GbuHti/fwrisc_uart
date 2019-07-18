@@ -1,0 +1,73 @@
+{
+    "CompUnits": {
+        "J2Vib_d": {
+            "mode": 4,
+            "mod": "UART_rx_fsm",
+            "bytes": 28508,
+            "out": "J2Vib_d.o",
+            "checksum": 0,
+            "archive": "archive.46/_26076_archive_1.a"
+        },
+        "Rq5Sq_d": {
+            "mode": 4,
+            "mod": "fwrisc_uart_tb",
+            "bytes": 241421,
+            "out": "Rq5Sq_d.o",
+            "checksum": 0,
+            "archive": "archive.46/_26076_archive_1.a"
+        }
+    },
+    "Modules": {
+        "fwrisc_uart_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 41
+        },
+        "op_uart": {
+            "Compiled": "Yes",
+            "Compiled Times": 34
+        },
+        "...MASTER...": {},
+        "UART_rx_fsm": {
+            "Compiled": "Yes",
+            "Compiled Times": 12
+        },
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 47
+        },
+        "mux2to1": {
+            "Compiled": "Yes",
+            "Compiled Times": 34
+        }
+    },
+    "reusePaths": {
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "UJngv_d": {
+            "icPath": "csrc"
+        },
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "TDywx_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.46/_26076_archive_1.a",
+            "objects": [
+                [
+                    "J2Vib_d.o",
+                    28508
+                ],
+                [
+                    "Rq5Sq_d.o",
+                    241421
+                ]
+            ],
+            "size": 269929
+        }
+    ]
+}

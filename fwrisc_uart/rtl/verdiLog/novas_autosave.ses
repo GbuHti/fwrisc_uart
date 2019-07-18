@@ -1,0 +1,44 @@
+@verdi rc file Version 1.0
+[General]
+VerdiVersion = Verdi3_L-2016.06-1
+[KeyNote]
+Line1 = Automatic Backup 0
+[TestBench]
+ConstrViewShow = 0
+InherViewShow = 0
+FSDBMsgShow = 0
+AnnotationShow = 0
+powerDumped = 0
+[hb]
+viewport = 0 23 1920 1017 629 415 255 1364
+activeNode = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers"
+activeScope = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers"
+activeFile = "/home/yzb/fwrisc/fwrisc_uart/rtl/UART_Registers.sv"
+interactiveMode = False
+viewType = Source
+simulatorMode = False
+sourceBeginLine = 35
+baMode = False
+srcLineNum = True
+syncSignal = False
+traceMode = Hierarchical
+showTraceInSchema = True
+paMode = False
+funcMode = False
+traceCrossHier = True
+DnDtraceCrossHierOnly = True
+traceIncTopPort = False
+leadingZero = False
+signalPane = False
+Scope1 = "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers"
+sdfCheckUndef = FALSE
+simFlow = FALSE
+[hb.sourceTab.1]
+scope = fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers
+File = /home/yzb/fwrisc/fwrisc_uart/rtl/UART_Registers.sv
+Line = 36
+[imp.design1]
+dbEnum =  oh
+invokeDir = /home/yzb/fwrisc/fwrisc_uart/rtl
+design = DebussyLib
+hostCommand = hostCommand -f fwrisc_uart.f

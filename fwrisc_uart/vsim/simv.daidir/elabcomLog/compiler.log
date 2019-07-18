@@ -1,0 +1,6 @@
+*design* DebussyLib (btIdent Verdi3_L-2016.06)
+Command arguments:  -lib  simv.daidir/work  -elab  simv.daidir/kdb  -simflow  -top  fwrisc_uart_tb   -ssz  -ssv  -ssy  -ssz  -ssv  -ssy  -Lf  work  -SNPS_ELABCOM  -saveElab 
+
+*Warning* port sizes differ (32 vs 20) in port connection (port UART_baudrate_div)
+"/home/yzb/fwrisc/fwrisc_uart/rtl/uart.sv", 61: 
+Total	0 error(s),   1 warning(s)

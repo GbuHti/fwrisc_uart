@@ -1,0 +1,175 @@
+{
+    "MlibObjs": {},
+    "CompileStatus": "Successful",
+    "CompileProcesses": [
+        "cgproc.25231.json"
+    ],
+    "PrevCompiledModules": {
+        "...MASTER...": {
+            "amcQw_d": {
+                "bytes": 7568,
+                "mod": "...MASTER...",
+                "mode": 4,
+                "checksum": 0,
+                "out": "objs/amcQw_d.o"
+            }
+        },
+        "mux2to1": {
+            "TDywx_d": {
+                "bytes": 8531,
+                "archive": "archive.45/_prev_archive_1.a",
+                "mod": "mux2to1",
+                "mode": 4,
+                "checksum": 0,
+                "out": "TDywx_d.o"
+            }
+        },
+        "fwrisc_uart_tb": {
+            "Rq5Sq_d": {
+                "bytes": 241561,
+                "archive": "archive.45/_25231_archive_1.a",
+                "mod": "fwrisc_uart_tb",
+                "out": "Rq5Sq_d.o",
+                "mode": 4,
+                "checksum": 0
+            }
+        },
+        "op_uart": {
+            "UJngv_d": {
+                "bytes": 34255,
+                "archive": "archive.45/_prev_archive_1.a",
+                "mod": "op_uart",
+                "mode": 4,
+                "checksum": 0,
+                "out": "UJngv_d.o"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "bytes": 41475,
+                "archive": "archive.45/_prev_archive_1.a",
+                "mod": "std",
+                "mode": 4,
+                "checksum": 0,
+                "out": "reYIK_d.o"
+            }
+        },
+        "UART_rx_fsm": {
+            "J2Vib_d": {
+                "bytes": 27932,
+                "archive": "archive.45/_prev_archive_1.a",
+                "mod": "UART_rx_fsm",
+                "mode": 4,
+                "checksum": 0,
+                "out": "J2Vib_d.o"
+            }
+        }
+    },
+    "stat": {
+        "nMops": 23026,
+        "totalObjSize": 359038,
+        "ru_self_cgstart": {
+            "ru_nvcsw": 37,
+            "ru_majflt": 9,
+            "ru_utime_sec": 0.13461400000000001,
+            "ru_maxrss_kb": 81728,
+            "ru_stime_sec": 0.041880000000000001,
+            "ru_minflt": 21232,
+            "ru_nivcsw": 14
+        },
+        "nQuads": 8843,
+        "ru_childs_cgstart": {
+            "ru_nvcsw": 4,
+            "ru_majflt": 0,
+            "ru_utime_sec": 0.002578,
+            "ru_maxrss_kb": 31864,
+            "ru_stime_sec": 0.0042050000000000004,
+            "ru_minflt": 2144,
+            "ru_nivcsw": 0
+        },
+        "mop/quad": 2.6038674657921521,
+        "quadSpeed": 80355.114539886796,
+        "ru_self_end": {
+            "ru_nvcsw": 38,
+            "ru_majflt": 9,
+            "ru_utime_sec": 0.24466299999999999,
+            "ru_maxrss_kb": 94364,
+            "ru_stime_sec": 0.050516999999999999,
+            "ru_minflt": 26095,
+            "ru_nivcsw": 24
+        },
+        "ru_childs_end": {
+            "ru_nvcsw": 6,
+            "ru_majflt": 1,
+            "ru_utime_sec": 0.0035509999999999999,
+            "ru_maxrss_kb": 36128,
+            "ru_stime_sec": 0.0061529999999999996,
+            "ru_minflt": 2733,
+            "ru_nivcsw": 0
+        },
+        "mopSpeed": 209234.06846041314,
+        "outputSizePerQuad": 40.0,
+        "Frontend(%)": 55.020170602011753,
+        "CodeGen(%)": 44.979829397988247
+    },
+    "LVLData": [
+        "SIM"
+    ],
+    "NameTable": {
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "UART_rx_fsm": [
+            "UART_rx_fsm",
+            "J2Vib",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "mux2to1": [
+            "mux2to1",
+            "TDywx",
+            "module"
+        ],
+        "op_uart": [
+            "op_uart",
+            "UJngv",
+            "module"
+        ],
+        "fwrisc_uart_tb": [
+            "fwrisc_uart_tb",
+            "Rq5Sq",
+            "module"
+        ]
+    },
+    "CompileStrategy": "fullobj",
+    "CurCompileUdps": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "UART_rx_fsm",
+        "mux2to1",
+        "op_uart",
+        "fwrisc_uart_tb",
+        "fwrisc_uart_tb"
+    ],
+    "SIMBData": {
+        "out": "amcQwB.o",
+        "bytes": 117617
+    },
+    "PEModules": [],
+    "Misc": {
+        "cwd": "/home/yzb/fwrisc/fwrisc_uart/vsim",
+        "csrc": "csrc",
+        "csrc_abs": "/home/yzb/fwrisc/fwrisc_uart/vsim/csrc",
+        "daidir": "simv.daidir",
+        "daidir_abs": "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.45"
+    }
+}

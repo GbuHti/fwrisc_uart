@@ -1,0 +1,336 @@
+Magic 271485
+Revision Verdi3_L-2016.06-1
+
+; Window Layout <x> <y> <width> <height> <signalwidth> <valuewidth>
+; File list:
+; openDirFile [-d delimiter] [-s time_offset] [-rf auto_bus_rule_file] path_name file_name
+; openDirFile -d / "" "/home/yzb/fwrisc/fwrisc_uart/vsim/inter.fsdb"
+
+; file time scale:
+; fileTimeScale ### s|ms|us|ns|ps
+
+; signal spacing:
+signalSpacing 5
+
+; windowTimeUnit is used for zoom, cursor & marker
+; waveform viewport range
+; user define markers
+; userMarker time_pos marker_name color linestyle
+; visible top row signal index
+top 17
+; marker line index
+markerPos 40
+
+; event list
+; addEvent event_name event_expression
+; curEvent event_name
+
+; toolbar current search type
+; curSTATUS search_type
+curSTATUS ByChange
+
+
+addGroup "tb"
+; activeDirFile "" "/home/yzb/fwrisc/fwrisc_uart/vsim/inter.fsdb"
+addSignal -h 15 /fwrisc_uart_tb/clk
+addSignal -h 15 /fwrisc_uart_tb/csr_a[13:0]
+addSignal -h 15 /fwrisc_uart_tb/csr_di[31:0]
+addSignal -h 15 /fwrisc_uart_tb/csr_do[31:0]
+addSignal -h 15 /fwrisc_uart_tb/csr_we
+addSignal -h 15 /fwrisc_uart_tb/i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/rst_n
+addSignal -h 15 /fwrisc_uart_tb/rx
+addSignal -h 15 /fwrisc_uart_tb/tx_irq
+addSignal -h 15 /fwrisc_uart_tb/rx_irq
+addSignal -h 15 /fwrisc_uart_tb/tx
+addGroup "fwrisc_top"
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/addr_d[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/addr_i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/baudrate[19:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/clock
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/daddr[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/drdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/drdata_r[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dready
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dready_r
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dstrb[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dvalid
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dwdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/dwrite
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/iaddr[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/idata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/iready
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/iready_r
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/itcm_full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/ivalid
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/program_addr[14:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/program_data[31:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rom_wr_en
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/program_done
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/program_ov
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/reset
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx_program_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx_program_data_valid
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx_program_data_cnt[1:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx_program_data_cnt_r[1:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/rx_program_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/tx
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/uart_drdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/uart_mux_sel
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/uart_ready
+addGroup "u_core"
+addSignal -h 15 /BLANK
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MCAUSE[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MCYCLEH[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MCYCLE[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MEPC[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MINSTRH[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MINSTR[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MTVAL[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_MTVEC[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/CSR_tmp[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_carry
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_eqz
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_op[2:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_op_a[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_op_b[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/alu_out[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/auipc_imm_31_12[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/branch_cond
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/clock
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/comp_op[1:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/comp_op_a[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/comp_op_b[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/comp_out
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/csr[11:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/csr_addr[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/cycle_counter[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/cycle_counter_ovf
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/daddr[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/dvalid
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/drdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/dready
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/dstrb[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/dwdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/dwrite
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/exc_code[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/exception
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/exec_state
+addSignal -c ID_ORANGE5 -ls solid -lw 1 -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/iaddr[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/idata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/imm_11_0[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/imm_11_0_u[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/imm_branch[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/imm_lui[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/instr[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/instr_counter[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/iready
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/ivalid
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/jal_off[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/misaligned_addr
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_arith_imm
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_arith_reg
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_auipc
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_branch
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_branch_ld_st_arith
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_csr
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_csrr_cs
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_csrrc
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_csrrs
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_ecall
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_eret
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_fence
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_jal
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_jalr
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_ld
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_ld_st
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_lui
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_shift
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_shift_imm
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_shift_reg
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_st
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_sys
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/op_sys_prv
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/pc[31:2]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/pc_next[31:2]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/pc_plus4[31:2]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/ra_raddr[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/ra_rdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rb_raddr[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rb_rdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rd[4:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rd_waddr[5:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rd_wdata[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rd_wen
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/read_data_wb[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/reset
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rs1[4:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/rs2[4:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/shift_amt[4:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/st_imm_11_0[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/state[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_core/zero[31:0]
+addGroup "uart" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/baudrate[19:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/daddr_i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/drdata_o[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/dready_o
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/dstrb_i[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/dvalid_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/dwdata_i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/dwrite_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/fifo_empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/fifo_full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rd_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rst
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rst_n
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rx
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/rx_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/tx
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/tx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/tx_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/wr_en
+addGroup "tx_fsm" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/baudrate_i[19:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/bit_cnt[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/cs[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/empty_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/ns[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/rd_en_o
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/rst_n
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/send_tick
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/tx_data_i[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/tx_en_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/tx_o
+addGroup "rx_fsm" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/baudrate_i[19:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/cs[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/full_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/gen_baudrate
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/ns[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rst_n
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_data_o[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_data_valid_o
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_en_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_h2l
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_reg
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_should_check
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_tick_delay
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/rx_tick_plus
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/tick
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/tick_counter[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/tick_l2h
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/tick_reg
+addGroup "uart_registers" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_Baudrate_Div[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_Rx_Buffer[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_Rx_Ctrl[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_Tx_Buffer[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_Tx_Ctrl[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_baudrate_div[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_rx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_rx_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_rx_fifo_full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_tx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_tx_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/UART_tx_fifo_empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/daddr_i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dvalid_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dwrite_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dwdata_i[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/drdata_o[31:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dready_o
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dready_fifo
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/dstrb_i[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/reg_rd_sel[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/reg_wr_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/reg_wr_sel[7:0]
+addGroup "tx_fifo" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/addra[2:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/addrb[2:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/catchup_r
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/catchup_w
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/din[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/dout[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/doutb[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/no_empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/no_full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/rd_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/rst
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/wr_en
+addGroup "rx_fifo" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra[2:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addrb[2:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/catchup_r
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/catchup_w
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/din[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/dout[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/doutb[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/no_empty
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/no_full
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/rd_en
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/rst
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/wr_en
+addGroup "tb_uart" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/divisor[15:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/enable16
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/enable16_counter[15:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_bitcount[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_busy
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_count16[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_done
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/rx_reg[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/sys_clk
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/sys_rst
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_bitcount[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_busy
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_count16[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_done
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_reg[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/tx_wr
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/uart_rx
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/uart_rx1
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/uart_rx2
+addSignal -h 15 /fwrisc_uart_tb/u_uart_receive/transceiver/uart_tx
+addGroup "program_receive_uart" -e FALSE
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/baudrate_i[19:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/clk
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/full_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/gen_baudrate
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/tick_l2h
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/ns[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rst_n
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_data[7:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_i
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_data_o[7:0]
+addSignal -c ID_RED5 -ls solid -lw 1 -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_data_valid_o
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_en_i
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_h2l
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_reg
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_reg1
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_reg2
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_should_check
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_tick_delay
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/rx_tick_plus
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/cs[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/tick
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/tick_counter[3:0]
+addSignal -h 15 /fwrisc_uart_tb/u_fwrisc_fpga_top/u_UART_rx_fsm/tick_reg
+addGroup "G12"
+

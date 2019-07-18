@@ -1,0 +1,434 @@
+debImport "-i" "-simflow" "-simBin" "./simv" "-simDelim" \
+          "+ROM=../../rundir/uart/ram.hex"
+srcTBInvokeSim
+srcTBRunSim
+srcTBSimBreak
+wvCreateWindow
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+wvSetCursor -win $_nWave3 209892882.569063
+wvRestoreSignal -win $_nWave3 "/home/yzb/fwrisc/fwrisc_uart/vsim/fwrisc_uart.rc" \
+           -overWriteAutoAlias on
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+wvSetCursor -win $_nWave3 85156540.928020 -snap {("fwrisc_top" 28)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvSetOptions -win $_nWave3 -cursorCenter on
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSetCursor -win $_nWave3 344224327.413257 -snap {("fwrisc_top" 22)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSetCursor -win $_nWave3 691447124.577501 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 684850491.125331 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 684250797.175133 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 705240085.432039 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 693246206.428093 -snap {("fwrisc_top" 22)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSetCursor -win $_nWave3 691690629.781994 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 691698535.903408 -snap {("fwrisc_top" 22)}
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSetCursor -win $_nWave3 1050663800.744430 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 1009884612.131062 -snap {("fwrisc_top" 22)}
+wvSetCursor -win $_nWave3 1074651558.752294 -snap {("fwrisc_top" 22)}
+wvScrollUp -win $_nWave3 7
+wvScrollDown -win $_nWave3 2
+wvScrollDown -win $_nWave3 3
+wvScrollDown -win $_nWave3 3
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 23 )} 
+wvSwitchDisplayAttr -win $_nWave3
+wvZoomAll -win $_nWave3
+wvSetCursor -win $_nWave3 6286285999.344691 -snap {("fwrisc_top" 23)}
+wvExpandGroup -win $_nWave3 "u_core"
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 23 )} 
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollDown -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvSelectSignal -win $_nWave3 {( "u_core" 61 )} 
+wvScrollUp -win $_nWave3 6
+wvScrollUp -win $_nWave3 22
+wvSelectSignal -win $_nWave3 {( "u_core" 38 )} 
+wvSelectSignal -win $_nWave3 {( "u_core" 38 )} 
+wvSwitchDisplayAttr -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "u_core" 39 )} 
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollUp -win $_nWave3 1
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+wvScrollDown -win $_nWave3 0
+verdiDockWidgetHide -dock windowDock_nWave_3
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "tx" -win $_nTrace1
+srcAction -pos 15 3 0 -win $_nTrace1 -name "tx" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_tx_fsm" -win \
+           $_nTrace1
+srcHBSelect "fwrisc_uart_tb" -win $_nTrace1
+verdiDockWidgetDisplay -dock windowDock_nWave_3
+verdiDockWidgetMaximize -dock windowDock_nWave_3
+wvSelectSignal -win $_nWave3 {( "tb" 11 )} 
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 23 )} 
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 22 )} 
+wvSetCursor -win $_nWave3 6332447273.917727 -snap {("fwrisc_top" 19)}
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomIn -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvZoomOut -win $_nWave3
+wvScrollDown -win $_nWave3 5
+wvScrollDown -win $_nWave3 5
+wvScrollDown -win $_nWave3 7
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 31 )} 
+wvSelectSignal -win $_nWave3 {( "fwrisc_top" 28 )} 
+verdiDockWidgetHide -dock windowDock_nWave_3
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcSetScope -win $_nTrace1 "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" \
+           -delim "."
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rx_en_i" -win $_nTrace1
+srcAction -pos 22 5 3 -win $_nTrace1 -name "rx_en_i" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcTraceLoad "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm.rx_en_i" -win \
+           $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcTraceDriver "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm.rx_en_i" -win \
+           $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcTraceLoad "fwrisc_uart_tb.u_fwrisc_fpga_top.rx_program_en" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcPrevTraced
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcNextTraced
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcPrevTraced
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcNextTraced
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcAction -pos 138 1 6 -win $_nTrace1 -name "UART_rx_fsm" -ctrlKey off
+srcShowDefine -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -inst "u_UART_rx_fsm" -win $_nTrace1
+srcShowDefine -win $_nTrace1
+srcSelect -win $_nTrace1 -range {18 18 3 4 1 1}
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "rx_en_i" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcSetScope -win $_nTrace1 "fwrisc_uart_tb.u_fwrisc_fpga_top" -delim "."
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -win $_nTrace1
+srcSetScope -win $_nTrace1 "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -delim "."
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSelect -signal "full_i" -win $_nTrace1
+srcAction -pos 24 5 3 -win $_nTrace1 -name "full_i" -ctrlKey off
+srcBackwardHistory -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_UART_rx_fsm" -win $_nTrace1
+verdiDockWidgetDisplay -dock windowDock_nWave_3
+wvSaveSignal -win $_nWave3 "/home/yzb/fwrisc/fwrisc_uart/vsim/fwrisc_uart.rc"
+nsMsgSwitchTab -tab general
+debExit

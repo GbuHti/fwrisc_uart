@@ -1,0 +1,176 @@
+{
+    "MlibObjs": {},
+    "CurCompileModules": [
+        "...MASTER...",
+        "std",
+        "UART_rx_fsm",
+        "UART_rx_fsm",
+        "mux2to1",
+        "op_uart",
+        "fwrisc_uart_tb",
+        "fwrisc_uart_tb"
+    ],
+    "CurCompileUdps": {},
+    "PrevCompiledModules": {
+        "mux2to1": {
+            "TDywx_d": {
+                "out": "TDywx_d.o",
+                "bytes": 8531,
+                "mode": 4,
+                "mod": "mux2to1",
+                "checksum": 0,
+                "archive": "archive.46/_prev_archive_1.a"
+            }
+        },
+        "...MASTER...": {
+            "amcQw_d": {
+                "out": "objs/amcQw_d.o",
+                "bytes": 7568,
+                "mode": 4,
+                "mod": "...MASTER...",
+                "checksum": 0
+            }
+        },
+        "op_uart": {
+            "UJngv_d": {
+                "out": "UJngv_d.o",
+                "bytes": 34255,
+                "mode": 4,
+                "mod": "op_uart",
+                "checksum": 0,
+                "archive": "archive.46/_prev_archive_1.a"
+            }
+        },
+        "fwrisc_uart_tb": {
+            "Rq5Sq_d": {
+                "out": "Rq5Sq_d.o",
+                "bytes": 241421,
+                "mode": 4,
+                "mod": "fwrisc_uart_tb",
+                "checksum": 0,
+                "archive": "archive.46/_26076_archive_1.a"
+            }
+        },
+        "UART_rx_fsm": {
+            "J2Vib_d": {
+                "out": "J2Vib_d.o",
+                "bytes": 27932,
+                "mode": 4,
+                "mod": "UART_rx_fsm",
+                "checksum": 0,
+                "archive": "archive.46/_26076_archive_1.a"
+            }
+        },
+        "std": {
+            "reYIK_d": {
+                "out": "reYIK_d.o",
+                "bytes": 41475,
+                "mode": 4,
+                "mod": "std",
+                "checksum": 0,
+                "archive": "archive.46/_prev_archive_1.a"
+            }
+        }
+    },
+    "Misc": {
+        "daidir_abs": "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir",
+        "daidir": "simv.daidir",
+        "cwd": "/home/yzb/fwrisc/fwrisc_uart/vsim",
+        "csrc": "csrc",
+        "csrc_abs": "/home/yzb/fwrisc/fwrisc_uart/vsim/csrc",
+        "default_output_dir": "csrc",
+        "archive_dir": "archive.46"
+    },
+    "SIMBData": {
+        "bytes": 117697,
+        "out": "amcQwB.o"
+    },
+    "NameTable": {
+        "UART_rx_fsm": [
+            "UART_rx_fsm",
+            "J2Vib",
+            "module"
+        ],
+        "std": [
+            "std",
+            "reYIK",
+            "module"
+        ],
+        "mux2to1": [
+            "mux2to1",
+            "TDywx",
+            "module"
+        ],
+        "...MASTER...": [
+            "SIM",
+            "amcQw",
+            "module"
+        ],
+        "fwrisc_uart_tb": [
+            "fwrisc_uart_tb",
+            "Rq5Sq",
+            "module"
+        ],
+        "op_uart": [
+            "op_uart",
+            "UJngv",
+            "module"
+        ]
+    },
+    "stat": {
+        "mopSpeed": 204097.97538429403,
+        "outputSizePerQuad": 43.0,
+        "ru_self_cgstart": {
+            "ru_utime_sec": 0.132526,
+            "ru_maxrss_kb": 77400,
+            "ru_stime_sec": 0.039267000000000003,
+            "ru_minflt": 21735,
+            "ru_majflt": 2,
+            "ru_nvcsw": 26,
+            "ru_nivcsw": 13
+        },
+        "CodeGen(%)": 46.435096114982294,
+        "totalObjSize": 387626,
+        "ru_childs_cgstart": {
+            "ru_utime_sec": 0.0028900000000000002,
+            "ru_maxrss_kb": 27448,
+            "ru_stime_sec": 0.00547,
+            "ru_minflt": 2144,
+            "ru_majflt": 0,
+            "ru_nvcsw": 4,
+            "ru_nivcsw": 0
+        },
+        "nMops": 23448,
+        "mop/quad": 2.613464110566206,
+        "nQuads": 8972,
+        "ru_childs_end": {
+            "ru_utime_sec": 0.0028900000000000002,
+            "ru_maxrss_kb": 31852,
+            "ru_stime_sec": 0.007672,
+            "ru_minflt": 2733,
+            "ru_majflt": 0,
+            "ru_nvcsw": 5,
+            "ru_nivcsw": 0
+        },
+        "ru_self_end": {
+            "ru_utime_sec": 0.24741199999999999,
+            "ru_maxrss_kb": 89108,
+            "ru_stime_sec": 0.050271000000000003,
+            "ru_minflt": 26378,
+            "ru_majflt": 3,
+            "ru_nvcsw": 29,
+            "ru_nivcsw": 24
+        },
+        "quadSpeed": 78094.807026095441,
+        "Frontend(%)": 53.564903885017706
+    },
+    "CompileStrategy": "fullobj",
+    "LVLData": [
+        "SIM"
+    ],
+    "PEModules": [],
+    "CompileProcesses": [
+        "cgproc.26076.json"
+    ],
+    "CompileStatus": "Successful"
+}

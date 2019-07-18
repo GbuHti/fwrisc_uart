@@ -1,0 +1,9 @@
+#!/bin/sh -h 
+PYTHONHOME=/home/yzb/EDA/synopsys/vcs/etc/search/pyh
+export PYTHONHOME
+PYTHONPATH=/home/yzb/EDA/synopsys/vcs/linux64/lib/pylib27
+export PYTHONPATH
+LD_LIBRARY_PATH=/home/yzb/EDA/synopsys/vcs/linux64/lib:/home/yzb/EDA/synopsys/vcs/linux64/lib/pylib27
+export LD_LIBRARY_PATH
+/home/yzb/EDA/synopsys/vcs/linux64/bin/vcsfind_create_index.exe  -z  "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir/debug_dump/fsearch/./idents_9MvMlf.xml.gz" "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir/debug_dump/fsearch/./idents_tapi.xml.gz" -o "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp"
+\mv "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir/debug_dump/fsearch/fsearch.db_tmp" "/home/yzb/fwrisc/fwrisc_uart/vsim/simv.daidir/debug_dump/fsearch/fsearch.db"

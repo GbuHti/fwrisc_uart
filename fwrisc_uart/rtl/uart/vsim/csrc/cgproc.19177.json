@@ -1,0 +1,50 @@
+{
+    "Modules": {
+        "...MASTER...": {},
+        "std": {
+            "Compiled": "Yes",
+            "Compiled Times": 7
+        },
+        "uart": {
+            "Compiled": "Yes",
+            "Compiled Times": 7
+        },
+        "uart_tb": {
+            "Compiled": "Yes",
+            "Compiled Times": 7
+        }
+    },
+    "CompUnits": {
+        "srKcx_d": {
+            "mod": "uart_tb",
+            "bytes": 17280,
+            "out": "srKcx_d.o",
+            "mode": 4,
+            "checksum": 0,
+            "archive": "archive.6/_19177_archive_1.a"
+        }
+    },
+    "reusePaths": {
+        "reYIK_d": {
+            "icPath": "csrc"
+        },
+        "amcQw_d": {
+            "icPath": "csrc"
+        },
+        "bvImI_d": {
+            "icPath": "csrc"
+        }
+    },
+    "ObjArchives": [
+        {
+            "archive": "archive.6/_19177_archive_1.a",
+            "objects": [
+                [
+                    "srKcx_d.o",
+                    17280
+                ]
+            ],
+            "size": 17280
+        }
+    ]
+}

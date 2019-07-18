@@ -1,0 +1,38 @@
+debImport "-f" "fwrisc_uart.f"
+srcHBSelect \
+           "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_tx_fsm.u_UART_baudrate_gen" \
+           -win $_nTrace1
+nsMsgSelect -range {0 0-0}
+nsMsgAction -tab cmpl -index {0 0}
+nsMsgSelect -range {0 0-0}
+debReload
+nsMsgSelect -range {0 0-0}
+debReload
+debReload
+nsMsgSelect -range {0 1-1}
+debReload
+debReload
+nsMsgSelect -range {0 0-0}
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers" -win \
+           $_nTrace1
+verdiWindowResize -win $_Verdi_1 "0" "23" "1920" "1017"
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers" -win \
+           $_nTrace1
+srcSetScope -win $_nTrace1 \
+           "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers" -delim \
+           "."
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_Registers" -win \
+           $_nTrace1
+srcHBSelect \
+           "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart.u_UART_tx_fsm.u_UART_baudrate_gen" \
+           -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart_mux" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_core" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart_mux" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_core" -win $_nTrace1
+srcHBSelect "fwrisc_uart_tb.u_fwrisc_fpga_top.u_uart" -win $_nTrace1
+srcDeselectAll -win $_nTrace1
+srcSetOptions -win $_nTrace1 -ExpandMacro on
+debExit

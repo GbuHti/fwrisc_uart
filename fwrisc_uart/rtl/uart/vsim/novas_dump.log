@@ -1,0 +1,308 @@
+ANF: vcsd_register_1st_RTL_rfn('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vcsd_register_1st_RTL_rfn')
+ANF: vcsd_register_1st_sequential_rfn('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vcsd_register_1st_sequential_rfn')
+ANF: vcsd_register_2nd_RTL_rfn('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vcsd_register_2nd_RTL_rfn')
+ANF: vcsd_register_2nd_sequential_rfn('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vcsd_register_2nd_sequential_rfn')
+ANF: scsd_xprop_is_enabled('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_is_enabled')
+ANF: scsd_xprop_sig_is_promoted('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_sig_is_promoted')
+ANF: scsd_xprop_int_xvalue('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_int_xvalue')
+ANF: scsd_xprop_bool_xvalue('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_bool_xvalue')
+ANF: scsd_xprop_enum_xvalue('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_enum_xvalue')
+ANF: scsd_xprop_register_merge_mode_cb('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_register_merge_mode_cb')
+ANF: scsd_xprop_delete_merge_mode_cb('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_delete_merge_mode_cb')
+ANF: scsd_xprop_get_merge_mode('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: scsd_xprop_get_merge_mode')
+ANF: msvEnableDumpingMode('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvEnableDumpingMode')
+ANF: msvGetVersion('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetVersion')
+ANF: msvGetInstProp('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetInstProp')
+ANF: msvIsSpiceEngineReady('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvIsSpiceEngineReady')
+ANF: msvSetAddProbeCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetAddProbeCallback')
+ANF: msvGetInstHandle('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetInstHandle')
+ANF: msvGetProbeByInst('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetProbeByInst')
+ANF: msvGetSigHandle('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetSigHandle')
+ANF: msvGetProbeBySig('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetProbeBySig')
+ANF: msvGetProbeInfo('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetProbeInfo')
+ANF: msvRelease('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvRelease')
+ANF: msvSetVcCallbackFunc('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetVcCallbackFunc')
+ANF: msvCheckVcCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvCheckVcCallback')
+ANF: msvAddVcCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvAddVcCallback')
+ANF: msvRemoveVcCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvRemoveVcCallback')
+ANF: msvGetLatestValue('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetLatestValue')
+ANF: msvSetEndofSimCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetEndofSimCallback')
+ANF: msvIgnoredProbe('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvIgnoredProbe')
+ANF: msvGetThruNetInfo('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetThruNetInfo')
+ANF: msvFreeThruNetInfo('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvFreeThruNetInfo')
+ANF: PI_ace_get_output_time_unit('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: PI_ace_get_output_time_unit')
+ANF: PI_ace_sim_sync('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: PI_ace_sim_sync')
+ANF: msvGetRereadInitFile('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetRereadInitFile')
+ANF: msvSetBeforeRereadCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetBeforeRereadCallback')
+ANF: msvSetAfterRereadCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetAfterRereadCallback')
+ANF: msvSetForceCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetForceCallback')
+ANF: msvSetReleaseCallback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvSetReleaseCallback')
+ANF: msvGetForceStatus('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: msvGetForceStatus')
+ANF: vhdi_dt_get_type('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_type')
+ANF: vhdi_dt_get_key('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_key')
+ANF: vhdi_dt_get_vhdl_enum_info('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_vhdl_enum_info')
+ANF: vhdi_dt_get_vhdl_physical_info('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_vhdl_physical_info')
+ANF: vhdi_dt_get_vhdl_array_info('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_vhdl_array_info')
+ANF: vhdi_dt_get_vhdl_record_info('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_dt_get_vhdl_record_info')
+ANF: vhdi_def_traverse_module('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_traverse_module')
+ANF: vhdi_def_traverse_scope('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_traverse_scope')
+ANF: vhdi_def_traverse_variable('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_traverse_variable')
+ANF: vhdi_def_get_module_id_by_vhpi('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_get_module_id_by_vhpi')
+ANF: vhdi_def_get_handle_by_module_id('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_get_handle_by_module_id')
+ANF: vhdi_def_free('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_def_free')
+ANF: vhdi_ist_traverse_scope('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_traverse_scope')
+ANF: vhdi_ist_traverse_variable('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_traverse_variable')
+ANF: vhdi_ist_convert_by_vhpi('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_convert_by_vhpi')
+ANF: vhdi_ist_clone('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_clone')
+ANF: vhdi_ist_free('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_free')
+ANF: vhdi_ist_hash_key('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_hash_key')
+ANF: vhdi_ist_compare('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_compare')
+ANF: vhdi_ist_get_value_addr('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_get_value_addr')
+ANF: vhdi_set_scsd_callback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_set_scsd_callback')
+ANF: vhdi_ist_check_scsd_callback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_check_scsd_callback')
+ANF: vhdi_ist_add_scsd_callback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_add_scsd_callback')
+ANF: vhdi_ist_remove_scsd_callback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_remove_scsd_callback')
+ANF: vhdi_ist_get_scsd_user_data('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_ist_get_scsd_user_data')
+ANF: vhdi_add_time_change_callback('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_add_time_change_callback')
+ANF: vhdi_get_real_value_by_value_addr('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_get_real_value_by_value_addr')
+ANF: vhdi_get_64_value_by_value_addr('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_get_64_value_by_value_addr')
+ANF: vhdi_xprop_inst_is_promoted('/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv: undefined symbol: vhdi_xprop_inst_is_promoted')
+VCS compile option:
+ option[0]: /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv
+ option[1]: -ucli
+ option[2]: +UVM_CONFIG_DB_TRACE
+ option[3]: +UVM_PHASE_TRACE
+ option[4]: +UVM_OBJECTION_TRACE
+ option[5]: +UVM_RESOURCE_DB_TRACE
+ option[6]: +UVM_LOG_RECORD
+ option[7]: +UVM_VERDI_TRACE=UVM_AWARE
+ option[8]: -ucli2Proc
+ option[9]: -lca
+ option[10]: -l
+ option[11]: /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/verdiLog/sim.log
+ option[12]: /home/yzb/EDA/synopsys/vcs/linux64/bin/vcs1
+ option[13]: -Mcc=gcc
+ option[14]: -Mcplusplus=g++
+ option[15]: -Masflags=
+ option[16]: -Mcfl= -pipe -fPIC -O -I/home/yzb/EDA/synopsys/vcs/include 
+ option[17]: -Mxcflags= -pipe -fPIC -I/home/yzb/EDA/synopsys/vcs/include
+ option[18]: -Mldflags= -rdynamic 
+ option[19]: -Mout=simv
+ option[20]: -Mamsrun=
+ option[21]: -Mvcsaceobjs=
+ option[22]: -Mobjects= /home/yzb/EDA/synopsys/vcs/linux64/lib/libvirsim.so /home/yzb/EDA/synopsys/vcs/linux64/lib/liberrorinf.so /home/yzb/EDA/synopsys/vcs/linux64/lib/libsnpsmalloc.so /home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/pli.a 
+ option[23]: -Mexternalobj=
+ option[24]: -Msaverestoreobj=/home/yzb/EDA/synopsys/vcs/linux64/lib/vcs_save_restore_new.o
+ option[25]: -Mcrt0=
+ option[26]: -Mcrtn=
+ option[27]: -Mcsrc=
+ option[28]: -Msyslibs=/home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/pli.a -ldl -lm 
+ option[29]: -timescale=1ns/1ps
+ option[30]: -fsdb
+ option[31]: -P
+ option[32]: /home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/verdi.tab
+ option[33]: -fsdb
+ option[34]: -full64
+ option[35]: +vc
+ option[36]: +v2k
+ option[37]: -debug_access+all+dmptf+bc
+ option[38]: +vpi
+ option[39]: +vcsd
+ option[40]: +memcbk
+ option[41]: +itf+/home/yzb/EDA/synopsys/vcs/linux64/lib/vcsdp.tab
+ option[42]: -debug_region=cell+lib
+ option[43]: -Xpiyushb1=0x80
+ option[44]: -lca
+ option[45]: -kdb
+ option[46]: -Xufe=2steps
+ option[47]: -P
+ option[48]: /home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/novas.tab
+ option[49]: +define+SIMULATION+
+ option[50]: -picarchive
+ option[51]: -debug_acc+fsdb
+ option[52]: -sverilog
+ option[53]: -gen_obj
+ option[54]: -f
+ option[55]: ../uart.f
+ option[56]: -load
+ option[57]: /home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[58]: -load
+ option[59]: /home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64/libnovas.so:FSDBDumpCmd
+ option[60]: timescale=1ns/1ps
+Chronologic Simulation VCS Release L-2016.06_Full64
+Linux 3.10.0-957.21.3.el7.x86_64 #1 SMP Tue Jun 18 16:35:19 UTC 2019 x86_64
+CPU cores: 1
+Limit information:
+======================================
+cputime			unlimited
+filesize		unlimited
+datasize		unlimited
+stacksize		8192 kbytes
+coredumpsize	0 kbytes
+memoryuse		unlimited
+vmemoryuse		unlimited
+descriptors		4096
+memorylocked	64 kbytes
+maxproc			3540
+======================================
+(Special)Runtime environment variables:
+
+Runtime environment variables:
+VCS_STOP_SAFE=1
+XDG_SESSION_ID=1
+HOSTNAME=localhost.localdomain
+NOVAS_SYNC_MOTIF_DISP=
+NOVAS_HOME=/home/yzb/EDA/synopsys/verdi
+SHELL=/bin/bash
+TERM=xterm
+MAKEFLAGS=
+HISTSIZE=1000
+SSH_CLIENT=192.168.137.1 53214 22
+SPS_FONT_PATH=/home/yzb/EDA/synopsys/verdi/font
+SPS_XFONT_PATH=/home/yzb/EDA/synopsys/verdi/XFont
+VCS_PATHMAP_PRELOAD_DONE=1
+SSH_TTY=/dev/pts/0
+LC_ALL=C
+USER=yzb
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
+LD_LIBRARY_PATH=/home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64
+SYSTEMC_LIBDIR=/home/yzb/utility/systemc-2.3.3/lib-linux64
+SYSTEMC_INCLUDE=/home/yzb/utility/systemc-2.3.3/include
+XNLSPATH=/home/yzb/EDA/synopsys/verdi/etc/access/nls
+SNPSLMD_LICENSE_FILE=27000@localhost.localdomain
+MAKELEVEL=1
+MFLAGS=
+PATH=/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/usr/loacl/java/jkd1.8.0_211/bin:/usr/local/vim/bin/:/home/yzb/EDA/synopsys/vcs/gui/dve/bin:/home/yzb/EDA/synopsys/vcs/bin:/home/yzb/EDA/synopsys/verdi/bin:/home/yzb/EDA/synopsys/verdi/bin:/home/yzb/EDA/synopsys/scl/linux64/bin:/opt/riscv32/bin:/home/yzb/.local/bin:/home/yzb/bin
+MAIL=/var/spool/mail/yzb
+VERDI_HOME=/home/yzb/EDA/synopsys/verdi
+PWD=/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim
+XMODIFIERS=@im=none
+VCS_HOME=/home/yzb/EDA/synopsys/vcs
+JAVA_HOME=/usr/loacl/java/jkd1.8.0_211
+SYS_PROG_NAME=verdi
+LANG=C
+TZ=Asia/Shanghai
+VCS_ARCH_OVERRIDE=linux
+SYSTEMC_HOME=/home/yzb/utility/systemc-2.3.3
+SYS_INST_DIR=/home/yzb/EDA/synopsys/verdi
+LM_LICENSE_FILE=27000@localhost.localdomain
+HISTCONTROL=ignoredups
+HOME=/home/yzb
+SHLVL=2
+VERDI_ORIGNAL_LD_LIBRARY_PATH=/home/yzb/EDA/synopsys/verdi/share/PLI/VCS/LINUX64
+LOGNAME=yzb
+SSH_CONNECTION=192.168.137.1 53214 192.168.137.200 22
+CLASSPATH=.:/usr/loacl/java/jkd1.8.0_211/lib/dt.jar:/usr/loacl/java/jkd1.8.0_211/lib/tools.jar
+NOVASHLPPATH=/home/yzb/EDA/synopsys/verdi/doc
+SPS_RGB_PATH=/home/yzb/EDA/synopsys/verdi/etc/rgb
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+LD_NOVERSION=1
+XDG_RUNTIME_DIR=/run/user/1000
+DISPLAY=localhost:10.0
+QT_PLUGIN_PATH=/home/yzb/EDA/synopsys/verdi/platform/LINUXAMD64/bin/plugins
+NOVAS_LC_ALL=C
+NOVAS_SIGNAL_BASE_EXTRACTION=1
+SIGNAL_BASE_EXTRACTION=1
+NOVAS_VERDI_SVTB_BETA=1
+VERDI_SVTB_BETA=1
+NOVAS_VERDI_SVTB_ALPHA=1
+VERDI_SVTB_ALPHA=1
+NOVAS_WAVE_REDRAW_ALLVC=1
+WAVE_REDRAW_ALLVC=1
+NOVAS_TCL_LIBRARY=/home/yzb/EDA/synopsys/verdi/etc/access/tcl86_library
+TCL_LIBRARY=/home/yzb/EDA/synopsys/verdi/etc/access/tcl86_library
+XKEYSYMDB=/home/yzb/EDA/synopsys/verdi/etc/access/XKeysymDB2.1
+XLOCALEDIR=/home/yzb/EDA/synopsys/verdi/etc/access/locale
+NOVAS_SIGNAL_BASED_BA=0
+SIGNAL_BASED_BA=0
+SYNOPSYS_SIM=/home/yzb/EDA/synopsys/vcs
+DISABLE_LIBRARY_MAP_CHECK=1
+SNPS_SIM_DEFAULT_GUI=verdi
+FSDB_FILE=/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb
+VCS_UCLI_STDIN_BLOCKING=1
+FSDB_RD_IR_ENABLE=1
+FSDB_SVA_STATUS=1
+DVE_SIM_SELECT_LOOP=on
+VCS_LCAMSG_PRINT_OFF=1
+Runtime command line arguments:
+argv[0]=/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/simv
+argv[1]=-ucli
+argv[2]=+UVM_CONFIG_DB_TRACE
+argv[3]=+UVM_PHASE_TRACE
+argv[4]=+UVM_OBJECTION_TRACE
+argv[5]=+UVM_RESOURCE_DB_TRACE
+argv[6]=+UVM_LOG_RECORD
+argv[7]=+UVM_VERDI_TRACE=UVM_AWARE
+argv[8]=-ucli2Proc
+argv[9]=-lca
+argv[10]=-l
+argv[11]=/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/verdiLog/sim.log
+239 profile - 100
+          CPU/Mem usage: 0.010 sys,  0.030 user,  228.08M sys,  0.00M vm
+240 VC callback profile - scalar:0 vector:0
+241 Tue Jul 16 16:08:46 2019
+242 pliAppInit
+243 ndpGetenv(FSDB_FILE): /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb
+244 ndpGetenv(FSDB_SVA_STATUS): 1
+245 *Verdi3* : FSDB_GATE is set.
+246 *Verdi3* : FSDB_RTL is set.
+247 *Verdi3* : Enable Parallel Dumping.
+248 pliAppMiscSet: New Sim Round
+249 pliEntryInit
+250 LIBSSCORE=found /home/yzb/EDA/synopsys/verdi/share/PLI/lib/LINUXAMD64/libsscore_vcs201606.so through $NOVAS_HOME setting.
+251 FSDB Dumper for VCS, Release Verdi3_L-2016.06-1, Linux x86_64/64bit, 07/10/2016
+252 (C) 1996 - 2016 by Synopsys, Inc.
+253 sps_tcl_fsdbDumpfile
+254 argv[0]: /home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb
+255 *Verdi3* : Create FSDB file '/home/yzb/fwrisc/fwrisc_uart/rtl/uart/vsim/inter.fsdb'
+256 sps_tcl_fsdbDumpflush
+257 *Verdi3* : Flush all FSDB Files at 0 ps.
+258 sps_tcl_fsdbDumpflush
+259 *Verdi3* : Flush all FSDB Files at 0 ps.
+260 sps_call_fsdbDumpfile at 0 : /home/yzb/fwrisc/fwrisc_uart/rtl/uart/uart_tb.sv(27)
+261 argv[0]: uart_t.fsdb
+262 *Verdi3* WARNING: fsdbDumpfile - One FSDB file has already opened for dumping.
+263 sps_call_fsdbDumpvars at 0 : /home/yzb/fwrisc/fwrisc_uart/rtl/uart/uart_tb.sv(28)
+264 argv[0]: 0
+265 argv[1]: (handle)0x3346908 uart_tb
+266 *Verdi3* : Begin traversing the scope (uart_tb), layer (0).
+267 *Verdi3* : End of traversing.
+268 fsdbDumpvars traverse var: profile - 
+          CPU/Mem usage: 0.010 sys,  0.130 user,  318.77M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  7.27M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  7.27M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  7.27M sys,  0.00M vm
+
+          Count usage: 88 var,  77 idcode,  45 callback
+                 incr: 88 var,  77 idcode,  45 callback
+                 accu: 88 var,  77 idcode,  45 callback
+            accu incr: 88 var,  77 idcode,  45 callback
+269 VC callback profile - scalar:0 vector:0
+270 Tue Jul 16 16:08:54 2019
+271 fsdbDumpvars: profile - 
+          CPU/Mem usage: 0.010 sys,  0.130 user,  319.96M sys,  0.00M vm
+                   incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+                   accu: 0.000 sys,  0.000 user,  8.46M sys,  0.00M vm
+              accu incr: 0.000 sys,  0.000 user,  1.19M sys,  0.00M vm
+
+          Count usage: 88 var,  77 idcode,  45 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 88 var,  77 idcode,  45 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+272 VC callback profile - scalar:21 vector:24
+273 Tue Jul 16 16:08:54 2019
+274 *Verdi3* WARNING: 
+
+  $fsdbDumpMem is obsolete. Use $fsdbDumpMDA instead.
+  This may result in a larger FSDB file size as $fsdbDumpMDA will
+  dump the memory contents with every change instead of only when
+  the command is called.
+
+275 sps_tcl_fsdbDumpflush
+276 *Verdi3* : Flush all FSDB Files at 4,678,620,000 ps.
+277 End of simulation at 4678620000
+278 VC callback profile - scalar:935800 vector:936111
+279 Tue Jul 16 17:23:31 2019
+280 Parallel profile    -  Flush:8 Expand:0 ProduceWait:0 ConsumerWait:12 BlockUsed:19
+281                        ProduceTime:0.368671579 ConsumerTime:0.169122841 Buffer:64MB
+282 SimExit
