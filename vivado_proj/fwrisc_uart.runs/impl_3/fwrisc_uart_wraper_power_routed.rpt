@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Jul 18 16:30:03 2019
+| Date             : Thu Jul 18 17:05:35 2019
 | Host             : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command          : report_power -file fwrisc_uart_wraper_power_routed.rpt -pb fwrisc_uart_wraper_power_summary_routed.pb -rpx fwrisc_uart_wraper_power_routed.rpx
 | Design           : fwrisc_uart_wraper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.235        |
+| Total On-Chip Power (W)  | 0.222        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.139        |
+| Dynamic (W)              | 0.127        |
 | Device Static (W)        | 0.095        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.3         |
-| Junction Temperature (C) | 27.7         |
+| Max Ambient (C)          | 82.4         |
+| Junction Temperature (C) | 27.6         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,20 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.003 |        8 |       --- |             --- |
-| Slice Logic              |     0.006 |     1690 |       --- |             --- |
-|   LUT as Logic           |     0.006 |      952 |     17600 |            5.41 |
+| Clocks                   |     0.002 |        8 |       --- |             --- |
+| Slice Logic              |     0.004 |     1690 |       --- |             --- |
+|   LUT as Logic           |     0.004 |      954 |     17600 |            5.42 |
 |   CARRY4                 |    <0.001 |       59 |      4400 |            1.34 |
 |   Register               |    <0.001 |      433 |     35200 |            1.23 |
 |   LUT as Distributed RAM |    <0.001 |       16 |      6000 |            0.27 |
 |   F7/F8 Muxes            |    <0.001 |        1 |     17600 |           <0.01 |
 |   Others                 |     0.000 |       33 |       --- |             --- |
-| Signals                  |     0.010 |     1598 |       --- |             --- |
-| Block RAM                |     0.024 |       13 |        60 |           21.67 |
-| PLL                      |     0.098 |        1 |         2 |           50.00 |
+| Signals                  |     0.006 |     1597 |       --- |             --- |
+| Block RAM                |     0.016 |       13 |        60 |           21.67 |
+| PLL                      |     0.099 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |        7 |       100 |            7.00 |
 | Static Power             |     0.095 |          |           |                 |
-| Total                    |     0.235 |          |           |                 |
+| Total                    |     0.222 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,8 +75,8 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.053 |       0.049 |      0.004 |
-| Vccaux    |       1.800 |     0.055 |       0.049 |      0.006 |
+| Vccint    |       1.000 |     0.040 |       0.036 |      0.004 |
+| Vccaux    |       1.800 |     0.056 |       0.050 |      0.005 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +84,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.002 |       0.002 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.001 |      0.001 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -138,8 +138,8 @@ Table of Contents
 +----------------------+-------------------------------------+-----------------+
 | Clock                | Domain                              | Constraint (ns) |
 +----------------------+-------------------------------------+-----------------+
-| clk_out1_clk_wiz_0   | u_clock_gen/inst/clk_out1_clk_wiz_0 |            13.3 |
-| clk_out1_clk_wiz_0_1 | u_clock_gen/inst/clk_out1_clk_wiz_0 |            13.3 |
+| clk_out1_clk_wiz_0   | u_clock_gen/inst/clk_out1_clk_wiz_0 |            20.0 |
+| clk_out1_clk_wiz_0_1 | u_clock_gen/inst/clk_out1_clk_wiz_0 |            20.0 |
 | clkfbout_clk_wiz_0   | u_clock_gen/inst/clkfbout_clk_wiz_0 |            40.0 |
 | clkfbout_clk_wiz_0_1 | u_clock_gen/inst/clkfbout_clk_wiz_0 |            40.0 |
 | clock                | clock                               |             8.0 |
@@ -156,13 +156,12 @@ Table of Contents
 +---------------------+-----------+
 | Name                | Power (W) |
 +---------------------+-----------+
-| fwrisc_uart_wraper  |     0.139 |
-|   u_clock_gen       |     0.098 |
-|     inst            |     0.098 |
-|   u_fwrisc_fpga_top |     0.042 |
-|     u_core          |     0.019 |
-|       u_regfile     |     0.016 |
-|     u_uart          |     0.001 |
+| fwrisc_uart_wraper  |     0.127 |
+|   u_clock_gen       |     0.099 |
+|     inst            |     0.099 |
+|   u_fwrisc_fpga_top |     0.028 |
+|     u_core          |     0.013 |
+|       u_regfile     |     0.010 |
 +---------------------+-----------+
 
 
