@@ -27,14 +27,13 @@ module fwrisc_uart_tb;
 	wire		rx_irq;
 	wire		tx_irq;
 	
-	wire 		clk_50M;
 
 	//verdi{{{
-	// initial begin 
-		// $fsdbDumpfile("fwrisc_uart_tb.fsdb");
-		// $fsdbDumpvars(0,fwrisc_uart_tb);
-		// $fsdbDumpMem;
-	// end /*}}}*/
+	initial begin 
+		$fsdbDumpfile("fwrisc_uart_tb.fsdb");
+		$fsdbDumpvars(0,fwrisc_uart_tb);
+		$fsdbDumpMem;
+	end /*}}}*/
 
 	integer i;
 	initial begin 
@@ -45,9 +44,10 @@ module fwrisc_uart_tb;
 		csr_di = 32'h0;
 		i	   = 0;
 
-		#3000;
-		rst_n = 1;
 		#200
+		rst_n = 1;
+
+		#1000;
 		Set_thru;
 
 		
@@ -61,6 +61,13 @@ module fwrisc_uart_tb;
 			end 
 		end 
 	end 
+	
+	initial begin
+		@(posedge rx_irq) begin
+			repeat(100) @(posedge clk);
+			Send_custom;
+		end
+	end
 
 //	reg [8*300:1] testcase;
 //	initial begin 
@@ -69,11 +76,11 @@ module fwrisc_uart_tb;
 //		$readmemh(testcase,u_fwrisc_fpga_top.rom);
 //	end 
 
-	always #5 clk = ~clk;
+	always #4 clk = ~clk;
 
 	reg [7:0] program_mem[0:4095];
 	initial begin
-	$readmemh("../../../../../fwrisc_uart/program/uart_program_mem.hex" ,program_mem);
+	$readmemh("../../rundir/uart/uart_program_mem.hex" ,program_mem);
 	end 
 
 	//tasks to handle tb's uart sending{{{
@@ -81,22 +88,29 @@ module fwrisc_uart_tb;
 		csr_we = 1;
 		csr_a = {4'b0000,8'h0,2'b00};
 		csr_di = {24'h0,program_mem[i]};
-		@(posedge clk_50M);
-		@(posedge clk_50M)
+		@(posedge clk)
 		csr_we = 0;
 	endtask
+
+	task Send_custom;
+		csr_we = 1;
+		csr_a = {4'b0000,8'h0,2'b00};
+		csr_di = {24'h0,8'hba};
+		@(posedge clk)
+		csr_we = 0;
+
+	endtask 
 	
 	task Set_thru;
 		csr_we = 1;
 		csr_a = {4'b0000,8'h0,2'b10};
 		csr_di = {31'b0,1'b0};
-		@(posedge clk_50M);
-		@(posedge clk_50M)
+		#10
 		csr_we = 0;
 	endtask /*}}}*/
 
 	//instance {{{
-	fwrisc_uart_wraper u_fwrisc_fpga_top(
+	fwrisc_fpga_top u_fwrisc_fpga_top(
 		.clock		(clk),
 		.reset		(!rst_n),		
 		.tx			(tx),
@@ -108,7 +122,7 @@ module fwrisc_uart_tb;
 	);
 
 	op_uart u_uart_receive(
-		.sys_clk		(clk_50M),
+		.sys_clk		(clk),
 		.sys_rst		(!rst_n),
 
 		.csr_a			(csr_a),
@@ -122,14 +136,5 @@ module fwrisc_uart_tb;
 		.uart_rx		(tx),
 		.uart_tx		(rx)
 	);/*}}}*/
-	
-	clk_wiz_0 u_clock_gen(
-		// Clock out ports
-		.clk_out1(clk_50M),     // output clk_out1
-		// Status and control signals
-		.reset(), // input reset
-		.locked(),       // output locked
-		// Clock in ports
-		.clk_in1(clk));      // input clk_in1
 
 endmodule 

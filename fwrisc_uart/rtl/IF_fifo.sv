@@ -28,20 +28,20 @@ module IF_fifo#(
 	input  [DATA_WIDTH-1:0] master_rdata,
 	input	rx_fifo_empty_i
 );
+	
+	wire	tx_dready = dvalid_i&&dwrite_i&& !tx_fifo_full_i;
+	wire	rx_dready = dvalid_i&&!dwrite_i && !rx_fifo_empty_i;
+	reg		rx_dready_r;
+	always @(posedge clk) begin rx_dready_r <= rx_dready; end 
+	assign dready_o = (tx_dready || rx_dready_r)?1:0;
 	reg dready_r;
 	always @(posedge clk) begin dready_r <= dready_o; end
 
-	wire	tx_dready = tx_fifo_wr_en_o && !tx_fifo_full_i;
-	wire	rx_dready = rx_fifo_rd_en_o && !rx_fifo_empty_i;
-	reg		rx_dready_r;
-	always @(posedge clk) begin rx_dready_r <= rx_dready; end 
-
-	assign tx_fifo_wr_en_o = (daddr_i == (`UART_BASE + `UART_TX_BUFFER))&&dwrite_i&&dvalid_i&&(~dready_r);
+	assign tx_fifo_wr_en_o = (daddr_i == (`UART_BASE + `UART_TX_BUFFER))&&dwrite_i&&dvalid_i&&(dready_o && !dready_r);
 	assign master_wdata = dwdata_i[7:0];
-	assign dready_o = (tx_dready || rx_dready_r)?1:0;
 	
 	
-	assign rx_fifo_rd_en_o = (daddr_i == (`UART_BASE + `UART_RX_BUFFER))&&!dwrite_i && dvalid_i&&(!dready_r);
+	assign rx_fifo_rd_en_o = (daddr_i == (`UART_BASE + `UART_RX_BUFFER))&&!dwrite_i && dvalid_i&&(dready_o && !dready_r);
 	assign drdata_o = {24'b0,master_rdata};
 
 endmodule 
