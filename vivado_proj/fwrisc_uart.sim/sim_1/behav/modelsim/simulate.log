@@ -11,23 +11,76 @@
 # //  is prohibited from disclosure under the Trade Secrets Act,
 # //  18 U.S.C. Section 1905.
 # //
-# do {pll_tb_simulate.do}
-# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.pll_tb xil_defaultlib.glbl 
-# Start time: 17:22:13 on Jul 18,2019
+# do {fwrisc_uart_tb_simulate.do}
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.fwrisc_uart_tb xil_defaultlib.glbl 
+# Start time: 19:16:23 on Jul 18,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading sv_std.std
-# Loading work.pll_tb(fast)
+# Loading work.fwrisc_uart_tb(fast)
+# Loading work.fwrisc_uart_wraper(fast)
 # Loading work.clk_wiz_0(fast)
 # Loading work.clk_wiz_0_clk_wiz(fast)
 # Loading unisims_ver.IBUF(fast)
 # Loading unisims_ver.PLLE2_ADV(fast)
 # Loading unisims_ver.BUFG(fast)
+# Loading work.fwrisc_fpga_top(fast)
+# Loading work.fwrisc(fast)
+# Loading work.fwrisc_comparator(fast)
+# Loading work.fwrisc_regfile(fast)
+# Loading work.fwrisc_alu(fast)
+# Loading work.fwrisc_dbus_if(fast)
+# Loading work.uart(fast)
+# Loading work.UART_Registers(fast)
+# Loading work.IF_fifo(fast)
+# Loading work.my_fifo(fast)
+# Loading work.my_ram(fast)
+# Loading work.UART_tx_fsm(fast)
+# Loading work.UART_baudrate_gen(fast)
+# Loading work.UART_rx_fsm(fast)
+# Loading work.mux2to1(fast)
+# Loading work.op_uart(fast)
+# Loading work.uart_transceiver(fast)
 # Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(825): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_core/u_dbus_if File: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_uart/u_UART_Registers File: ../../../../../fwrisc_uart/rtl/UART_Registers.sv
 # 1
 # 1
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
+do D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim/wave.do
+restart
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.fwrisc_uart_tb(fast)
+# Loading work.fwrisc_uart_wraper(fast)
+# Loading work.clk_wiz_0(fast)
+# Loading work.clk_wiz_0_clk_wiz(fast)
+# Loading unisims_ver.IBUF(fast)
+# Loading unisims_ver.PLLE2_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.fwrisc_fpga_top(fast)
+# Loading work.fwrisc(fast)
+# Loading work.fwrisc_comparator(fast)
+# Loading work.fwrisc_regfile(fast)
+# Loading work.fwrisc_alu(fast)
+# Loading work.fwrisc_dbus_if(fast)
+# Loading work.uart(fast)
+# Loading work.UART_Registers(fast)
+# Loading work.IF_fifo(fast)
+# Loading work.my_fifo(fast)
+# Loading work.my_ram(fast)
+# Loading work.UART_tx_fsm(fast)
+# Loading work.UART_baudrate_gen(fast)
+# Loading work.UART_rx_fsm(fast)
+# Loading work.mux2to1(fast)
+# Loading work.op_uart(fast)
+# Loading work.uart_transceiver(fast)
+# Loading work.glbl(fast)
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(825): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
+#    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_core/u_dbus_if File: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(44).
+#    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_uart/u_UART_Registers File: ../../../../../fwrisc_uart/rtl/UART_Registers.sv
 run -all
-# End time: 17:22:48 on Jul 18,2019, Elapsed time: 0:00:35
-# Errors: 0, Warnings: 0
+# Warning : input CLKIN1 period and attribute CLKIN1_PERIOD on PLLE2_ADV instance fwrisc_uart_tb.u_fwrisc_fpga_top.u_clock_gen.inst.plle2_adv_inst are not same.

@@ -29,11 +29,11 @@ module fwrisc_uart_tb;
 	
 
 	//verdi{{{
-	initial begin 
-		$fsdbDumpfile("fwrisc_uart_tb.fsdb");
-		$fsdbDumpvars(0,fwrisc_uart_tb);
-		$fsdbDumpMem;
-	end /*}}}*/
+	// initial begin 
+		// $fsdbDumpfile("fwrisc_uart_tb.fsdb");
+		// $fsdbDumpvars(0,fwrisc_uart_tb);
+		// $fsdbDumpMem;
+	// end /*}}}*/
 
 	integer i;
 	initial begin 
@@ -47,7 +47,7 @@ module fwrisc_uart_tb;
 		#200
 		rst_n = 1;
 
-		#1000;
+		#3000;
 		Set_thru;
 
 		
@@ -73,7 +73,7 @@ module fwrisc_uart_tb;
 
 	reg [7:0] program_mem[0:4095];
 	initial begin
-	$readmemh("../../rundir/uart/uart_program_mem.hex" ,program_mem);
+	$readmemh("../../../../../fwrisc_uart/program/uart_program_mem.hex" ,program_mem);
 	end 
 
 	//tasks to handle tb's uart sending{{{
@@ -94,7 +94,7 @@ module fwrisc_uart_tb;
 	endtask /*}}}*/
 
 	//instance {{{
-	fwrisc_fpga_top u_fwrisc_fpga_top(
+	fwrisc_uart_wraper u_fwrisc_fpga_top(
 		.clock		(clk),
 		.reset		(!rst_n),		
 		.tx			(tx),

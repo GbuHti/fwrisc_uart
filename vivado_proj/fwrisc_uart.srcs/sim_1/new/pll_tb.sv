@@ -23,6 +23,7 @@
 module pll_tb;
 	reg clock;
 	reg reset;
+	wire lock;
 	wire clk;
 	
 	initial begin
@@ -40,7 +41,7 @@ module pll_tb;
 		.clk_out1(clk),     // output clk_out1
 		// Status and control signals
 		.reset(), // input reset
-		.locked(),       // output locked
+		.locked(lock),       // output locked
 		// Clock in ports
 		.clk_in1(clock));      // input clk_in1
 endmodule

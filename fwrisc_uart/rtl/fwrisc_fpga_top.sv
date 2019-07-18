@@ -24,6 +24,8 @@
  * 
  * TODO: Add module documentation
  */
+ 
+`include "fwrisc_defines.vh"
 module fwrisc_fpga_top (
 		input			clock,
 		input			reset,
