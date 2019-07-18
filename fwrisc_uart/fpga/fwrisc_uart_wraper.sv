@@ -15,7 +15,7 @@ module fwrisc_uart_wraper(
 		// Clock out ports
 		.clk_out1(clk),     // output clk_out1
 		// Status and control signals
-		.reset(reset), // input reset
+		.reset(), // input reset
 		.locked(),       // output locked
 		// Clock in ports
 		.clk_in1(clock));      // input clk_in1

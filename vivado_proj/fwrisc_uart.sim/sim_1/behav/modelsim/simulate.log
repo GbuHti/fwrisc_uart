@@ -13,8 +13,8 @@
 # //
 # do {pll_tb_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.pll_tb xil_defaultlib.glbl 
-# Start time: 15:51:05 on Jul 18,2019
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Start time: 17:22:13 on Jul 18,2019
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading sv_std.std
 # Loading work.pll_tb(fast)
 # Loading work.clk_wiz_0(fast)
@@ -28,5 +28,6 @@
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
-# End time: 15:51:33 on Jul 18,2019, Elapsed time: 0:00:28
+run -all
+# End time: 17:22:48 on Jul 18,2019, Elapsed time: 0:00:35
 # Errors: 0, Warnings: 0
