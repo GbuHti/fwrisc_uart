@@ -58,6 +58,8 @@ module UART_Registers(
 	
 	wire tx_fifo_wr_en;
 	wire rx_fifo_rd_en;
+	wire tx_fifo_full;
+	wire rx_fifo_empty;
 
 	wire [7:0] tx_fifo_din;
 	wire [7:0] tx_fifo_dout;
@@ -93,11 +95,11 @@ module UART_Registers(
 		if(!rst_n)begin
 			UART_Tx_Ctrl <= 0;
 		end
-		else if(reg_wr_en && reg_wr_sel == `UART_TX_CTRL ) begin
+		else if(reg_wr_en && reg_wr_sel == `UART_TX_CTRL ) begin	//bit[0]:enable sending, software set
 			UART_Tx_Ctrl <= dwdata_i[0];
 		end
 		else 
-			UART_Tx_Ctrl <= UART_Tx_Ctrl;
+			UART_Tx_Ctrl <= {tx_fifo_full,UART_Tx_Ctrl[30:0]};     //bit[31]:indicate tx_fifo full, hardware set and clear;
 	end 
 	
 	always @(posedge clk) begin
@@ -139,14 +141,14 @@ module UART_Registers(
 			UART_Rx_Ctrl <= dwdata_i[0];
 		end 
 		else 
-			UART_Rx_Ctrl <= UART_Rx_Ctrl;
+			UART_Rx_Ctrl <= {rx_fifo_empty,UART_Rx_Ctrl[30:0]};
 	end
 
 	always @(*) begin
 		case(reg_rd_sel)
-			`UART_TX_BUFFER:	drdata_o = UART_Tx_Buffer;
+			`UART_TX_BUFFER:	drdata_o = tx_fifo_dout;
 			`UART_TX_CTRL:		drdata_o = UART_Tx_Ctrl;
-			`UART_RX_BUFFER:	drdata_o = UART_Rx_Buffer;
+			`UART_RX_BUFFER:	drdata_o = rx_fifo_dout;
 			`UART_RX_CTRL:		drdata_o = UART_Rx_Ctrl;
 			`UART_BAUDRATE_DIV:	drdata_o = UART_Baudrate_Div;
 			default:			drdata_o = 32'hdeaddead;
