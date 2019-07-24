@@ -46,7 +46,7 @@ module fwrisc (
 	reg[31:0]			instr;
 	
 	
-	reg[3:0]			state;
+	reg[13:0]			state;
 	reg[31:2]			pc;
 	reg[4:0]			shift_amt;
 	wire[31:2]			pc_plus4;
@@ -82,7 +82,7 @@ module fwrisc (
 	// ALU signals
 	reg[31:0]					alu_op_a;
 	reg[31:0]					alu_op_b;
-	reg[2:0]					alu_op;
+	reg[7:0]					alu_op;
 	wire[31:0]					alu_out;
 	wire						alu_carry;
 	wire						alu_eqz;
@@ -228,7 +228,7 @@ module fwrisc (
 				`SHIFT_1: begin
 					if (op_shift_reg) begin
 						shift_amt <= (rb_rdata[4:0] - 1'b1);
-						if (|rb_rdata[4:0]) begin	//只移一位则结束
+						if (|rb_rdata[4:0]) begin	//判断是否需要移位
 							state <= `SHIFT_2;
 						end else begin
 							state <= `EXECUTE;
@@ -432,11 +432,12 @@ module fwrisc (
 			`SHIFT_1, `SHIFT_2: begin
 				// rs1 has been read as ra_rdata
 				// write to CSR_tmp
-				if (|ra_rdata[31:5]) begin
-					ra_raddr = zero;
-				end else begin
-					ra_raddr = CSR_tmp;
-				end
+				// if (|ra_rdata[31:5]) begin
+					// ra_raddr = zero;
+				// end else begin
+					// ra_raddr = CSR_tmp;
+				// end
+				ra_raddr = CSR_tmp;
 				rb_raddr = zero;
 				rd_waddr = CSR_tmp;
 			end
