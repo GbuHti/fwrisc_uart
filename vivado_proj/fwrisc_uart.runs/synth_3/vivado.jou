@@ -2,8 +2,8 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Wed Jul 24 22:06:39 2019
-# Process ID: 3540
+# Start of session at: Wed Jul 24 22:35:00 2019
+# Process ID: 6512
 # Current directory: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3
 # Command line: vivado.exe -log fwrisc_uart_wraper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source fwrisc_uart_wraper.tcl
 # Log file: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/fwrisc_uart_wraper.vds

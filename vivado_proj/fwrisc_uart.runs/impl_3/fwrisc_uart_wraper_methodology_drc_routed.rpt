@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Wed Jul 24 22:07:59 2019
+| Date         : Wed Jul 24 22:37:32 2019
 | Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command      : report_methodology -file fwrisc_uart_wraper_methodology_drc_routed.rpt -pb fwrisc_uart_wraper_methodology_drc_routed.pb -rpx fwrisc_uart_wraper_methodology_drc_routed.rpx
 | Design       : fwrisc_uart_wraper
@@ -23,12 +23,33 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 0
-+------+----------+-------------+------------+
-| Rule | Severity | Description | Violations |
-+------+----------+-------------+------------+
-+------+----------+-------------+------------+
+             Violations found: 4
++----------+----------+-------------------+------------+
+| Rule     | Severity | Description       | Violations |
++----------+----------+-------------------+------------+
+| SYNTH-16 | Warning  | Address collision | 4          |
++----------+----------+-------------------+------------+
 
 2. REPORT DETAILS
 -----------------
+SYNTH-16#1 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_0_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#2 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_1_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#3 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_2_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
+SYNTH-16#4 Warning
+Address collision  
+Block RAM u_fwrisc_fpga_top/ram_3_reg may get memory collision error if read and write address collide. Use of address collision resolution circuitry is recommended.
+Related violations: <none>
+
 

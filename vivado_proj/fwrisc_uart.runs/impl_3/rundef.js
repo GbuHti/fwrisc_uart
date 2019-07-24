@@ -23,7 +23,7 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
          "-log fwrisc_uart_wraper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source fwrisc_uart_wraper.tcl -notrace" );
 
