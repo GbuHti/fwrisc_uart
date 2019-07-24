@@ -24,7 +24,7 @@
  * 
  * TODO: Add module documentation
  */
- `include "fwrisc_defines.vh"
+`include "fwrisc_defines.vh"
 module fwrisc_fpga_top (
 		input			clock,
 		input			reset,
@@ -88,8 +88,7 @@ module fwrisc_fpga_top (
 
 
 	// ROM: 'h8000_0000
-	// RAM: 'h8000_2000
-	// LED: 'hC000_0000
+	// RAM: 'h8001_0000
 	reg[7:0]			ram_0[4095:0]; // 16k ram
 	reg[7:0]			ram_1[4095:0]; // 
 	reg[7:0]			ram_2[4095:0]; //
@@ -99,7 +98,7 @@ module fwrisc_fpga_top (
 	
 	assign iready = iready_r;
 
-	wire uart_mux_sel = ((daddr&32'hfffff000) == `UART_BASE)?1:0;
+	wire uart_mux_sel = ((daddr&32'hffff0000) == `UART_BASE)?1:0;
 	mux2to1 #(
 		.DATA_WIDTH(33)
 	)u_uart_mux	(
@@ -121,8 +120,7 @@ module fwrisc_fpga_top (
 		addr_i <= iaddr;
 
 		if (dvalid && dready && dwrite) begin
-			if (daddr[31:28] == 4'h8 && 
-				daddr[15:12] == 4'h2) begin
+			if ((daddr&32'hffff0000) == `RAM_BASE) begin
 				if (dstrb[0]) ram_0[daddr[13:2]]<=dwdata[7:0];
 				if (dstrb[1]) ram_1[daddr[13:2]]<=dwdata[15:8];
 				if (dstrb[2]) ram_2[daddr[13:2]]<=dwdata[23:16];
@@ -173,9 +171,7 @@ module fwrisc_fpga_top (
 	wire	rom_wr_en = (rx_program_data_cnt == 2'b00)&&(rx_program_data_cnt_r == 2'b11);
 
 	always @(posedge clock)begin 
-		if(reset)
-			program_data <= 0;
-		else if(rx_program_data_valid)
+		if(rx_program_data_valid)
 			program_data <= {program_data[23:0],rx_program_data};
 	end
 
@@ -225,7 +221,7 @@ module fwrisc_fpga_top (
 	end
 
 	always @* begin
-		if (addr_d[31:28] == 4'h8 && addr_d[15:12] == 4'h2) begin 
+		if ((addr_d&32'hffff0000) == `RAM_BASE) begin 
 			drdata_r = {
 				ram_3[addr_d[13:2]],
 				ram_2[addr_d[13:2]],
@@ -236,12 +232,12 @@ module fwrisc_fpga_top (
 			drdata_r = rom[addr_d[13:2]];
 		end
 		
-		if (addr_i[31:28] == 4'h8 && addr_i[15:12] == 4'h2) begin
+		if ((addr_i&32'hffff0000) == `RAM_BASE) begin
 			idata = {
-				ram_3[addr_d[13:2]],
-				ram_2[addr_d[13:2]],
-				ram_1[addr_d[13:2]],
-				ram_0[addr_d[13:2]]
+				ram_3[addr_i[13:2]],
+				ram_2[addr_i[13:2]],
+				ram_1[addr_i[13:2]],
+				ram_0[addr_i[13:2]]
 				};
 		end else begin
 			idata = rom[addr_i[13:2]];

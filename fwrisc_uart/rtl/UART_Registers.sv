@@ -8,12 +8,7 @@
 // //Additional explanation: 
 // //---------------------------------------------------- 
 // 分配寄存器地址
-`define UART_BASE			32'h80006000
-`define UART_TX_BUFFER		32'h0
-`define UART_TX_CTRL		32'h4
-`define UART_RX_BUFFER		32'h8
-`define UART_RX_CTRL		32'hc
-`define UART_BAUDRATE_DIV	32'h10
+`include "fwrisc_defines.vh"
 module UART_Registers(
 	input			clk,
 	input			rst_n,
@@ -72,8 +67,8 @@ module UART_Registers(
 	assign UART_baudrate_div=	UART_Baudrate_Div;
 
 	//
-	wire reg_wr_en = ((daddr_i&32'hfffff000) == `UART_BASE )&&dvalid_i&&dwrite_i;
-	wire reg_rd_en = ((daddr_i&32'hfffff000) == `UART_BASE )&&dvalid_i&&(!dwrite_i);
+	wire reg_wr_en = ((daddr_i&32'hffff0000) == `UART_BASE )&&dvalid_i&&dwrite_i;
+	wire reg_rd_en = ((daddr_i&32'hffff0000) == `UART_BASE )&&dvalid_i&&(!dwrite_i);
 	wire [7:0] reg_wr_sel = daddr_i[7:0];
 	wire [7:0] reg_rd_sel = daddr_i[7:0];
 	wire dready_fifo;
