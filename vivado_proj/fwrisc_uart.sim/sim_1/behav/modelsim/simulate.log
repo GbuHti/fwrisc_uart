@@ -83,3 +83,5 @@ restart
 # ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(44).
 #    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_uart/u_UART_Registers File: ../../../../../fwrisc_uart/rtl/UART_Registers.sv
 run -all
+# End time: 15:41:34 on Jul 19,2019, Elapsed time: 16:25:36
+# Errors: 0, Warnings: 0
