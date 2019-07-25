@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jul 25 21:10:16 2019
+| Date         : Thu Jul 25 21:16:30 2019
 | Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file fwrisc_uart_wraper_timing_summary_routed.rpt -pb fwrisc_uart_wraper_timing_summary_routed.pb -rpx fwrisc_uart_wraper_timing_summary_routed.rpx -warn_on_violation
 | Design       : fwrisc_uart_wraper
@@ -126,7 +126,7 @@ Table of Contents
 
     WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
     -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
-      5.601        0.000                      0                 1394        0.024        0.000                      0                 1394        2.000        0.000                       0                   512  
+     85.549        0.000                      0                 1394        0.024        0.000                      0                 1394        2.000        0.000                       0                   512  
 
 
 All user specified timing constraints are met.
@@ -140,10 +140,10 @@ All user specified timing constraints are met.
 Clock                   Waveform(ns)         Period(ns)      Frequency(MHz)
 -----                   ------------         ----------      --------------
 clock                   {0.000 4.000}        8.000           125.000         
-  clk_out1_clk_wiz_0    {0.000 10.000}       20.000          50.000          
+  clk_out1_clk_wiz_0    {0.000 50.000}       100.000         10.000          
   clkfbout_clk_wiz_0    {0.000 20.000}       40.000          25.000          
 sys_clk_pin             {0.000 4.000}        8.000           125.000         
-  clk_out1_clk_wiz_0_1  {0.000 10.000}       20.000          50.000          
+  clk_out1_clk_wiz_0_1  {0.000 50.000}       100.000         10.000          
   clkfbout_clk_wiz_0_1  {0.000 20.000}       40.000          25.000          
 
 
@@ -155,10 +155,10 @@ sys_clk_pin             {0.000 4.000}        8.000           125.000
 Clock                       WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
 -----                       -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
 clock                                                                                                                                                                     2.000        0.000                       0                     1  
-  clk_out1_clk_wiz_0          5.601        0.000                      0                 1394        0.024        0.000                      0                 1394        8.750        0.000                       0                   508  
+  clk_out1_clk_wiz_0         85.549        0.000                      0                 1394        0.024        0.000                      0                 1394       48.750        0.000                       0                   508  
   clkfbout_clk_wiz_0                                                                                                                                                     12.633        0.000                       0                     3  
 sys_clk_pin                                                                                                                                                               2.000        0.000                       0                     1  
-  clk_out1_clk_wiz_0_1        5.608        0.000                      0                 1394        0.024        0.000                      0                 1394        8.750        0.000                       0                   508  
+  clk_out1_clk_wiz_0_1       85.568        0.000                      0                 1394        0.024        0.000                      0                 1394       48.750        0.000                       0                   508  
   clkfbout_clk_wiz_0_1                                                                                                                                                   12.633        0.000                       0                     3  
 
 
@@ -217,31 +217,31 @@ High Pulse Width  Fast    PLLE2_ADV/CLKIN1  n/a            2.000         4.000  
 From Clock:  clk_out1_clk_wiz_0
   To Clock:  clk_out1_clk_wiz_0
 
-Setup :            0  Failing Endpoints,  Worst Slack        5.601ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack       85.549ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.024ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        8.750ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       48.750ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             5.601ns  (required time - arrival time)
+Slack (MET) :             85.549ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[9]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.684ns  (logic 5.239ns (38.285%)  route 8.445ns (61.715%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -311,47 +311,47 @@ Slack (MET) :             5.601ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.149    17.692    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.201    97.640    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[9])
-                                                                   -0.566    17.126    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.074    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.126    
+                                       required time                         97.074    
                                        arrival time                         -11.525    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.601    
+                                       slack                                 85.549    
 
-Slack (MET) :             5.670ns  (required time - arrival time)
+Slack (MET) :             85.618ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[5]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.616ns  (logic 5.239ns (38.478%)  route 8.377ns (61.522%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=2 LUT6=6)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -421,47 +421,47 @@ Slack (MET) :             5.670ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.149    17.692    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.201    97.640    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
-                                                                   -0.566    17.126    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.074    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.126    
+                                       required time                         97.074    
                                        arrival time                         -11.456    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.670    
+                                       slack                                 85.618    
 
-Slack (MET) :             5.689ns  (required time - arrival time)
+Slack (MET) :             85.637ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[7]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.596ns  (logic 5.239ns (38.532%)  route 8.357ns (61.468%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=2 LUT5=1 LUT6=6)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -531,47 +531,47 @@ Slack (MET) :             5.689ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.149    17.692    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.201    97.640    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
-                                                                   -0.566    17.126    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.074    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.126    
+                                       required time                         97.074    
                                        arrival time                         -11.437    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.689    
+                                       slack                                 85.637    
 
-Slack (MET) :             5.766ns  (required time - arrival time)
+Slack (MET) :             85.714ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[1]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -641,47 +641,47 @@ Slack (MET) :             5.766ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[1])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.766    
+                                       slack                                 85.714    
 
-Slack (MET) :             5.766ns  (required time - arrival time)
+Slack (MET) :             85.714ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[3]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -751,47 +751,47 @@ Slack (MET) :             5.766ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[3])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.766    
+                                       slack                                 85.714    
 
-Slack (MET) :             5.766ns  (required time - arrival time)
+Slack (MET) :             85.714ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[2]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -861,47 +861,47 @@ Slack (MET) :             5.766ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[2])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.766    
+                                       slack                                 85.714    
 
-Slack (MET) :             5.839ns  (required time - arrival time)
+Slack (MET) :             85.787ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[0]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.459ns  (logic 5.003ns (37.171%)  route 8.456ns (62.828%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -971,47 +971,47 @@ Slack (MET) :             5.839ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[0])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.300    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.839    
+                                       slack                                 85.787    
 
-Slack (MET) :             5.862ns  (required time - arrival time)
+Slack (MET) :             85.810ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[2]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1081,47 +1081,47 @@ Slack (MET) :             5.862ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[2])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.862    
+                                       slack                                 85.810    
 
-Slack (MET) :             5.862ns  (required time - arrival time)
+Slack (MET) :             85.810ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[1]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1191,47 +1191,47 @@ Slack (MET) :             5.862ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[1])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.862    
+                                       slack                                 85.810    
 
-Slack (MET) :             5.862ns  (required time - arrival time)
+Slack (MET) :             85.810ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[3]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0 rise@20.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0 rise@100.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.149ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.201ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.289ns
+    Discrete Jitter          (DJ):    0.395ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -1301,29 +1301,29 @@ Slack (MET) :             5.862ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.149    17.671    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.201    97.619    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[3])
-                                                                   -0.532    17.139    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.087    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.139    
+                                       required time                         97.087    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.862    
+                                       slack                                 85.810    
 
 
 
@@ -1333,9 +1333,9 @@ Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1395,9 +1395,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1457,9 +1457,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1519,9 +1519,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1581,9 +1581,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1643,9 +1643,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1705,9 +1705,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/ADR0
-                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1767,9 +1767,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/ADR0
-                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1829,9 +1829,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.060ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_core/cycle_counter_reg[0]/C
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/cycle_counter_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1893,9 +1893,9 @@ Slack (MET) :             0.060ns  (arrival time - required time)
 
 Slack (MET) :             0.072ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_core/cycle_counter_reg[0]/C
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/cycle_counter_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0 rise@0.000ns - clk_out1_clk_wiz_0 rise@0.000ns)
@@ -1962,42 +1962,42 @@ Slack (MET) :             0.072ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out1_clk_wiz_0
-Waveform(ns):       { 0.000 10.000 }
-Period(ns):         20.000
+Waveform(ns):       { 0.000 50.000 }
+Period(ns):         100.000
 Sources:            { u_clock_gen/inst/plle2_adv_inst/CLKOUT0 }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y3     u_fwrisc_fpga_top/rom_reg_1_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X2Y2     u_fwrisc_fpga_top/rom_reg_1_3/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y0     u_fwrisc_fpga_top/rom_reg_2_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X2Y1     u_fwrisc_fpga_top/rom_reg_2_3/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.944         20.000      17.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y5     u_fwrisc_fpga_top/rom_reg_1_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y1     u_fwrisc_fpga_top/rom_reg_1_2/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y4     u_fwrisc_fpga_top/rom_reg_2_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y0     u_fwrisc_fpga_top/rom_reg_2_2/CLKARDCLK
-Max Period        n/a     PLLE2_ADV/CLKOUT0   n/a            160.000       20.000      140.000    PLLE2_ADV_X0Y1  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMB/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMB_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMC/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMC_D1/CLK
-Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMD/CLK
-Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMD_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y3     u_fwrisc_fpga_top/rom_reg_1_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X2Y2     u_fwrisc_fpga_top/rom_reg_1_3/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y0     u_fwrisc_fpga_top/rom_reg_2_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X2Y1     u_fwrisc_fpga_top/rom_reg_2_3/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.944         100.000     97.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y5     u_fwrisc_fpga_top/rom_reg_1_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y1     u_fwrisc_fpga_top/rom_reg_1_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y4     u_fwrisc_fpga_top/rom_reg_2_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y0     u_fwrisc_fpga_top/rom_reg_2_2/CLKARDCLK
+Max Period        n/a     PLLE2_ADV/CLKOUT0   n/a            160.000       100.000     60.000     PLLE2_ADV_X0Y1  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y22    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y22    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X8Y21     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X8Y21     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
 
 
 
@@ -2058,31 +2058,31 @@ High Pulse Width  Fast    PLLE2_ADV/CLKIN1  n/a            2.000         4.000  
 From Clock:  clk_out1_clk_wiz_0_1
   To Clock:  clk_out1_clk_wiz_0_1
 
-Setup :            0  Failing Endpoints,  Worst Slack        5.608ns,  Total Violation        0.000ns
+Setup :            0  Failing Endpoints,  Worst Slack       85.568ns,  Total Violation        0.000ns
 Hold  :            0  Failing Endpoints,  Worst Slack        0.024ns,  Total Violation        0.000ns
-PW    :            0  Failing Endpoints,  Worst Slack        8.750ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack       48.750ns,  Total Violation        0.000ns
 ---------------------------------------------------------------------------------------------------
 
 
 Max Delay Paths
 --------------------------------------------------------------------------------------
-Slack (MET) :             5.608ns  (required time - arrival time)
+Slack (MET) :             85.568ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[9]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.684ns  (logic 5.239ns (38.285%)  route 8.445ns (61.715%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2152,47 +2152,47 @@ Slack (MET) :             5.608ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.141    17.700    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.181    97.660    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[9])
-                                                                   -0.566    17.134    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.094    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.134    
+                                       required time                         97.094    
                                        arrival time                         -11.525    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.608    
+                                       slack                                 85.568    
 
-Slack (MET) :             5.677ns  (required time - arrival time)
+Slack (MET) :             85.637ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[5]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.616ns  (logic 5.239ns (38.478%)  route 8.377ns (61.522%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=2 LUT6=6)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2262,47 +2262,47 @@ Slack (MET) :             5.677ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.141    17.700    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.181    97.660    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[5])
-                                                                   -0.566    17.134    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.094    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.134    
+                                       required time                         97.094    
                                        arrival time                         -11.456    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.677    
+                                       slack                                 85.637    
 
-Slack (MET) :             5.696ns  (required time - arrival time)
+Slack (MET) :             85.656ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/ADDRARDADDR[7]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.596ns  (logic 5.239ns (38.532%)  route 8.357ns (61.468%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=2 LUT5=1 LUT6=6)
   Clock Path Skew:        0.000ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.815ns = ( 18.185 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.815ns = ( 98.185 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.344ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2372,47 +2372,47 @@ Slack (MET) :             5.696ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.535    18.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.535    98.185    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                                       clock pessimism             -0.344    17.841    
-                                       clock uncertainty           -0.141    17.700    
+                                       clock pessimism             -0.344    97.841    
+                                       clock uncertainty           -0.181    97.660    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKARDCLK_ADDRARDADDR[7])
-                                                                   -0.566    17.134    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.566    97.094    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.134    
+                                       required time                         97.094    
                                        arrival time                         -11.437    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.696    
+                                       slack                                 85.656    
 
-Slack (MET) :             5.773ns  (required time - arrival time)
+Slack (MET) :             85.733ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[1]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2482,47 +2482,47 @@ Slack (MET) :             5.773ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[1])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.773    
+                                       slack                                 85.733    
 
-Slack (MET) :             5.773ns  (required time - arrival time)
+Slack (MET) :             85.733ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[3]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2592,47 +2592,47 @@ Slack (MET) :             5.773ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[3])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.773    
+                                       slack                                 85.733    
 
-Slack (MET) :             5.773ns  (required time - arrival time)
+Slack (MET) :             85.733ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[2]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.533ns  (logic 5.003ns (36.970%)  route 8.530ns (63.030%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2702,47 +2702,47 @@ Slack (MET) :             5.773ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[2])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.373    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.773    
+                                       slack                                 85.733    
 
-Slack (MET) :             5.847ns  (required time - arrival time)
+Slack (MET) :             85.807ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[0]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.459ns  (logic 5.003ns (37.171%)  route 8.456ns (62.828%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2812,47 +2812,47 @@ Slack (MET) :             5.847ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[0])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.300    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.847    
+                                       slack                                 85.807    
 
-Slack (MET) :             5.870ns  (required time - arrival time)
+Slack (MET) :             85.830ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/WEBWE[2]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -2922,47 +2922,47 @@ Slack (MET) :             5.870ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y6          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y6          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[2])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.870    
+                                       slack                                 85.830    
 
-Slack (MET) :             5.870ns  (required time - arrival time)
+Slack (MET) :             85.830ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[1]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -3032,47 +3032,47 @@ Slack (MET) :             5.870ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[1])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.870    
+                                       slack                                 85.830    
 
-Slack (MET) :             5.870ns  (required time - arrival time)
+Slack (MET) :             85.830ns  (required time - arrival time)
   Source:                 u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKARDCLK
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/WEBWE[3]
-                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMB18E1 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Setup (Max at Slow Process Corner)
-  Requirement:            20.000ns  (clk_out1_clk_wiz_0_1 rise@20.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
+  Requirement:            100.000ns  (clk_out1_clk_wiz_0_1 rise@100.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
   Data Path Delay:        13.436ns  (logic 5.003ns (37.235%)  route 8.433ns (62.765%))
   Logic Levels:           13  (CARRY4=3 LUT2=1 LUT4=1 LUT5=1 LUT6=7)
   Clock Path Skew:        -0.021ns (DCD - SCD + CPR)
-    Destination Clock Delay (DCD):    -1.812ns = ( 18.188 - 20.000 ) 
+    Destination Clock Delay (DCD):    -1.812ns = ( 98.188 - 100.000 ) 
     Source Clock Delay      (SCD):    -2.159ns
     Clock Pessimism Removal (CPR):    -0.368ns
-  Clock Uncertainty:      0.141ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
+  Clock Uncertainty:      0.181ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE
     Total System Jitter     (TSJ):    0.071ns
-    Discrete Jitter          (DJ):    0.273ns
+    Discrete Jitter          (DJ):    0.356ns
     Phase Error              (PE):    0.000ns
 
     Pin Reuse     Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
@@ -3142,29 +3142,29 @@ Slack (MET) :             5.870ns  (required time - arrival time)
   ---------------------------------------------------------------------------------    -------------------
 
                                        (clock clk_out1_clk_wiz_0_1 rise edge)
-                                                                   20.000    20.000 r  
-                  L16                                               0.000    20.000 r  clock (IN)
-                                       net (fo=0)                   0.000    20.000    u_clock_gen/inst/clk_in1
+                                                                  100.000   100.000 r  
+                  L16                                               0.000   100.000 r  clock (IN)
+                                       net (fo=0)                   0.000   100.000    u_clock_gen/inst/clk_in1
                   L16                                                               r  u_clock_gen/inst/clkin1_ibufg/I
-                  L16                  IBUF (Prop_ibuf_I_O)         1.421    21.421 r  u_clock_gen/inst/clkin1_ibufg/O
-                                       net (fo=1, routed)           1.181    22.602    u_clock_gen/inst/clk_in1_clk_wiz_0
+                  L16                  IBUF (Prop_ibuf_I_O)         1.421   101.421 r  u_clock_gen/inst/clkin1_ibufg/O
+                                       net (fo=1, routed)           1.181   102.602    u_clock_gen/inst/clk_in1_clk_wiz_0
                   PLLE2_ADV_X0Y1                                                    r  u_clock_gen/inst/plle2_adv_inst/CLKIN1
                   PLLE2_ADV_X0Y1       PLLE2_ADV (Prop_plle2_adv_CLKIN1_CLKOUT0)
-                                                                   -7.637    14.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-                                       net (fo=1, routed)           1.594    16.559    u_clock_gen/inst/clk_out1_clk_wiz_0
+                                                                   -7.637    94.965 r  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+                                       net (fo=1, routed)           1.594    96.559    u_clock_gen/inst/clk_out1_clk_wiz_0
                   BUFGCTRL_X0Y16                                                    r  u_clock_gen/inst/clkout1_buf/I
-                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    16.650 r  u_clock_gen/inst/clkout1_buf/O
-                                       net (fo=506, routed)         1.538    18.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
+                  BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    96.650 r  u_clock_gen/inst/clkout1_buf/O
+                                       net (fo=506, routed)         1.538    98.188    u_fwrisc_fpga_top/u_core/u_regfile/clk_out1
                   RAMB18_X1Y7          RAMB18E1                                     r  u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2/CLKBWRCLK
-                                       clock pessimism             -0.368    17.820    
-                                       clock uncertainty           -0.141    17.679    
+                                       clock pessimism             -0.368    97.820    
+                                       clock uncertainty           -0.181    97.639    
                   RAMB18_X1Y7          RAMB18E1 (Setup_ramb18e1_CLKBWRCLK_WEBWE[3])
-                                                                   -0.532    17.147    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
+                                                                   -0.532    97.107    u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2
   ---------------------------------------------------------------------------------
-                                       required time                         17.147    
+                                       required time                         97.107    
                                        arrival time                         -11.277    
   ---------------------------------------------------------------------------------
-                                       slack                                  5.870    
+                                       slack                                 85.830    
 
 
 
@@ -3174,9 +3174,9 @@ Min Delay Paths
 --------------------------------------------------------------------------------------
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3236,9 +3236,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3298,9 +3298,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3360,9 +3360,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3422,9 +3422,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3484,9 +3484,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/WADR0
-                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMD32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3546,9 +3546,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/ADR0
-                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3608,9 +3608,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.024ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/addra_reg[0]/C
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/ADR0
-                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell RAMS32 clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3670,9 +3670,9 @@ Slack (MET) :             0.024ns  (arrival time - required time)
 
 Slack (MET) :             0.060ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_core/cycle_counter_reg[0]/C
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/cycle_counter_reg[4]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3734,9 +3734,9 @@ Slack (MET) :             0.060ns  (arrival time - required time)
 
 Slack (MET) :             0.072ns  (arrival time - required time)
   Source:                 u_fwrisc_fpga_top/u_core/cycle_counter_reg[0]/C
-                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDSE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Destination:            u_fwrisc_fpga_top/u_core/cycle_counter_reg[3]/D
-                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@10.000ns period=20.000ns})
+                            (rising edge-triggered cell FDRE clocked by clk_out1_clk_wiz_0_1  {rise@0.000ns fall@50.000ns period=100.000ns})
   Path Group:             clk_out1_clk_wiz_0_1
   Path Type:              Hold (Min at Fast Process Corner)
   Requirement:            0.000ns  (clk_out1_clk_wiz_0_1 rise@0.000ns - clk_out1_clk_wiz_0_1 rise@0.000ns)
@@ -3803,42 +3803,42 @@ Slack (MET) :             0.072ns  (arrival time - required time)
 Pulse Width Checks
 --------------------------------------------------------------------------------------
 Clock Name:         clk_out1_clk_wiz_0_1
-Waveform(ns):       { 0.000 10.000 }
-Period(ns):         20.000
+Waveform(ns):       { 0.000 50.000 }
+Period(ns):         100.000
 Sources:            { u_clock_gen/inst/plle2_adv_inst/CLKOUT0 }
 
 Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y3     u_fwrisc_fpga_top/rom_reg_1_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X2Y2     u_fwrisc_fpga_top/rom_reg_1_3/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y0     u_fwrisc_fpga_top/rom_reg_2_1/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X2Y1     u_fwrisc_fpga_top/rom_reg_2_3/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKARDCLK
-Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.944         20.000      17.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X0Y5     u_fwrisc_fpga_top/rom_reg_1_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y1     u_fwrisc_fpga_top/rom_reg_1_2/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y4     u_fwrisc_fpga_top/rom_reg_2_0/CLKARDCLK
-Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         20.000      17.056     RAMB36_X1Y0     u_fwrisc_fpga_top/rom_reg_2_2/CLKARDCLK
-Max Period        n/a     PLLE2_ADV/CLKOUT0   n/a            160.000       20.000      140.000    PLLE2_ADV_X0Y1  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMB/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMB_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMC/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMC_D1/CLK
-Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMD/CLK
-Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         10.000      8.750      SLICE_X8Y20     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMD_D1/CLK
-Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
-High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
-High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         10.000      8.750      SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y3     u_fwrisc_fpga_top/rom_reg_1_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X2Y2     u_fwrisc_fpga_top/rom_reg_1_3/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y0     u_fwrisc_fpga_top/rom_reg_2_1/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X2Y1     u_fwrisc_fpga_top/rom_reg_2_3/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKARDCLK
+Min Period        n/a     RAMB18E1/CLKBWRCLK  n/a            2.944         100.000     97.056     RAMB18_X1Y6     u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X0Y5     u_fwrisc_fpga_top/rom_reg_1_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y1     u_fwrisc_fpga_top/rom_reg_1_2/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y4     u_fwrisc_fpga_top/rom_reg_2_0/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.944         100.000     97.056     RAMB36_X1Y0     u_fwrisc_fpga_top/rom_reg_2_2/CLKARDCLK
+Max Period        n/a     PLLE2_ADV/CLKOUT0   n/a            160.000       100.000     60.000     PLLE2_ADV_X0Y1  u_clock_gen/inst/plle2_adv_inst/CLKOUT0
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/CLK
+Low Pulse Width   Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/CLK
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y22    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
+Low Pulse Width   Fast    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y22    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_6_7/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMB_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMC_D1/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD/CLK
+High Pulse Width  Slow    RAMS32/CLK          n/a            1.250         50.000      48.750     SLICE_X12Y23    u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_rx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMD_D1/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X8Y21     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
+High Pulse Width  Fast    RAMD32/CLK          n/a            1.250         50.000      48.750     SLICE_X8Y21     u_fwrisc_fpga_top/u_uart/u_UART_Registers/u_tx_fifo/u_yzb_ram/ram_reg_0_7_0_5/RAMA/CLK
 
 
 

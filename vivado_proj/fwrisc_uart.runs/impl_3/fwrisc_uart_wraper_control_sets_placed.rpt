@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Thu Jul 25 21:09:58 2019
+| Date         : Thu Jul 25 21:16:25 2019
 | Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file fwrisc_uart_wraper_control_sets_placed.rpt
 | Design       : fwrisc_uart_wraper
@@ -66,9 +66,9 @@ Table of Contents
 |        Clock Signal        |                                       Enable Signal                                      |                                 Set/Reset Signal                                 | Slice Load Count | Bel Load Count |
 +----------------------------+------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------+------------------+----------------+
 |  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/u_UART_baudrate_gen/cs_reg[2]                     | reset_IBUF                                                                       |                1 |              1 |
-|  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/u_UART_baudrate_gen/E[0]                          | u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/bit_cnt[3]_i_1_n_0                        |                1 |              4 |
 |  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_UART_rx_fsm/u_UART_baudrate_gen/tick_o_reg_0[0]                      | u_fwrisc_fpga_top/u_UART_rx_fsm/tick_counter[3]_i_1__0_n_0                       |                1 |              4 |
 |  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/u_UART_baudrate_gen/tick_o_reg_0[0]               | u_fwrisc_fpga_top/u_uart/u_UART_rx_fsm/tick_counter[3]_i_1_n_0                   |                2 |              4 |
+|  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/u_UART_baudrate_gen/E[0]                          | u_fwrisc_fpga_top/u_uart/u_UART_tx_fsm/bit_cnt[3]_i_1_n_0                        |                1 |              4 |
 |  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_core/shift_amt[4]_i_1_n_0                                            |                                                                                  |                4 |              5 |
 |  u_clock_gen/inst/clk_out1 |                                                                                          | u_fwrisc_fpga_top/u_core/cycle_counter0                                          |                3 |              8 |
 |  u_clock_gen/inst/clk_out1 | u_fwrisc_fpga_top/u_UART_rx_fsm/u_UART_baudrate_gen/E[0]                                 | reset_IBUF                                                                       |                1 |              8 |
