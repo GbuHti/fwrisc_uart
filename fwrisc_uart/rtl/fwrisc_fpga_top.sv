@@ -47,9 +47,9 @@ module fwrisc_fpga_top (
 	wire[31:0]			drdata;
 	reg [31:0]			drdata_r;
 	wire[3:0]			dstrb;
-	wire				dwrite;
-	wire				dvalid;
-	wire				dready;
+	(*MARK_DEBUG="TRUE"*)wire				dwrite;
+	(*MARK_DEBUG="TRUE"*)wire				dvalid;
+	(*MARK_DEBUG="TRUE"*)wire				dready;
 
 
 	fwrisc u_core (

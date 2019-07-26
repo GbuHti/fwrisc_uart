@@ -64,11 +64,10 @@ module fwrisc_uart_tb;
 	initial begin
 		@(posedge rx_irq) begin
 			repeat(100) @(posedge clk);
-			Send_custom(67);
-			@(posedge tx_irq) Send_custom(54);
-			@(posedge tx_irq) Send_custom(37);
-			@(posedge tx_irq) Send_custom(58);
-			@(posedge tx_irq) Send_custom(91);
+			Send_custom(8'h01);
+			@(posedge tx_irq) begin #1000; Send_custom(8'h02); end
+			@(posedge tx_irq) begin #1000; Send_custom(8'h23); end
+			@(posedge tx_irq) begin #1000; Send_custom(8'h11); end
 			
 		end
 	end

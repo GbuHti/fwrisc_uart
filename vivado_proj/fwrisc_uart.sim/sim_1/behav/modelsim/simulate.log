@@ -13,7 +13,7 @@
 # //
 # do {fwrisc_uart_tb_simulate.do}
 # vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.fwrisc_uart_tb xil_defaultlib.glbl 
-# Start time: 23:15:58 on Jul 18,2019
+# Start time: 19:40:37 on Jul 25,2019
 # ** Note: (vsim-3813) Design is being optimized due to module recompilation...
 # Loading sv_std.std
 # Loading work.fwrisc_uart_tb(fast)
@@ -41,18 +41,23 @@
 # Loading work.op_uart(fast)
 # Loading work.uart_transceiver(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(825): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(826): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
 #    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_core/u_dbus_if File: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv
-# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(44).
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(39).
 #    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_uart/u_UART_Registers File: ../../../../../fwrisc_uart/rtl/UART_Registers.sv
 # 1
 # 1
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: yuzhenbo-0  Hostname: DESKTOP-EVPNNIR  ProcessID: 14776
+#           Attempting to use alternate WLF file "./wlftswfx82".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlftswfx82
 # .main_pane.wave.interior.cs.body.pw.wf
 # .main_pane.structure.interior.cs.body.struct
 # .main_pane.objects.interior.cs.body.tree
 do D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim/wave.do
 restart
-# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# ** Note: (vsim-8009) Loading existing optimized design _opt2
 # Loading work.fwrisc_uart_tb(fast)
 # Loading work.fwrisc_uart_wraper(fast)
 # Loading work.clk_wiz_0(fast)
@@ -78,10 +83,9 @@ restart
 # Loading work.op_uart(fast)
 # Loading work.uart_transceiver(fast)
 # Loading work.glbl(fast)
-# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(825): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/fwrisc.sv(826): [PCDPC] - Port size (4) does not match connection size (1) for port 'dstrb'. The port definition is at: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv(22).
 #    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_core/u_dbus_if File: ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv
-# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(44).
+# ** Warning: (vsim-3015) ../../../../../fwrisc_uart/rtl/uart.sv(38): [PCDPC] - Port size (32) does not match connection size (20) for port 'UART_baudrate_div'. The port definition is at: ../../../../../fwrisc_uart/rtl/UART_Registers.sv(39).
 #    Time: 0 ps  Iteration: 0  Instance: /fwrisc_uart_tb/u_fwrisc_fpga_top/u_fwrisc_fpga_top/u_uart/u_UART_Registers File: ../../../../../fwrisc_uart/rtl/UART_Registers.sv
 run -all
-# End time: 15:41:34 on Jul 19,2019, Elapsed time: 16:25:36
-# Errors: 0, Warnings: 0
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim/wave.do

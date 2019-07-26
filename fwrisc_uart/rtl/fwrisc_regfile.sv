@@ -26,13 +26,13 @@
 module fwrisc_regfile(
 		input				clock,
 		input				reset,
-		input[5:0]			ra_raddr,
-		output [31:0]		ra_rdata,
-		input[5:0]			rb_raddr,
-		output [31:0]		rb_rdata,
-		input[5:0]			rd_waddr,
-		input[31:0]			rd_wdata,
-		input				rd_wen
+		(*MARK_DEBUG="TRUE"*)input[5:0]			ra_raddr,
+		(*MARK_DEBUG="TRUE"*)output [31:0]		ra_rdata,
+		(*MARK_DEBUG="TRUE"*)input[5:0]			rb_raddr,
+		(*MARK_DEBUG="TRUE"*)output [31:0]		rb_rdata,
+		(*MARK_DEBUG="TRUE"*)input[5:0]			rd_waddr,
+		(*MARK_DEBUG="TRUE"*)input[31:0]			rd_wdata,
+		(*MARK_DEBUG="TRUE"*)input				rd_wen
 		);
 
 	reg[5:0]			ra_raddr_r;

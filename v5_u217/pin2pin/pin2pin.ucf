@@ -1,0 +1,4 @@
+NET  tx_v7_i       LOC="M6";  	#J8 IO_0_VRN_39 <--u1 | u217--> IO_L2N_18 M6
+NET  rx_v7_o       LOC="K5";   #T10 IO_0_VRN_37 <--u1 | u217--> IO_L0P_18 K5
+NET  tx_o       LOC="T7";  		# J106 2
+NET  rx_i       LOC="T16";  	# J106 4

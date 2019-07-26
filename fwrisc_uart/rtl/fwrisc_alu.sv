@@ -31,7 +31,7 @@ module fwrisc_alu (
 		input					reset,
 		input[31:0]				op_a,
 		input[31:0]				op_b,
-		input[2:0]				op,
+		input[7:0]				op,
 		output reg[31:0]		out,
 		output 					carry,
 		output					eqz);

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "D:/Project/16_proj_fwisc_uart/v5_u217/pin2pin/pin2pin.xst" -ofn "D:/Project/16_proj_fwisc_uart/v5_u217/pin2pin/pin2pin.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc5vlx30-ff324-1 pin2pin.ngc pin2pin.ngd  
+map -intstyle ise -p xc5vlx30-ff324-1 -w -logic_opt off -ol high -t 1 -register_duplication off -global_opt off -mt off -cm area -ir off -pr off -lc off -power off -o pin2pin_map.ncd pin2pin.ngd pin2pin.pcf 
+par -w -intstyle ise -ol high -mt off pin2pin_map.ncd pin2pin.ncd pin2pin.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml pin2pin.twx pin2pin.ncd -o pin2pin.twr pin2pin.pcf 
+bitgen -intstyle ise -f pin2pin.ut pin2pin.ncd 

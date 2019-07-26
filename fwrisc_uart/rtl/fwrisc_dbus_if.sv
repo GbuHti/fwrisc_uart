@@ -14,7 +14,7 @@ module fwrisc_dbus_if(
 		input[31:0]		instr,
 		input[31:0]		rb_rdata,
 		input[31:0]		alu_out,
-		input[3:0]		state,
+		input[13:0]		state,
 		output[31:0]	daddr,
 		output			dvalid,
 		output			dwrite,

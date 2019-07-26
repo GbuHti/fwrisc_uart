@@ -821,7 +821,7 @@ module fwrisc (
 	wire 		dvalid_w;
 	wire 		dwrite_w;
 	wire 	[31:0]	dwdata_w;
-	wire 		dstrb_w;
+	wire	[3:0]	dstrb_w;
 	// Handle data-access control signals
 	fwrisc_dbus_if u_dbus_if (
 		.clock     (clock    ), 
