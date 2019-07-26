@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\Project\16_proj_fwisc_uart\v5_u217\pin2pin\pin2pin.ncd
+OUTFILE=D:\Project\16_proj_fwisc_uart\v5_u217\pin2pin\pin2pin.bit
+FAMILY=Virtex5
+PART=xc5vlx30-1ff324
+WORKINGDIR=D:\Project\16_proj_fwisc_uart\v5_u217\pin2pin
+LICENSE=WebPack
+USER_INFO=_
