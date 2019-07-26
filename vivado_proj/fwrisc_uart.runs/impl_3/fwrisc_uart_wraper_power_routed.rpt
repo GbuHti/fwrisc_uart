@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Thu Jul 25 21:16:30 2019
+| Date             : Fri Jul 26 15:21:39 2019
 | Host             : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command          : report_power -file fwrisc_uart_wraper_power_routed.rpt -pb fwrisc_uart_wraper_power_summary_routed.pb -rpx fwrisc_uart_wraper_power_routed.rpx
 | Design           : fwrisc_uart_wraper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.199        |
+| Total On-Chip Power (W)  | 0.205        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.104        |
-| Device Static (W)        | 0.095        |
+| Dynamic (W)              | 0.109        |
+| Device Static (W)        | 0.096        |
 | Effective TJA (C/W)      | 11.5         |
-| Max Ambient (C)          | 82.7         |
-| Junction Temperature (C) | 27.3         |
+| Max Ambient (C)          | 82.6         |
+| Junction Temperature (C) | 27.4         |
 | Confidence Level         | Medium       |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,20 +52,21 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |    <0.001 |        8 |       --- |             --- |
-| Slice Logic              |    <0.001 |     1909 |       --- |             --- |
-|   LUT as Logic           |    <0.001 |     1137 |     17600 |            6.46 |
-|   CARRY4                 |    <0.001 |       59 |      4400 |            1.34 |
-|   Register               |    <0.001 |      446 |     35200 |            1.27 |
-|   LUT as Distributed RAM |    <0.001 |       16 |      6000 |            0.27 |
-|   F7/F8 Muxes            |    <0.001 |        1 |     17600 |           <0.01 |
-|   Others                 |     0.000 |       35 |       --- |             --- |
-| Signals                  |     0.001 |     1828 |       --- |             --- |
-| Block RAM                |     0.003 |       13 |        60 |           21.67 |
+| Clocks                   |     0.002 |        9 |       --- |             --- |
+| Slice Logic              |    <0.001 |     7274 |       --- |             --- |
+|   LUT as Logic           |    <0.001 |     2672 |     17600 |           15.18 |
+|   LUT as Shift Register  |    <0.001 |      205 |      6000 |            3.42 |
+|   Register               |    <0.001 |     3153 |     35200 |            8.96 |
+|   CARRY4                 |    <0.001 |      123 |      4400 |            2.80 |
+|   LUT as Distributed RAM |    <0.001 |       40 |      6000 |            0.67 |
+|   F7/F8 Muxes            |    <0.001 |       36 |     17600 |            0.20 |
+|   Others                 |     0.000 |      428 |       --- |             --- |
+| Signals                  |     0.002 |     5656 |       --- |             --- |
+| Block RAM                |     0.005 |     39.5 |        60 |           65.83 |
 | PLL                      |     0.099 |        1 |         2 |           50.00 |
 | I/O                      |    <0.001 |        7 |       100 |            7.00 |
-| Static Power             |     0.095 |          |           |                 |
-| Total                    |     0.199 |          |           |                 |
+| Static Power             |     0.096 |          |           |                 |
+| Total                    |     0.205 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -75,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.018 |       0.014 |      0.004 |
+| Vccint    |       1.000 |     0.023 |       0.018 |      0.005 |
 | Vccaux    |       1.800 |     0.055 |       0.050 |      0.005 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -84,7 +85,7 @@ Table of Contents
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -135,16 +136,17 @@ Table of Contents
 2.2 Clock Constraints
 ---------------------
 
-+----------------------+-------------------------------------+-----------------+
-| Clock                | Domain                              | Constraint (ns) |
-+----------------------+-------------------------------------+-----------------+
-| clk_out1_clk_wiz_0   | u_clock_gen/inst/clk_out1_clk_wiz_0 |           100.0 |
-| clk_out1_clk_wiz_0_1 | u_clock_gen/inst/clk_out1_clk_wiz_0 |           100.0 |
-| clkfbout_clk_wiz_0   | u_clock_gen/inst/clkfbout_clk_wiz_0 |            40.0 |
-| clkfbout_clk_wiz_0_1 | u_clock_gen/inst/clkfbout_clk_wiz_0 |            40.0 |
-| clock                | clock                               |             8.0 |
-| sys_clk_pin          | clock                               |             8.0 |
-+----------------------+-------------------------------------+-----------------+
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| Clock                                                                                      | Domain                                                               | Constraint (ns) |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
+| clk_out1_clk_wiz_0                                                                         | u_clock_gen/inst/clk_out1_clk_wiz_0                                  |           100.0 |
+| clk_out1_clk_wiz_0_1                                                                       | u_clock_gen/inst/clk_out1_clk_wiz_0                                  |           100.0 |
+| clkfbout_clk_wiz_0                                                                         | u_clock_gen/inst/clkfbout_clk_wiz_0                                  |            40.0 |
+| clkfbout_clk_wiz_0_1                                                                       | u_clock_gen/inst/clkfbout_clk_wiz_0                                  |            40.0 |
+| clock                                                                                      | clock                                                                |             8.0 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/TCK | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/tck_bs |            33.0 |
+| sys_clk_pin                                                                                | clock                                                                |             8.0 |
++--------------------------------------------------------------------------------------------+----------------------------------------------------------------------+-----------------+
 
 
 3. Detailed Reports
@@ -153,15 +155,20 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+---------------------+-----------+
-| Name                | Power (W) |
-+---------------------+-----------+
-| fwrisc_uart_wraper  |     0.104 |
-|   u_clock_gen       |     0.099 |
-|     inst            |     0.099 |
-|   u_fwrisc_fpga_top |     0.005 |
-|     u_core          |     0.002 |
-|       u_regfile     |     0.002 |
-+---------------------+-----------+
++--------------------------+-----------+
+| Name                     | Power (W) |
++--------------------------+-----------+
+| fwrisc_uart_wraper       |     0.109 |
+|   dbg_hub                |     0.001 |
+|     inst                 |     0.001 |
+|       BSCANID.u_xsdbm_id |     0.001 |
+|   u_clock_gen            |     0.099 |
+|     inst                 |     0.099 |
+|   u_fwrisc_fpga_top      |     0.005 |
+|     u_core               |     0.002 |
+|   u_ila_0                |     0.003 |
+|     inst                 |     0.003 |
+|       ila_core_inst      |     0.003 |
++--------------------------+-----------+
 
 

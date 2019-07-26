@@ -66,19 +66,13 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param simulator.modelsimInstallPath C:/modeltech64_10.6d/win64
-  create_project -in_memory -part xc7z010clg400-1
-  set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/fwrisc_uart_wraper.dcp
   set_property webtalk.parent_dir D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.cache/wt [current_project]
   set_property parent.project_path D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.xpr [current_project]
   set_property ip_output_repo D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_CDC [current_project]
-  add_files -quiet D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/fwrisc_uart_wraper.dcp
-  read_ip -quiet D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_xdc D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart.xdc
-  link_design -top fwrisc_uart_wraper -part xc7z010clg400-1
   close_msg_db -file init_design.pb
 } RESULT]
 if {$rc} {
