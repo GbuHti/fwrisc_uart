@@ -1,14 +1,14 @@
 -- Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
--- Date        : Thu Jul 18 17:01:49 2019
+-- Date        : Fri Jul 26 21:52:30 2019
 -- Host        : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
 --               d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_sim_netlist.vhdl
 -- Design      : clk_wiz_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
--- Device      : xc7z010clg400-1
+-- Device      : xc7v2000tflg1925-1
 -- --------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
@@ -70,11 +70,11 @@ clkout1_buf: unisim.vcomponents.BUFG
 plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
     generic map(
       BANDWIDTH => "OPTIMIZED",
-      CLKFBOUT_MULT => 34,
+      CLKFBOUT_MULT => 45,
       CLKFBOUT_PHASE => 0.000000,
-      CLKIN1_PERIOD => 8.000000,
+      CLKIN1_PERIOD => 50.000000,
       CLKIN2_PERIOD => 0.000000,
-      CLKOUT0_DIVIDE => 17,
+      CLKOUT0_DIVIDE => 18,
       CLKOUT0_DUTY_CYCLE => 0.500000,
       CLKOUT0_PHASE => 0.000000,
       CLKOUT1_DIVIDE => 1,
@@ -93,7 +93,7 @@ plle2_adv_inst: unisim.vcomponents.PLLE2_ADV
       CLKOUT5_DUTY_CYCLE => 0.500000,
       CLKOUT5_PHASE => 0.000000,
       COMPENSATION => "ZHOLD",
-      DIVCLK_DIVIDE => 5,
+      DIVCLK_DIVIDE => 1,
       IS_CLKINSEL_INVERTED => '0',
       IS_PWRDWN_INVERTED => '0',
       IS_RST_INVERTED => '0',

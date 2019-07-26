@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="clk_wiz_0_synth_1" LaunchPart="xc7z010clg400-1" LaunchTime="1563440468">
+<GenRun Id="clk_wiz_0_synth_1" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1564149105">
   <File Type="PA-TCL" Name="clk_wiz_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="clk_wiz_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="clk_wiz_0_reports.tcl"/>
   <File Type="RDS-RDS" Name="clk_wiz_0.vds"/>
   <File Type="RDS-UTIL" Name="clk_wiz_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="clk_wiz_0_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="clk_wiz_0.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="clk_wiz_0_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="clk_wiz_0_timing_summary_synth.pb"/>
   <FileSet Name="sources" Type="BlockSrcs" RelSrcDir="$PSRCDIR/clk_wiz_0">
     <File Path="$PSRCDIR/sources_1/ip/clk_wiz_0/clk_wiz_0.xci">
       <FileInfo>
@@ -34,12 +37,24 @@
   </FileSet>
   <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
     <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/impl_3/fwrisc_uart_wraper_routed.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PRUNDIR/impl_3/fwrisc_uart_wraper_routed.dcp"/>
+        <Attr Name="ImportTime" Val="1564060439"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="impl_3"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
     <Config>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
 </GenRun>
