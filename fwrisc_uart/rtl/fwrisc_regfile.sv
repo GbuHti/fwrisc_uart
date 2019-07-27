@@ -50,11 +50,11 @@ module fwrisc_regfile(
 		regs['d0] <= 0;
 	end
 
-	assign ra_rdata = regs[ra_raddr_r];
-	assign rb_rdata = regs[rb_raddr_r];
+	// assign ra_rdata = regs[ra_raddr_r];
+	// assign rb_rdata = regs[rb_raddr_r];
 
-	// assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
-	// assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
+	assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
+	assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
 `else
 blk_mem_gen_0 u_regfile_0 (
   .clka(clock),    // input wire clka

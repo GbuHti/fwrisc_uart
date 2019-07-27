@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date             : Sat Jul 27 17:55:38 2019
+| Date             : Sat Jul 27 18:10:30 2019
 | Host             : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command          : report_power -file fwrisc_uart_wraper_power_routed.rpt -pb fwrisc_uart_wraper_power_summary_routed.pb -rpx fwrisc_uart_wraper_power_routed.rpx
 | Design           : fwrisc_uart_wraper
@@ -56,8 +56,8 @@ Table of Contents
 | Slice Logic              |     0.006 |    11313 |       --- |             --- |
 |   LUT as Logic           |     0.005 |     3801 |   1221600 |            0.31 |
 |   LUT as Shift Register  |    <0.001 |      215 |    344800 |            0.06 |
-|   F7/F8 Muxes            |    <0.001 |      787 |   1221600 |            0.06 |
 |   Register               |    <0.001 |     5259 |   2443200 |            0.22 |
+|   F7/F8 Muxes            |    <0.001 |      787 |   1221600 |            0.06 |
 |   CARRY4                 |    <0.001 |      128 |    305400 |            0.04 |
 |   LUT as Distributed RAM |    <0.001 |       40 |    344800 |            0.01 |
 |   Others                 |     0.000 |      528 |       --- |             --- |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.379 |       0.066 |      0.312 |
+| Vccint    |       1.000 |     0.378 |       0.066 |      0.312 |
 | Vccaux    |       1.800 |     0.150 |       0.051 |      0.099 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -162,9 +162,9 @@ Table of Contents
 |   u_clock_gen            |     0.102 |
 |     inst                 |     0.102 |
 |   u_fwrisc_fpga_top      |     0.036 |
-|     u_core               |     0.021 |
+|     u_core               |     0.020 |
 |       u_alu              |     0.005 |
-|       u_regfile          |     0.013 |
+|       u_regfile          |     0.012 |
 |   u_ila_0                |     0.019 |
 |     inst                 |     0.019 |
 |       ila_core_inst      |     0.019 |
