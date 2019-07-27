@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_4" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1564211907">
+<GenRun Id="impl_4" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1564213667">
   <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="fwrisc_uart_wraper_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="fwrisc_uart_wraper_timing_summary_init.rpt"/>
