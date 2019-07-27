@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_4_xc7v2000t" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1564213667">
+<GenRun Id="synth_4_xc7v2000t" LaunchPart="xc7v2000tflg1925-1" LaunchTime="1564216378">
   <File Type="PA-TCL" Name="fwrisc_uart_wraper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="fwrisc_uart_wraper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="fwrisc_uart_wraper_reports.tcl"/>
@@ -129,6 +129,14 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../fwrisc_uart/rtl/fwrisc_tracer.sv">
       <FileInfo>
         <Attr Name="AutoDisabled" Val="1"/>
@@ -237,5 +245,4 @@
     <Step Id="synth_design"/>
   </Strategy>
   <BlockFileSet Type="BlockSrcs" Name="clk_wiz_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blk_mem_gen_0"/>
 </GenRun>

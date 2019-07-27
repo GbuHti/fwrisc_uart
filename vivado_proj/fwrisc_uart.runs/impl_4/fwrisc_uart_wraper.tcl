@@ -73,10 +73,9 @@ set rc [catch {
   set_property parent.project_path D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.xpr [current_project]
   set_property ip_output_repo D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   add_files -quiet D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/fwrisc_uart_wraper.dcp
   read_ip -quiet d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
-  read_ip -quiet d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0.xci
   read_xdc D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc
   link_design -top fwrisc_uart_wraper -part xc7v2000tflg1925-1
   close_msg_db -file init_design.pb
@@ -157,7 +156,7 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
-  set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
+  set_property XPM_LIBRARIES XPM_CDC [current_project]
   catch { write_mem_info -force fwrisc_uart_wraper.mmi }
   write_bitstream -force fwrisc_uart_wraper.bit 
   catch {write_debug_probes -quiet -force fwrisc_uart_wraper}

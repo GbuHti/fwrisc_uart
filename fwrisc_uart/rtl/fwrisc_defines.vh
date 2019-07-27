@@ -57,4 +57,4 @@
 `define ITCM_SIZE			'd4096
 // `define PROMGRAM_RX_BAUDRATE 'd434
 `define PROMGRAM_RX_BAUDRATE 'd434
-`define FPGA
+// `define FPGA

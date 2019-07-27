@@ -42,15 +42,13 @@ module fwrisc_regfile(
 
 
 	always @(posedge clock) begin
+		ra_raddr_r <= ra_raddr;
+		rb_raddr_r <= rb_raddr;
 		if (rd_wen) begin
 			regs[rd_waddr] <= rd_wdata;
 		end
 	end
 
-	always @(posedge clock) begin
-		ra_raddr_r <= ra_raddr;
-		rb_raddr_r <= rb_raddr;
-	end 
 
 	assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
 	assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
