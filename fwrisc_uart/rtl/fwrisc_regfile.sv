@@ -47,7 +47,7 @@ module fwrisc_regfile(
 		if (rd_wen) begin
 			regs[rd_waddr] <= rd_wdata;
 		end
-		// regs['d0] <= 0;
+		regs['d0] <= 0;
 	end
 
 	// assign ra_rdata = regs[ra_raddr_r];
