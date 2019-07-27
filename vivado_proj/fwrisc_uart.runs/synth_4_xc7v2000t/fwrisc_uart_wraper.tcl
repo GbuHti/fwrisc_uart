@@ -18,7 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param simulator.modelsimInstallPath C:/modeltech64_10.6d/win64
-create_project -in_memory -part xc7v2000tflg1925-1
+create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -29,6 +29,7 @@ set_property parent.project_path D:/Project/16_proj_fwisc_uart/vivado_proj/fwris
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_output_repo d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_defines.vh
@@ -63,13 +64,13 @@ set_property used_in_implementation false [get_files -all d:/Project/16_proj_fwi
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc
-set_property used_in_implementation false [get_files D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc]
+read_xdc D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart.xdc
+set_property used_in_implementation false [get_files D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
-synth_design -top fwrisc_uart_wraper -part xc7v2000tflg1925-1
+synth_design -top fwrisc_uart_wraper -part xc7z010clg400-1
 
 
 # disable binary constraint mode for synth run checkpoints

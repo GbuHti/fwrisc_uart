@@ -40,7 +40,6 @@ module fwrisc_regfile(
 	reg[5:0]			rb_raddr_r;
 	(*ram_style="block"*)reg[31:0]			regs['h3f:0];
 
-// (*ram_style="block"*)
 	always @(posedge clock) begin
 		ra_raddr_r <= ra_raddr;
 		rb_raddr_r <= rb_raddr;
@@ -50,11 +49,11 @@ module fwrisc_regfile(
 		regs['d0] <= 0;
 	end
 
-	// assign ra_rdata = regs[ra_raddr_r];
-	// assign rb_rdata = regs[rb_raddr_r];
+	assign ra_rdata = regs[ra_raddr_r];
+	assign rb_rdata = regs[rb_raddr_r];
 
-	assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
-	assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
+	// assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
+	// assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
 `else
 blk_mem_gen_0 u_regfile_0 (
   .clka(clock),    // input wire clka

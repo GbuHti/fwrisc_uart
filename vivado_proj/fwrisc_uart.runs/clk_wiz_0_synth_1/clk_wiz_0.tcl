@@ -20,7 +20,7 @@ proc create_report { reportName command } {
 set_param simulator.modelsimInstallPath C:/modeltech64_10.6d/win64
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
-create_project -in_memory -part xc7v2000tflg1925-1
+create_project -in_memory -part xc7z010clg400-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
@@ -31,6 +31,7 @@ set_property parent.project_path D:/Project/16_proj_fwisc_uart/vivado_proj/fwris
 set_property XPM_LIBRARIES XPM_CDC [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
+set_property board_part digilentinc.com:zybo:part0:1.0 [current_project]
 set_property ip_output_repo d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_ip -quiet d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.xci
@@ -55,7 +56,7 @@ set cached_ip [config_ip_cache -export -no_bom -use_project_ipc -dir D:/Project/
 if { $cached_ip eq {} } {
 close [open __synthesis_is_running__ w]
 
-synth_design -top clk_wiz_0 -part xc7v2000tflg1925-1 -mode out_of_context
+synth_design -top clk_wiz_0 -part xc7z010clg400-1 -mode out_of_context
 
 #---------------------------------------------------------
 # Generate Checkpoint/Stub/Simulation Files For IP Cache
