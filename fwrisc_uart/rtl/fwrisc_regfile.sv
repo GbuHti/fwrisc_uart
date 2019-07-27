@@ -35,21 +35,11 @@ module fwrisc_regfile(
 		(*MARK_DEBUG="TRUE"*)input				rd_wen
 		);
 
+`ifndef FPGA
 	reg[5:0]			ra_raddr_r;
 	reg[5:0]			rb_raddr_r;
 	(*ram_style="block"*)reg[31:0]			regs['h3f:0];
 
-// `ifdef FORMAL
-	// initial regs[0] = 0;
-//	genvar reg_i;
-//	for (reg_i=1; reg_i<64; reg_i++) begin
-//		initial regs[reg_i] = $anyconst;
-//	end
-// `else
-	// initial begin
-		// $readmemh("../../../../../program_gen/regs.hex", regs);
-	// end
-// `endif
 
 	always @(posedge clock) begin
 		if (rd_wen) begin
@@ -64,7 +54,33 @@ module fwrisc_regfile(
 
 	assign ra_rdata = (ra_raddr_r == 0)? 32'b0 : regs[ra_raddr_r];
 	assign rb_rdata = (rb_raddr_r == 0)? 32'b0 : regs[rb_raddr_r];
+`else
+blk_mem_gen_0 u_regfile_0 (
+  .clka(clock),    // input wire clka
+  .ena(1),      // input wire ena
+  .wea(rd_wen),      // input wire [0 : 0] wea
+  .addra(rd_waddr),  // input wire [5 : 0] addra
+  .dina(rd_wdata),    // input wire [31 : 0] dina
+  
+  .clkb(clock),    // input wire clkb
+  .enb(1),      // input wire enb
+  .addrb(ra_raddr),  // input wire [5 : 0] addrb
+  .doutb(ra_rdata)  // output wire [31 : 0] doutb
+);
 
+blk_mem_gen_0 u_regfile_1 (
+  .clka(clock),    // input wire clka
+  .ena(1),      // input wire ena
+  .wea(rd_wen),      // input wire [0 : 0] wea
+  .addra(rd_waddr),  // input wire [5 : 0] addra
+  .dina(rd_wdata),    // input wire [31 : 0] dina
+  
+  .clkb(clock),    // input wire clkb
+  .enb(1),      // input wire enb
+  .addrb(rb_raddr),  // input wire [5 : 0] addrb
+  .doutb(rb_rdata)  // output wire [31 : 0] doutb
+);
+`endif
 endmodule
 
 

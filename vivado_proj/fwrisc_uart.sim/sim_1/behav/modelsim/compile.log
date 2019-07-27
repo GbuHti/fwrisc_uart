@@ -1,4 +1,4 @@
-# do {fwrisc_uart_tb_compile.do}
+# do {simple_ram_tb_compile.do}
 # ** Warning: (vlib-34) Library already exists at "modelsim_lib/work".
 # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim".
 # ** Warning: (vlib-34) Library already exists at "modelsim_lib/msim/xil_defaultlib".
@@ -7,49 +7,30 @@
 # Modifying modelsim.ini
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 19:40:28 on Jul 25,2019
-# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../../fwrisc_uart/rtl" "+incdir+../../../../../fwrisc_uart/rtl/uart/vsim/csrc" "+incdir+../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0" ../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0_clk_wiz.v ../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0.v 
-# -- Skipping module clk_wiz_0_clk_wiz
-# -- Skipping module clk_wiz_0
+# Start time: 15:10:36 on Jul 27,2019
+# vlog -64 -incr -work xil_defaultlib "+incdir+../../../../../fwrisc_uart/rtl" "+incdir+../../../../../fwrisc_uart/rtl/uart/vsim/csrc" "+incdir+../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0" ../../../../fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/sim/blk_mem_gen_0.v 
+# -- Skipping module blk_mem_gen_0
 # 
 # Top level modules:
-# 	clk_wiz_0
-# End time: 19:40:28 on Jul 25,2019, Elapsed time: 0:00:00
+# 	blk_mem_gen_0
+# End time: 15:10:36 on Jul 27,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # ** Warning: (vlog-159) Mode option -64 is not supported in this context and will be ignored.
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 19:40:28 on Jul 25,2019
-# vlog -64 -incr -sv -work xil_defaultlib "+incdir+../../../../../fwrisc_uart/rtl" "+incdir+../../../../../fwrisc_uart/rtl/uart/vsim/csrc" "+incdir+../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0" ../../../../../fwrisc_uart/rtl/IF_fifo.sv ../../../../../fwrisc_uart/rtl/UART_Registers.sv ../../../../../fwrisc_uart/rtl/UART_baudrate_gen.sv ../../../../../fwrisc_uart/rtl/UART_rx_fsm.sv ../../../../../fwrisc_uart/rtl/UART_tx_fsm.sv ../../../../../fwrisc_uart/rtl/fwrisc.sv ../../../../../fwrisc_uart/rtl/fwrisc_alu.sv ../../../../../fwrisc_uart/rtl/fwrisc_comparator.sv ../../../../../fwrisc_uart/rtl/fwrisc_dbus_if.sv ../../../../../fwrisc_uart/rtl/fwrisc_fpga_top.sv ../../../../../fwrisc_uart/rtl/fwrisc_regfile.sv ../../../../../fwrisc_uart/fpga/fwrisc_uart_wraper.sv ../../../../../fwrisc_uart/rtl/mux2to1.sv ../../../../../fwrisc_uart/rtl/my_fifo.sv ../../../../../fwrisc_uart/rtl/my_ram.sv ../../../../../fwrisc_uart/rtl/uart/op_uart.sv ../../../../../fwrisc_uart/rtl/uart.sv ../../../../../fwrisc_uart/rtl/uart/uart_transceiver.sv ../../../../../fwrisc_uart/rtl/fwrisc_uart_tb.sv 
-# -- Skipping module IF_fifo
-# -- Skipping module UART_Registers
-# -- Skipping module UART_baudrate_gen
-# -- Skipping module UART_rx_fsm
-# -- Skipping module UART_tx_fsm
-# -- Skipping module fwrisc
-# -- Skipping module fwrisc_alu
-# -- Skipping module fwrisc_comparator
-# -- Skipping module fwrisc_dbus_if
-# -- Skipping module fwrisc_fpga_top
-# -- Skipping module fwrisc_regfile
-# -- Skipping module fwrisc_uart_wraper
-# -- Skipping module mux2to1
-# -- Skipping module my_fifo
-# -- Skipping module my_ram
-# -- Skipping module op_uart
-# -- Skipping module uart
-# -- Skipping module uart_transceiver
-# -- Compiling module fwrisc_uart_tb
+# Start time: 15:10:36 on Jul 27,2019
+# vlog -64 -incr -sv -work xil_defaultlib "+incdir+../../../../../fwrisc_uart/rtl" "+incdir+../../../../../fwrisc_uart/rtl/uart/vsim/csrc" "+incdir+../../../../fwrisc_uart.srcs/sources_1/ip/clk_wiz_0" ../../../../fwrisc_uart.srcs/sim_1/new/simple_ram_tb.v 
+# -- Skipping module simple_ram_tb
 # 
 # Top level modules:
-# 	fwrisc_uart_tb
-# End time: 19:40:28 on Jul 25,2019, Elapsed time: 0:00:00
+# 	simple_ram_tb
+# End time: 15:10:36 on Jul 27,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # Model Technology ModelSim SE-64 vlog 10.6d Compiler 2018.02 Feb 24 2018
-# Start time: 19:40:28 on Jul 25,2019
+# Start time: 15:10:36 on Jul 27,2019
 # vlog -work xil_defaultlib glbl.v 
 # -- Compiling module glbl
 # 
 # Top level modules:
 # 	glbl
-# End time: 19:40:28 on Jul 25,2019, Elapsed time: 0:00:00
+# End time: 15:10:36 on Jul 27,2019, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

@@ -14,16 +14,16 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7v2000t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 2044 
+INFO: Helper process launched with PID 9612 
 WARNING: [Synth 8-2507] parameter declaration becomes local in my_fifo with formal parameter declaration list [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_fifo.sv:15]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 482.656 ; gain = 112.480
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 483.027 ; gain = 112.730
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'fwrisc_uart_wraper' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:1]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:5]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:6]
-INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-2056-DESKTOP-EVPNNIR/realtime/clk_wiz_0_stub.v:5]
-INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-2056-DESKTOP-EVPNNIR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6157] synthesizing module 'clk_wiz_0' [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-12564-DESKTOP-EVPNNIR/realtime/clk_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'clk_wiz_0' (1#1) [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-12564-DESKTOP-EVPNNIR/realtime/clk_wiz_0_stub.v:5]
 INFO: [Synth 8-6157] synthesizing module 'fwrisc_fpga_top' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:28]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:50]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:51]
@@ -39,18 +39,21 @@ INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:33]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:34]
 INFO: [Synth 8-5534] Detected attribute (* MARK_DEBUG = "TRUE" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:35]
-INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:40]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc_regfile' (3#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:26]
+INFO: [Synth 8-6157] synthesizing module 'blk_mem_gen_0' [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-12564-DESKTOP-EVPNNIR/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'blk_mem_gen_0' (3#1) [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/.Xil/Vivado-12564-DESKTOP-EVPNNIR/realtime/blk_mem_gen_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_regfile_0'. This will prevent further optimization [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:58]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_regfile_1'. This will prevent further optimization [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:71]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc_regfile' (4#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv:26]
 INFO: [Synth 8-6157] synthesizing module 'fwrisc_alu' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_alu.sv:29]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc_alu' (4#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_alu.sv:29]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc_alu' (5#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_alu.sv:29]
 INFO: [Synth 8-6157] synthesizing module 'fwrisc_dbus_if' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_dbus_if.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc_dbus_if' (5#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_dbus_if.sv:12]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc' (6#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc_dbus_if' (6#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_dbus_if.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc' (7#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc.sv:28]
 INFO: [Synth 8-6157] synthesizing module 'uart' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/uart.sv:10]
 INFO: [Synth 8-6157] synthesizing module 'UART_Registers' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_Registers.sv:12]
 INFO: [Synth 8-6157] synthesizing module 'IF_fifo' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/IF_fifo.sv:11]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'IF_fifo' (7#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/IF_fifo.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'IF_fifo' (8#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/IF_fifo.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'my_fifo' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_fifo.sv:1]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter ADDR_WIDTH bound to: 3 - type: integer 
@@ -58,11 +61,11 @@ INFO: [Synth 8-6157] synthesizing module 'my_fifo' [D:/Project/16_proj_fwisc_uar
 INFO: [Synth 8-6157] synthesizing module 'my_ram' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_ram.sv:22]
 	Parameter DATA_WIDTH bound to: 8 - type: integer 
 	Parameter ADDR_WIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'my_ram' (8#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_ram.sv:22]
-INFO: [Synth 8-6155] done synthesizing module 'my_fifo' (9#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_fifo.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'my_ram' (9#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_ram.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'my_fifo' (10#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/my_fifo.sv:1]
 WARNING: [Synth 8-6014] Unused sequential element UART_Tx_Buffer_reg was removed.  [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_Registers.sv:82]
 WARNING: [Synth 8-6014] Unused sequential element UART_Rx_Buffer_reg was removed.  [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_Registers.sv:126]
-INFO: [Synth 8-6155] done synthesizing module 'UART_Registers' (10#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_Registers.sv:12]
+INFO: [Synth 8-6155] done synthesizing module 'UART_Registers' (11#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_Registers.sv:12]
 WARNING: [Synth 8-689] width (20) of port connection 'UART_baudrate_div' does not match port width (32) of module 'UART_Registers' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/uart.sv:61]
 INFO: [Synth 8-6157] synthesizing module 'UART_tx_fsm' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_tx_fsm.sv:11]
 	Parameter IDLE bound to: 4'b0001 
@@ -71,24 +74,24 @@ INFO: [Synth 8-6157] synthesizing module 'UART_tx_fsm' [D:/Project/16_proj_fwisc
 	Parameter STOP bound to: 4'b1000 
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_tx_fsm.sv:45]
 INFO: [Synth 8-6157] synthesizing module 'UART_baudrate_gen' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_baudrate_gen.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'UART_baudrate_gen' (11#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_baudrate_gen.sv:11]
-INFO: [Synth 8-6155] done synthesizing module 'UART_tx_fsm' (12#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_tx_fsm.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'UART_baudrate_gen' (12#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_baudrate_gen.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'UART_tx_fsm' (13#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_tx_fsm.sv:11]
 INFO: [Synth 8-6157] synthesizing module 'UART_rx_fsm' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_rx_fsm.sv:18]
 	Parameter IDLE bound to: 4'b0001 
 	Parameter STAR bound to: 4'b0010 
 	Parameter RXDA bound to: 4'b0100 
 	Parameter STOP bound to: 4'b1000 
 INFO: [Synth 8-155] case statement is not full and has no default [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_rx_fsm.sv:63]
-INFO: [Synth 8-6155] done synthesizing module 'UART_rx_fsm' (13#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_rx_fsm.sv:18]
-INFO: [Synth 8-6155] done synthesizing module 'uart' (14#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/uart.sv:10]
+INFO: [Synth 8-6155] done synthesizing module 'UART_rx_fsm' (14#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/UART_rx_fsm.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'uart' (15#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/uart.sv:10]
 INFO: [Synth 8-6157] synthesizing module 'mux2to1' [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/mux2to1.sv:11]
 	Parameter DATA_WIDTH bound to: 33 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux2to1' (15#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/mux2to1.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1' (16#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/mux2to1.sv:11]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_core'. This will prevent further optimization [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:55]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_uart'. This will prevent further optimization [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:72]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc_fpga_top' (16#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:28]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc_fpga_top' (17#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:28]
 INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'u_fwrisc_fpga_top'. This will prevent further optimization [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:24]
-INFO: [Synth 8-6155] done synthesizing module 'fwrisc_uart_wraper' (17#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:1]
+INFO: [Synth 8-6155] done synthesizing module 'fwrisc_uart_wraper' (18#1) [D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv:1]
 WARNING: [Synth 8-3331] design IF_fifo has unconnected port dwdata_i[31]
 WARNING: [Synth 8-3331] design IF_fifo has unconnected port dwdata_i[30]
 WARNING: [Synth 8-3331] design IF_fifo has unconnected port dwdata_i[29]
@@ -155,7 +158,7 @@ WARNING: [Synth 8-3331] design fwrisc_regfile has unconnected port reset
 WARNING: [Synth 8-3331] design fwrisc_comparator has unconnected port clock
 WARNING: [Synth 8-3331] design fwrisc_comparator has unconnected port reset
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.656 ; gain = 155.480
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.934 ; gain = 158.637
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -168,10 +171,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.656 ; gain = 155.480
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.934 ; gain = 158.637
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 525.656 ; gain = 155.480
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 528.934 ; gain = 158.637
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7v2000tflg1925-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
@@ -180,28 +183,32 @@ Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clock_gen'
 Finished Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc] for cell 'u_clock_gen'
+Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_0'
+Finished Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_0'
+Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_1'
+Finished Parsing XDC File [d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/blk_mem_gen_0/blk_mem_gen_0/blk_mem_gen_0_in_context.xdc] for cell 'u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_1'
 Parsing XDC File [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc]
 Finished Parsing XDC File [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/constrs_1/new/fwrisc_uart_xc7v2000t.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/fwrisc_uart_wraper_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/fwrisc_uart_wraper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1497.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.129 ; gain = 0.000
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1497.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1498.129 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1497.664 ; gain = 0.000
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1497.664 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1498.129 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1498.129 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1498.129 ; gain = 1127.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7v2000tflg1925-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1498.129 ; gain = 1127.832
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -209,8 +216,10 @@ Start Applying 'set_property' XDC Constraints
 Applied set_property IO_BUFFER_TYPE = NONE for clock. (constraint file  d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 3).
 Applied set_property CLOCK_BUFFER_TYPE = NONE for clock. (constraint file  d:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/sources_1/ip/clk_wiz_0/clk_wiz_0/clk_wiz_0_in_context.xdc, line 4).
 Applied set_property DONT_TOUCH = true for u_clock_gen. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for u_fwrisc_fpga_top/u_core/u_regfile/u_regfile_1. (constraint file  auto generated constraint, line ).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1498.129 ; gain = 1127.832
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_alu.sv:40]
 INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc.sv:229]
@@ -267,7 +276,6 @@ WARNING: [Synth 8-6014] Unused sequential element addr_d_reg_rep_bsel was remove
 WARNING: [Synth 8-6014] Unused sequential element addr_d_reg_rep_bsel was removed.  [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:119]
 WARNING: [Synth 8-6014] Unused sequential element addr_d_reg_rep_bsel was removed.  [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:119]
 WARNING: [Synth 8-6014] Unused sequential element addr_d_reg_rep_bsel was removed.  [D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv:119]
-INFO: [Synth 8-3971] The signal regs_reg was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -314,7 +322,7 @@ INFO: [Synth 8-3971] The signal ram_1_reg was recognized as a true dual port RAM
 INFO: [Synth 8-3971] The signal ram_2_reg was recognized as a true dual port RAM template.
 INFO: [Synth 8-3971] The signal ram_3_reg was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1498.129 ; gain = 1127.832
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -342,7 +350,6 @@ Detailed RTL Component Info :
 	               30 Bit    Registers := 1     
 	               12 Bit    Registers := 10    
 	                8 Bit    Registers := 6     
-	                6 Bit    Registers := 4     
 	                5 Bit    Registers := 1     
 	                4 Bit    Registers := 4     
 	                3 Bit    Registers := 4     
@@ -351,11 +358,10 @@ Detailed RTL Component Info :
 +---RAMs : 
 	             128K Bit         RAMs := 1     
 	              32K Bit         RAMs := 4     
-	               2K Bit         RAMs := 1     
 	               64 Bit         RAMs := 2     
 +---Muxes : 
 	   2 Input     33 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 32    
+	   2 Input     32 Bit        Muxes := 30    
 	   7 Input     32 Bit        Muxes := 2     
 	   4 Input     32 Bit        Muxes := 3     
 	   3 Input     32 Bit        Muxes := 2     
@@ -397,14 +403,6 @@ Module fwrisc_comparator
 Detailed RTL Component Info : 
 +---Muxes : 
 	   2 Input      1 Bit        Muxes := 2     
-Module fwrisc_regfile 
-Detailed RTL Component Info : 
-+---Registers : 
-	                6 Bit    Registers := 4     
-+---RAMs : 
-	               2K Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 2     
 Module fwrisc_alu 
 Detailed RTL Component Info : 
 +---Adders : 
@@ -604,9 +602,6 @@ WARNING: [Synth 8-3331] design fwrisc_dbus_if has unconnected port instr[2]
 WARNING: [Synth 8-3331] design fwrisc_dbus_if has unconnected port instr[1]
 WARNING: [Synth 8-3331] design fwrisc_dbus_if has unconnected port instr[0]
 INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-RAM Pipeline Warning: Read Address Register Found For RAM regs_reg. We will not be able to pipeline it. This may degrade performance. 
-RAM Pipeline Warning: Read Address Register Found For RAM regs_reg. We will not be able to pipeline it. This may degrade performance. 
-INFO: [Synth 8-3971] The signal regs_reg was recognized as a true dual port RAM template.
 RAM Pipeline Warning: Read Address Register Found For RAM rom_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM rom_reg. We will not be able to pipeline it. This may degrade performance. 
 INFO: [Synth 8-3971] The signal rom_reg was recognized as a true dual port RAM template.
@@ -622,7 +617,6 @@ INFO: [Synth 8-6430] The Block RAM ram_2_reg may get memory collision error if r
 RAM Pipeline Warning: Read Address Register Found For RAM ram_3_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM ram_3_reg. We will not be able to pipeline it. This may degrade performance. 
 INFO: [Synth 8-6430] The Block RAM ram_3_reg may get memory collision error if read and write address collide. Use attribute (* rw_addr_collision= "yes" *) to avoid collision 
-RAM Pipeline Warning: Read Address Register Found For RAM regs_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM rom_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM ram_0_reg. We will not be able to pipeline it. This may degrade performance. 
 RAM Pipeline Warning: Read Address Register Found For RAM ram_1_reg. We will not be able to pipeline it. This may degrade performance. 
@@ -691,7 +685,7 @@ INFO: [Synth 8-3886] merging instance 'u_fwrisc_fpga_top/u_uart/u_UART_Registers
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_fwrisc_fpga_top/u_uart/\u_UART_Registers/UART_Rx_Ctrl_reg[30] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_fwrisc_fpga_top/u_uart/\u_UART_Registers/UART_Tx_Ctrl_reg[30] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:53 ; elapsed = 00:00:54 . Memory (MB): peak = 1515.738 ; gain = 1145.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -721,8 +715,6 @@ Note: The table above is a preliminary report that shows the Distributed RAMs at
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/i_1/regs_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/i_1/regs_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/i_6/rom_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/i_6/rom_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/i_6/rom_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -751,13 +743,13 @@ Start Applying XDC Timing Constraints
 INFO: [Synth 8-5578] Moved timing constraint from pin 'u_clock_gen/clk_out1' to pin 'u_clock_gen/bbstub_clk_out1/O'
 INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 1497.664 ; gain = 1127.488
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:00 ; elapsed = 00:01:01 . Memory (MB): peak = 1515.738 ; gain = 1145.441
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 1722.570 ; gain = 1352.395
+Finished Timing Optimization : Time (s): cpu = 00:01:13 ; elapsed = 00:01:14 . Memory (MB): peak = 1722.789 ; gain = 1352.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -794,8 +786,6 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
-INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/u_core/u_regfile/regs_reg_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/rom_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/rom_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/rom_reg_1_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
@@ -813,7 +803,7 @@ INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/ram_2_reg (im
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/ram_3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 INFO: [Synth 8-6837] The timing for the instance u_fwrisc_fpga_top/ram_3_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Technology Mapping : Time (s): cpu = 00:01:14 ; elapsed = 00:01:15 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -838,7 +828,7 @@ Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 CRITICAL WARNING: [Synth 8-4442] BlackBox module u_clock_gen has unconnected pin reset
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished IO Insertion : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -851,7 +841,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -863,25 +853,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -891,39 +881,41 @@ Report BlackBoxes:
 +------+--------------+----------+
 |      |BlackBox name |Instances |
 +------+--------------+----------+
-|1     |clk_wiz_0     |         1|
+|1     |blk_mem_gen_0 |         2|
+|2     |clk_wiz_0     |         1|
 +------+--------------+----------+
 
 Report Cell Usage: 
-+------+-----------+------+
-|      |Cell       |Count |
-+------+-----------+------+
-|1     |clk_wiz_0  |     1|
-|2     |CARRY4     |    59|
-|3     |LUT1       |    44|
-|4     |LUT2       |   169|
-|5     |LUT3       |   140|
-|6     |LUT4       |   131|
-|7     |LUT5       |   199|
-|8     |LUT6       |   693|
-|9     |RAM32M     |     4|
-|10    |RAMB18E1   |     2|
-|11    |RAMB36E1   |     8|
-|12    |RAMB36E1_1 |     4|
-|13    |FDRE       |   442|
-|14    |FDSE       |     7|
-|15    |IBUF       |     2|
-|16    |OBUF       |     4|
-+------+-----------+------+
++------+-----------------+------+
+|      |Cell             |Count |
++------+-----------------+------+
+|1     |blk_mem_gen_0    |     1|
+|2     |blk_mem_gen_0__2 |     1|
+|3     |clk_wiz_0        |     1|
+|4     |CARRY4           |    59|
+|5     |LUT1             |    44|
+|6     |LUT2             |   105|
+|7     |LUT3             |   140|
+|8     |LUT4             |   131|
+|9     |LUT5             |   199|
+|10    |LUT6             |   691|
+|11    |RAM32M           |     4|
+|12    |RAMB36E1         |     8|
+|13    |RAMB36E1_1       |     4|
+|14    |FDRE             |   430|
+|15    |FDSE             |     7|
+|16    |IBUF             |     2|
+|17    |OBUF             |     4|
++------+-----------------+------+
 
 Report Instance Areas: 
 +------+----------------------------+--------------------+------+
 |      |Instance                    |Module              |Cells |
 +------+----------------------------+--------------------+------+
-|1     |top                         |                    |  1910|
-|2     |  u_fwrisc_fpga_top         |fwrisc_fpga_top     |  1902|
-|3     |    u_core                  |fwrisc              |  1257|
-|4     |      u_regfile             |fwrisc_regfile      |    80|
+|1     |top                         |                    |  1894|
+|2     |  u_fwrisc_fpga_top         |fwrisc_fpga_top     |  1886|
+|3     |    u_core                  |fwrisc              |  1241|
+|4     |      u_regfile             |fwrisc_regfile      |    64|
 |5     |      u_alu                 |fwrisc_alu          |   467|
 |6     |      u_comp                |fwrisc_comparator   |    96|
 |7     |    u_uart                  |uart                |   360|
@@ -941,28 +933,28 @@ Report Instance Areas:
 |19    |      u_UART_baudrate_gen   |UART_baudrate_gen   |    40|
 +------+----------------------------+--------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 1 critical warnings and 49 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:53 ; elapsed = 00:00:57 . Memory (MB): peak = 1723.578 ; gain = 381.395
-Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.578 ; gain = 1353.402
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:54 ; elapsed = 00:00:58 . Memory (MB): peak = 1723.805 ; gain = 384.313
+Synthesis Optimization Complete : Time (s): cpu = 00:01:15 ; elapsed = 00:01:16 . Memory (MB): peak = 1723.805 ; gain = 1353.508
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 77 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 75 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1745.027 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1723.805 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 4 instances were transformed.
   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-233 Infos, 112 Warnings, 1 Critical Warnings and 0 Errors encountered.
+230 Infos, 112 Warnings, 1 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:19 ; elapsed = 00:01:22 . Memory (MB): peak = 1745.027 ; gain = 1386.320
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1745.027 ; gain = 0.000
+synth_design: Time (s): cpu = 00:01:20 ; elapsed = 00:01:22 . Memory (MB): peak = 1723.805 ; gain = 1364.977
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1723.805 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_4_xc7v2000t/fwrisc_uart_wraper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file fwrisc_uart_wraper_utilization_synth.rpt -pb fwrisc_uart_wraper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 11:16:00 2019...
+INFO: [Common 17-206] Exiting Vivado at Sat Jul 27 15:19:58 2019...
