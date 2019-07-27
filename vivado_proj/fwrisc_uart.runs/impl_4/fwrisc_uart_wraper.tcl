@@ -109,6 +109,8 @@ start_step place_design
 set ACTIVE_STEP place_design
 set rc [catch {
   create_msg_db place_design.pb
+  read_checkpoint -auto_incremental  -incremental D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.srcs/utils_1/imports/impl_4/fwrisc_uart_wraper_routed.dcp
+  catch { report_incremental_reuse -file fwrisc_uart_wraper_incremental_reuse_pre_placed.rpt }
   if { [llength [get_debug_cores -quiet] ] > 0 }  { 
     implement_debug_core 
   } 
