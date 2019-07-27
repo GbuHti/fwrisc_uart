@@ -1,0 +1,510 @@
+/*
+
+Xilinx Vivado v2018.3 (64-bit) [Major: 2018, Minor: 3]
+SW Build: 2405991 on Thu Dec  6 23:38:27 MST 2018
+IP Build: 2404404 on Fri Dec  7 01:43:56 MST 2018
+
+Process ID (PID): 13852
+License: Customer
+
+Current time: 	Wed Jul 24 15:59:30 CST 2019
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 6
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 42 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	9.0.4 64-bit
+Java home: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4
+Java executable location: 	C:/Xilinx/Vivado/2018.3/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	yuzhenbo-0
+User home directory: C:/Users/yuzhenbo-0
+User working directory: D:/Project/16_proj_fwisc_uart/vivado_proj
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2018.3
+RDI_DATADIR: C:/Xilinx/Vivado/2018.3/data
+RDI_BINDIR: C:/Xilinx/Vivado/2018.3/bin
+
+Vivado preferences file location: C:/Users/yuzhenbo-0/AppData/Roaming/Xilinx/Vivado/2018.3/vivado.xml
+Vivado preferences directory: C:/Users/yuzhenbo-0/AppData/Roaming/Xilinx/Vivado/2018.3/
+Vivado layouts directory: C:/Users/yuzhenbo-0/AppData/Roaming/Xilinx/Vivado/2018.3/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2018.3/lib/classes/planAhead.jar
+Vivado log file location: 	D:/Project/16_proj_fwisc_uart/vivado_proj/vivado.log
+Vivado journal file location: 	D:/Project/16_proj_fwisc_uart/vivado_proj/vivado.jou
+Engine tmp dir: 	D:/Project/16_proj_fwisc_uart/vivado_proj/.Xil/Vivado-13852-DESKTOP-EVPNNIR
+
+Xilinx Environment Variables
+----------------------------
+NO_XILINX_DATA_LICENSE: HIDDEN
+XILINX: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2018.3/ids_lite/ISE
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2018.3
+XILINX_SDK: C:/Xilinx/SDK/2018.3
+XILINX_VIVADO: C:/Xilinx/Vivado/2018.3
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2018.3
+
+
+GUI allocated memory:	128 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 596 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 62 MB (+62905kb) [00:00:08]
+// [Engine Memory]: 545 MB (+420039kb) [00:00:08]
+// bx (cp):  Open Project : addNotify
+// Opening Vivado Project: D:\Project\16_proj_fwisc_uart\vivado_proj\fwrisc_uart.xpr. Version: Vivado v2018.3 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 601 MB. GUI used memory: 45 MB. Current time: 7/24/19, 3:59:32 PM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 103 MB (+39784kb) [00:00:22]
+// [Engine Memory]: 701 MB (+134640kb) [00:00:22]
+// WARNING: HEventQueue.dispatchEvent() is taking  3081 ms.
+// Tcl Message: open_project D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2018.3/data/ip'. 
+// [Engine Memory]: 740 MB (+4564kb) [00:00:24]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 757.391 ; gain = 181.156 
+// [Engine Memory]: 788 MB (+11038kb) [00:00:25]
+// Project name: fwrisc_uart; location: D:/Project/16_proj_fwisc_uart/vivado_proj; part: xc7z010clg400-1
+dismissDialog("Open Project"); // bx (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 790 MB. GUI used memory: 52 MB. Current time: 7/24/19, 3:59:47 PM CST
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 110 MB (+1503kb) [00:00:37]
+// Elapsed time: 12 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 20, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// [Engine Memory]: 833 MB (+6455kb) [00:00:41]
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_3 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 4 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// Tcl Message: launch_runs impl_3 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jul 24 16:00:03 2019] Launched synth_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/runme.log [Wed Jul 24 16:00:03 2019] Launched impl_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 3, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 3); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 5, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 4, false); // B (D, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 848 MB. GUI used memory: 54 MB. Current time: 7/24/19, 4:00:17 PM CST
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 4, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 5, true); // B (D, cp) - Node
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 848 MB. GUI used memory: 56 MB. Current time: 7/24/19, 4:30:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 848 MB. GUI used memory: 51 MB. Current time: 7/24/19, 5:00:17 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 848 MB. GUI used memory: 51 MB. Current time: 7/24/19, 5:30:18 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 848 MB. GUI used memory: 51 MB. Current time: 7/24/19, 6:00:18 PM CST
+// Elapsed time: 8315 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (cp):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_3 
+// HMemoryUtils.trashcanNow. Engine heap size: 926 MB. GUI used memory: 51 MB. Current time: 7/24/19, 6:18:58 PM CST
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_REPORT_STALE
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,571 MB. GUI used memory: 51 MB. Current time: 7/24/19, 6:19:09 PM CST
+// [Engine Memory]: 1,571 MB (+729800kb) [02:19:49]
+// TclEventType: DESIGN_NEW
+// [Engine Memory]: 1,677 MB (+29104kb) [02:19:50]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// [GUI Memory]: 127 MB (+12384kb) [02:19:51]
+// DeviceView Instantiated
+// WARNING: HEventQueue.dispatchEvent() is taking  1852 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 78 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.3 INFO: [Device 21-403] Loading part xc7z010clg400-1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1656.133 ; gain = 0.000 
+// Tcl Message: Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.208 . Memory (MB): peak = 1656.133 ; gain = 0.000 Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1656.133 ; gain = 0.000 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary:   A total of 4 instances were transformed.   RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances  
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// Tcl Message: open_run: Time (s): cpu = 00:00:21 ; elapsed = 00:00:17 . Memory (MB): peak = 1767.289 ; gain = 901.570 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// [GUI Memory]: 135 MB (+825kb) [02:19:54]
+// [GUI Memory]: 142 MB (+257kb) [02:19:54]
+// WARNING: HEventQueue.dispatchEvent() is taking  2203 ms.
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dQ' command handler elapsed time: 22 seconds
+// [GUI Memory]: 158 MB (+9711kb) [02:19:57]
+// Elapsed time: 22 seconds
+dismissDialog("Open Implemented Design"); // bx (cp)
+// Elapsed time: 815 seconds
+selectTab((HResource) null, (HResource) null, "Sources", 0); // aI (aF, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 5); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 5, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc.sv" -n28'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 93 MB. Current time: 7/24/19, 6:49:14 PM CST
+// Elapsed time: 1474 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header]", 1); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, fwrisc_defines.vh]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, fwrisc_defines.vh]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_defines.vh" -n0'
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 91 MB. Current time: 7/24/19, 7:19:14 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  2576 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  2371 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 83 MB. Current time: 7/24/19, 7:49:14 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 83 MB. Current time: 7/24/19, 8:19:14 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 6152 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Non-module Files]", 3, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 7, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 7, true); // B (D, cp) - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv)]", 7); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv), u_regfile : fwrisc_regfile (fwrisc_regfile.sv)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv), u_regfile : fwrisc_regfile (fwrisc_regfile.sv)]", 9, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv), u_regfile : fwrisc_regfile (fwrisc_regfile.sv)]", 9, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_regfile.sv" -n26'
+// Elapsed time: 68 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// Tcl Message: reset_run synth_3 
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_3 -to_step write_bitstream -jobs 6 
+// TclEventType: RUN_MODIFY
+// Tcl Message: [Wed Jul 24 20:41:31 2019] Launched synth_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/runme.log [Wed Jul 24 20:41:31 2019] Launched impl_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 242 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectTab((HResource) null, (HResource) null, "Timing", 8); // aI (aF, cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 93 MB. Current time: 7/24/19, 8:49:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 94 MB. Current time: 7/24/19, 9:19:15 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 93 MB. Current time: 7/24/19, 9:49:15 PM CST
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 4856 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_3 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: DESIGN_STALE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_3 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Wed Jul 24 22:06:37 2019] Launched synth_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/runme.log [Wed Jul 24 22:06:37 2019] Launched impl_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 158 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// Elapsed time: 248 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// f (cp): Launch Runs: addNotify
+selectButton("PAResourceQtoS.RunBitgen_BITSTREAM_GENERATION_HAS_ALREADY_COMPLETED_OK", "OK"); // JButton (C, I)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// 'cw' command handler elapsed time: 3 seconds
+// TclEventType: RUN_MODIFY
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run impl_3 -prev_step  
+// bx (cp):  Generate Bitstream : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_3 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Wed Jul 24 22:13:29 2019] Launched impl_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 14 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, fwrisc_defines.vh]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, fwrisc_defines.vh]", 2, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_defines.vh" -n0'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_clock_gen : clk_wiz_0 (clk_wiz_0.xci)]", 5, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 6, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 6, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_fpga_top.sv" -n28'
+// Elapsed time: 17 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Run Implementation]", 17, false, false, false, false, true, false); // u (Q, cp) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_IMPL_SETTINGS, "Implementation Settings..."); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_IMPL_SETTINGS
+// Tcl Command: 'rdi::info_commands {device::*}'
+// Tcl Command: 'rdi::info_commands {debug::*}'
+// Tcl Command: 'rdi::info_commands {*}'
+// F (cp): Settings: addNotify
+// WARNING: HEventQueue.dispatchEvent() is taking  1891 ms.
+selectButton(PAResourceItoN.IncrementalRunPanel_TURN_INCREMENTAL_IMPLEMENTATION_ON, (String) null); // q (l, F)
+// bq (F): Incremental Implementation: addNotify
+selectRadioButton(PAResourceItoN.IncrementalCompileChooserPanel_AUTOMATICALLY_USE_CHECKPOINT, "Automatically use the checkpoint from the previous run"); // a (aI, bq)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (bq)
+// Tcl Command: 'set_property AUTO_INCREMENTAL_CHECKPOINT 1 [get_runs impl_3]'
+dismissDialog("Incremental Implementation"); // bq (F)
+// TclEventType: RUN_OPTIONS_MODIFIED
+// Tcl Message: set_property AUTO_INCREMENTAL_CHECKPOINT 1 [get_runs impl_3] 
+// [GUI Memory]: 170 MB (+3920kb) [06:14:59]
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (F)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 111 MB. Current time: 7/24/19, 10:14:27 PM CST
+dismissDialog("Settings"); // F (cp)
+// Elapsed time: 934 seconds
+selectButton(PAResourceOtoP.ProjectTab_CLOSE_DESIGN, "Close Design"); // h (cQ, cp)
+// TclEventType: DESIGN_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 94 MB. Current time: 7/24/19, 10:30:02 PM CST
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,715 MB. GUI used memory: 94 MB. Current time: 7/24/19, 10:30:02 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1113 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: close_design 
+// bx (cp):  Closing : addNotify
+// TclEventType: DESIGN_CLOSE
+dismissDialog("Closing"); // bx (cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // u (Q, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Verilog Header, fwrisc_defines.vh]", 2, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/fpga/fwrisc_uart_wraper.sv" -n1'
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv)]", 4); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv)]", 6); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv), u_dbus_if : fwrisc_dbus_if (fwrisc_dbus_if.sv)]", 11, false); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fwrisc_uart_wraper (fwrisc_uart_wraper.sv), u_fwrisc_fpga_top : fwrisc_fpga_top (fwrisc_fpga_top.sv), u_core : fwrisc (fwrisc.sv), u_dbus_if : fwrisc_dbus_if (fwrisc_dbus_if.sv)]", 11, false, false, false, false, false, true); // B (D, cp) - Double Click
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_dbus_if.sv" -n12'
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 58 seconds
+maximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aI, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: launch_simulation -install_path C:/modeltech64_10.6d/win64 
+// TclEventType: LOAD_FEATURE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: INFO: [USF-ModelSim-107] Finding global include files... INFO: [USF-ModelSim-108] Finding include directories and verilog header directory paths... INFO: [USF-ModelSim-109] Fetching design files from 'sim_1'... INFO: [USF-ModelSim-2] ModelSim::Compile design INFO: [USF-ModelSim-15] Creating automatic 'do' files... 
+// Tcl Message: INFO: [USF-ModelSim-69] Executing 'COMPILE and ANALYZE' step in 'D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim' 
+// Tcl Message: run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1858.582 ; gain = 0.000 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '5' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=14980) 
+// Tcl Message: launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1858.582 ; gain = 0.000 
+// 'd' command handler elapsed time: 7 seconds
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Elapsed time: 200 seconds
+unMaximizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // ax (aI, cp)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 26, false); // u (Q, cp)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+// A (cp): Synthesis is Out-of-date: addNotify
+selectButton(RDIResource.BaseDialog_YES, "Yes"); // a (A)
+// bx (cp):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+dismissDialog("Synthesis is Out-of-date"); // A (cp)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_3 
+// Tcl Message: INFO: [Project 1-973] Auto Incremental Compile:: New reference dcp wns is greater than threshold, current reference dcp will be replaced INFO: [Project 1-954] Importing D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/fwrisc_uart_wraper_routed.dcp file to utils Fileset. 
+// f (cp): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+dismissDialog("Launch Runs"); // f (cp)
+// TclEventType: RUN_LAUNCH
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// bx (cp):  Generate Bitstream : addNotify
+// Tcl Message: launch_runs impl_3 -to_step write_bitstream -jobs 6 
+// Tcl Message: [Wed Jul 24 22:34:58 2019] Launched synth_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/synth_3/runme.log [Wed Jul 24 22:34:58 2019] Launched impl_3... Run output will be captured here: D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.runs/impl_3/runme.log 
+dismissDialog("Generate Bitstream"); // bx (cp)
+// Elapsed time: 53 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Simulation, Run Simulation]", 6, false); // u (Q, cp)
+selectMenuItem(PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, "Run Behavioral Simulation"); // af (al, cp)
+// Run Command: PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL
+// e (cp):  Run Simulation : addNotify
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PACKAGER_MESSAGE_RESET
+// TclEventType: PACKAGER_UNLOAD_CORE
+// Tcl Message: launch_simulation -install_path C:/modeltech64_10.6d/win64 
+// Tcl Message: INFO: [USF-ModelSim-69] 'compile' step finished in '2' seconds INFO: [USF-ModelSim-4] ModelSim::Simulate design INFO: [USF-ModelSim-69] Executing 'SIMULATE' step in 'D:/Project/16_proj_fwisc_uart/vivado_proj/fwrisc_uart.sim/sim_1/behav/modelsim' 
+// Tcl Message: Program launched (PID=1308) 
+dismissDialog("Run Simulation"); // e (cp)
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STEP_COMPLETED
+// Elapsed time: 74 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 19); // B (D, cp)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 20); // B (D, cp)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fwrisc_uart_tb (fwrisc_uart_tb.sv)]", 23, true); // B (D, cp) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fwrisc_uart_tb (fwrisc_uart_tb.sv)]", 23, true, false, false, false, false, true); // B (D, cp) - Double Click - Node
+// Launch External Editor: 'C:/Program Files (x86)/Notepad++/notepad++.exe "D:/Project/16_proj_fwisc_uart/fwrisc_uart/rtl/fwrisc_uart_tb.sv" -n12'
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, fwrisc_uart_tb (fwrisc_uart_tb.sv)]", 23, true); // B (D, cp) - Node
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: RUN_COMPLETED
+// ah (cp): Bitstream Generation Completed: addNotify
+// Elapsed time: 67 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_REPORTS_WINDOW
+dismissDialog("Bitstream Generation Completed"); // ah (cp)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 72 MB. Current time: 7/24/19, 11:00:06 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 70 MB. Current time: 7/24/19, 11:30:06 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1190 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 12:00:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 12:30:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 1:00:07 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 1:30:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 2:00:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 2:30:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 3:00:08 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 3:30:09 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 4:00:09 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 4:30:09 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 5:00:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 5:30:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 6:00:10 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 6:30:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 7:00:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 7:30:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 8:00:11 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 66 MB. Current time: 7/25/19, 8:30:12 AM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1031 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 70 MB. Current time: 7/25/19, 9:00:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 70 MB. Current time: 7/25/19, 9:30:12 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,715 MB. GUI used memory: 70 MB. Current time: 7/25/19, 10:00:13 AM CST
