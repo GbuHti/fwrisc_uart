@@ -1,7 +1,7 @@
 Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2018.3 (win64) Build 2405991 Thu Dec  6 23:38:27 MST 2018
-| Date         : Fri Jul 26 22:58:28 2019
+| Date         : Sat Jul 27 11:47:31 2019
 | Host         : DESKTOP-EVPNNIR running 64-bit major release  (build 9200)
 | Command      : report_drc -file fwrisc_uart_wraper_drc_routed.rpt -pb fwrisc_uart_wraper_drc_routed.pb -rpx fwrisc_uart_wraper_drc_routed.rpx
 | Design       : fwrisc_uart_wraper
@@ -24,11 +24,12 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 2
+             Violations found: 3
 +-----------+----------+-----------------------------------------------------+------------+
 | Rule      | Severity | Description                                         | Violations |
 +-----------+----------+-----------------------------------------------------+------------+
 | CFGBVS-1  | Warning  | Missing CFGBVS and CONFIG_VOLTAGE Design Properties | 1          |
+| IOSR-1    | Warning  | IOB set reset sharing                               | 1          |
 | RTSTAT-10 | Warning  | No routable loads                                   | 1          |
 +-----------+----------+-----------------------------------------------------+------------+
 
@@ -45,6 +46,11 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+IOSR-1#1 Warning
+IOB set reset sharing  
+IO rx connects to flops which have these u_ila_0/inst/ila_core_inst/use_probe_debug_circuit, reset_IBUF set/reset signals.  For optimal IOB flop packing there should be only one set/reset signal coming into the IOB.
 Related violations: <none>
 
 RTSTAT-10#1 Warning

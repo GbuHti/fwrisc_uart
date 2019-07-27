@@ -145,44 +145,8 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 5,
-                                "portIndex": 1,
-                                "nets": [
-                                    {
-                                        "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr",
-                                        "isBus": true,
-                                        "subnets": [
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[5]"
-                                            },
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[4]"
-                                            },
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[3]"
-                                            },
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[2]"
-                                            },
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[1]"
-                                            },
-                                            {
-                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[0]"
-                                            }
-                                        ]
-                                    }
-                                ]
-                            },
-                            {
-                                "name": "probe2",
-                                "id": 2,
-                                "type": "DATA_TRIGGER",
-                                "direction": "IN",
-                                "isVector": true,
-                                "leftIndex": 0,
                                 "rightIndex": 31,
-                                "portIndex": 2,
+                                "portIndex": 1,
                                 "nets": [
                                     {
                                         "name": "u_fwrisc_fpga_top/u_core/u_regfile/rb_rdata",
@@ -289,14 +253,14 @@
                                 ]
                             },
                             {
-                                "name": "probe3",
-                                "id": 3,
+                                "name": "probe2",
+                                "id": 2,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 5,
-                                "portIndex": 3,
+                                "portIndex": 2,
                                 "nets": [
                                     {
                                         "name": "u_fwrisc_fpga_top/u_core/u_regfile/rb_raddr",
@@ -325,14 +289,14 @@
                                 ]
                             },
                             {
-                                "name": "probe4",
-                                "id": 4,
+                                "name": "probe3",
+                                "id": 3,
                                 "type": "DATA_TRIGGER",
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
                                 "rightIndex": 5,
-                                "portIndex": 4,
+                                "portIndex": 3,
                                 "nets": [
                                     {
                                         "name": "u_fwrisc_fpga_top/u_core/u_regfile/rd_waddr",
@@ -355,6 +319,42 @@
                                             },
                                             {
                                                 "name": "u_fwrisc_fpga_top/u_core/u_regfile/rd_waddr[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 5,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[5]"
+                                            },
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[4]"
+                                            },
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[3]"
+                                            },
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[2]"
+                                            },
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[1]"
+                                            },
+                                            {
+                                                "name": "u_fwrisc_fpga_top/u_core/u_regfile/ra_raddr[0]"
                                             }
                                         ]
                                     }
@@ -534,6 +534,38 @@
                                 "nets": [
                                     {
                                         "name": "u_fwrisc_fpga_top/u_core/u_regfile/rd_wen",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe10",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 10,
+                                "nets": [
+                                    {
+                                        "name": "rx_IBUF",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe11",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 11,
+                                "nets": [
+                                    {
+                                        "name": "tx_OBUF",
                                         "isBus": false
                                     }
                                 ]
