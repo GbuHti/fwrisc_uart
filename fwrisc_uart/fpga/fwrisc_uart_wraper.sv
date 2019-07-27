@@ -2,8 +2,8 @@ module fwrisc_uart_wraper(
 		input			clock,
 		input			reset,
 
-		input			rx,
-		output			tx,
+		(*MARK_DEBUG="TRUE"*)input			rx,
+		(*MARK_DEBUG="TRUE"*)output			tx,
 
 		output			program_receiving,
 		output			program_ov,
