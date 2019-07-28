@@ -38,8 +38,9 @@ module fwrisc_regfile(
 `ifndef FPGA
 	reg[5:0]			ra_raddr_r;
 	reg[5:0]			rb_raddr_r;
-	(*ram_style="block"*)reg[31:0]			regs['h3f:0];
+	(*dont_touch = "{true}"*)reg[31:0]			regs['h3f:0];
 
+	// (*ram_style="block"*)
 	always @(posedge clock) begin
 		ra_raddr_r <= ra_raddr;
 		rb_raddr_r <= rb_raddr;
