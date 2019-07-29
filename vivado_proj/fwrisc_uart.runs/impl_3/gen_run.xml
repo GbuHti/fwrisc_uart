@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_3" LaunchPart="xc7z010clg400-1" LaunchTime="1564125451" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/impl_3/fwrisc_uart_wraper_routed.dcp">
-  <File Type="OPT-HWDEF" Name="fwrisc_uart_wraper.hwdef"/>
   <File Type="ROUTE-BUS-SKEW" Name="fwrisc_uart_wraper_bus_skew_routed.rpt"/>
   <File Type="PA-DCP" Name="fwrisc_uart_wraper.dcp"/>
-  <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="fwrisc_uart_wraper_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="fwrisc_uart_wraper_timing_summary_init.rpt"/>
+  <File Type="OPT-HWDEF" Name="fwrisc_uart_wraper.hwdef"/>
   <File Type="ROUTE-PWR" Name="fwrisc_uart_wraper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="fwrisc_uart_wraper.tcl"/>
-  <File Type="OPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_opted.rpt"/>
+  <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
   <File Type="OPT-DCP" Name="fwrisc_uart_wraper_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="fwrisc_uart_wraper_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="fwrisc_uart_wraper_reports.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="fwrisc_uart_wraper_power_summary_routed.pb"/>
   <File Type="OPT-DRC" Name="fwrisc_uart_wraper_drc_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="fwrisc_uart_wraper_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="fwrisc_uart_wraper_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="fwrisc_uart_wraper_placed.dcp"/>
   <File Type="PLACE-IO" Name="fwrisc_uart_wraper_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="fwrisc_uart_wraper_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="fwrisc_uart_wraper_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="fwrisc_uart_wraper_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="fwrisc_uart_wraper_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_pre_placed.rpt"/>
-  <File Type="PLACE-TIMING" Name="fwrisc_uart_wraper_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="fwrisc_uart_wraper_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="fwrisc_uart_wraper.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="fwrisc_uart_wraper_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="fwrisc_uart_wraper_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="fwrisc_uart_wraper.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="fwrisc_uart_wraper_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="fwrisc_uart_wraper_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="fwrisc_uart_wraper_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="fwrisc_uart_wraper_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="fwrisc_uart_wraper_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="fwrisc_uart_wraper.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="fwrisc_uart_wraper_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="fwrisc_uart_wraper.mmi"/>
+  <File Type="BITSTR-LTX" Name="fwrisc_uart_wraper.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="fwrisc_uart_wraper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="fwrisc_uart_wraper.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="fwrisc_uart_wraper_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="fwrisc_uart_wraper.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="fwrisc_uart_wraper_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="fwrisc_uart_wraper.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="fwrisc_uart_wraper_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="fwrisc_uart_wraper_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="fwrisc_uart_wraper_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="fwrisc_uart_wraper_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="fwrisc_uart_wraper_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="fwrisc_uart_wraper_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="fwrisc_uart_wraper_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="fwrisc_uart_wraper_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="fwrisc_uart_wraper_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="fwrisc_uart_wraper_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="fwrisc_uart_wraper_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="fwrisc_uart_wraper_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="fwrisc_uart_wraper.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="fwrisc_uart_wraper_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="fwrisc_uart_wraper.rbt"/>
   <File Type="BITSTR-NKY" Name="fwrisc_uart_wraper.nky"/>
   <File Type="BG-BGN" Name="fwrisc_uart_wraper.bgn"/>

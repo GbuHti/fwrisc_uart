@@ -54,3 +54,5 @@
 # blk_mem_gen_v8_4_2 collision detected at time: 105000, Instance: simple_ram_tb.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_2_inst.async_coll, A write address: 0, B  read address: 0
 # blk_mem_gen_v8_4_2 collision detected at time: 115000, Instance: simple_ram_tb.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_2_inst.async_coll, A write address: 0, B  read address: 0
 # blk_mem_gen_v8_4_2 collision detected at time: 705000, Instance: simple_ram_tb.your_instance_name.inst.native_mem_module.blk_mem_gen_v8_4_2_inst.async_coll, A write address: 1d, B  read address: 1d
+# End time: 13:20:05 on Jul 29,2019, Elapsed time: 46:09:20
+# Errors: 0, Warnings: 6

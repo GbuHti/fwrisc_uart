@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_2" LaunchPart="xcvu440-flga2892-1-c" LaunchTime="1563437900">
-  <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
   <File Type="PA-TCL" Name="fwrisc_uart_wraper.tcl"/>
-  <File Type="OPT-DCP" Name="fwrisc_uart_wraper_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="fwrisc_uart_wraper_bd.bmm"/>
   <File Type="REPORTS-TCL" Name="fwrisc_uart_wraper_reports.tcl"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="fwrisc_uart_wraper_opt.dcp"/>
   <File Type="OPT-DRC" Name="fwrisc_uart_wraper_drc_opted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="fwrisc_uart_wraper_incremental_reuse_pre_placed.rpt"/>
   <File Type="OPT-HWDEF" Name="fwrisc_uart_wraper.hwdef"/>
   <File Type="PWROPT-DCP" Name="fwrisc_uart_wraper_pwropt.dcp"/>
   <File Type="PLACE-DCP" Name="fwrisc_uart_wraper_placed.dcp"/>

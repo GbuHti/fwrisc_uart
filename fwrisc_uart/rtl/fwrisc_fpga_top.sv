@@ -38,8 +38,8 @@ module fwrisc_fpga_top (
 		);
 
 	
-	wire[31:0]			iaddr;
-	reg[31:0]			idata;
+	(*MARK_DEBUG="TRUE"*)wire[31:0]			iaddr;
+	(*MARK_DEBUG="TRUE"*)reg[31:0]			idata;
 	wire				ivalid;
 	wire				iready;
 	wire[31:0]			daddr;
